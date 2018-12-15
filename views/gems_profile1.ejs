@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>THIRAN GEMS PORTAL - Jobs made easy</title>
+
+  <!-- Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import materialize.css-->
+  <!-- Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style type="text/css">
+
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://camo.githubusercontent.com/32c7c4a15e2ff3600f7e808f2f7997ece27cd572/687474703a2f2f692e696d6775722e636f6d2f484333613675332e676966') 50% 50% no-repeat white;
+}
+</style>
+<body>
+  <div id="loader"></div>
+<div class="content">
+
+  <nav class="pink darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/projects/yetexplore" class="brand-logo"><i class="material-icons">dashboard</i>Set up your profile</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/projects/novicenet" target="_blank">Home</a></li>
+        <li><a href="/projects/novicenet" target="_blank">Tour</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/"><i class="material-icons">account_balance</i>THIRAN</a></li>
+        <li><a href="/projects/codesuite" target="_blank"><i class="material-icons">domain</i>CodeSuite</a></li>
+
+        <li><a href="#cloudrunz"><i class="material-icons">language</i>CloudRunz</a></li>
+        <li><a href="#devtoolz"><i class="material-icons">invert_colors</i>DevToolz</a></li>
+        <li><a href="/projects/novicenet" target="_blank"><i class="material-icons">network_check</i>NoviceNet</a></li>
+        <li><a href="/projects/offlinides" target="_blank"><i class="material-icons">library_books</i>Offlinides</a></li>
+        <li><a href="/projects/codemate" target="_blank"><i class="material-icons">graphic_eq</i>CodeMate</a></li>
+         <li><a href="/projects/codemate" target="_blank"><i class="material-icons">account_balance</i>DiscussHub Home</a></li>
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="col s12 m7">
+    <h4 class="header">Phase 1 - Let's get to know,code your profile</h4><br>
+    <div class="card horizontal">
+
+      <div class="card-stacked">
+        <div class="card-content">
+
+  <div class="row">
+    <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>   Basic profile</p>
+    <form class="col s12" method="POST" action="/projects/gems_profile1">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">face</i>
+          <textarea id="icon_prefix1" class="materialize-textarea" name="name"></textarea>
+          <label for="icon_prefix1">Your Name </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">business</i>
+          <input type="text" id="autocomplete-input1" class="autocomplete" name="district_name" autocomplete="off">
+          <label for="autocomplete-input1">Native  </label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">textsms</i>
+          <input id="phoneno" type="number" class="validate" name="phoneno">
+          <label for="phoneno">Contact no</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">contact_mail</i>
+          <input id="email" type="email" class="validate" name="email">
+          <label for="email">Email</label>
+        </div>
+         <div class="input-field col s6">
+          <i class="material-icons prefix">art_track</i>
+              <select name="domain" id="dep">
+                <option value="" disabled="" selected="">Domain</option>
+                <option value="CSE">CSE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MCA">MCA</option>
+                <option value="ME">ME</option>
+              </select>
+              <label>Home</label>
+            </div>
+      </div>
+       <div class="row">
+
+        <div class="input-field col s6">
+          <i class="material-icons prefix">add</i>
+              <select name="year" id="year">
+                <option value="" disabled="" selected="">Year </option>
+                <option value="1st year">1st year</option>
+                <option value="2nd year">2nd year</option>
+                <option value="3rd year">3rd year</option>
+                <option value="4th year">4th year</option>
+              </select>
+              <label>Study</label>
+            </div>
+
+        <div class="input-field col s6">
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">add_circle_outline</i>
+     <select name="year_of_passing" id="yearpicker"></select>
+    <label>Year of passing</label><br>
+  </div>
+        </div>
+      </div>
+      <br>
+      <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>   Education</p><br>
+      <div class="input-field col s12">
+      <p>
+      <label>
+        <input class="with-gap" name="edu1" type="radio" value="12th" />
+        <span>Higher secondary</span>
+      </label>
+       <label>
+        <input class="with-gap" name="edu1" type="radio" value="le" />
+        <span>Polytechnic</span>
+      </label>
+       <label>
+        <input class="with-gap" name="edu1" type="radio" value="both" />
+        <span>Both</span>
+      </label>
+    </p>
+  </div><br>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">blur_circular</i>
+          <textarea id="institution_name" class="materialize-textarea" name="institution_name1"></textarea>
+          <label for="institution_name">Institution </label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">device_hub</i>
+          <input type="text" id="autocomplete-input2" class="autocomplete" name="district1" autocomplete="off">
+          <label for="autocomplete-input2">District</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix">donut_small</i>
+        <label for="cutoff">Percentage %</label>
+      </div>
+        <div class="input-field col s12">
+
+        <p class="range-field">
+      <input type="range" id="cutoff" min="0" max="100" name="cutoff1" />
+
+    </p>
+    </div>
+      </div>
+      <div class="input-field col s12">
+      <p>
+      <label>
+        <input class="with-gap" name="edu2" type="radio" value="stateboard" />
+        <span>State Board</span>
+      </label>
+       <label>
+        <input class="with-gap" name="edu2" type="radio" value="cbsc" />
+        <span>CBSC</span>
+      </label>
+       <label>
+        <input class="with-gap" name="edu2" type="radio" value="other" />
+        <span>Other</span>
+      </label>
+    </p>
+  </div><br>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">blur_circular</i>
+          <textarea id="institution_name2" class="materialize-textarea" name="institution_name2"></textarea>
+          <label for="institution_name2">Institution </label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">device_hub</i>
+          <input type="text" id="autocomplete-input3" class="autocomplete" name="district2" autocomplete="off">
+          <label for="autocomplete-input3">District</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix">donut_small</i>
+        <label for="cutoff">Percentage %</label>
+      </div>
+
+        <div class="input-field col s12">
+
+        <p class="range-field">
+      <input type="range" id="cutoff2" min="0" max="100" name="cutoff2" />
+
+    </p>
+    </div>
+      </div>
+       <br>
+      <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>   Skills</p><br>
+      <div class="row">
+
+
+        <div class="input-field col s6" >
+          <i class="material-icons prefix">devices_other</i>
+          <label>Software tools & technologies</label><br>
+        <div class="chips chips-autocomplete" id="software_skills" name="software_skills"></div>
+      </div>
+
+      <div class="input-field col s6" >
+        <i class="material-icons prefix">extension</i>
+        <label>Other skillSet</label><br>
+        <div class="chips chips-autocomplete" id="other_skills" name="other_skills"></div>
+      </div>
+      </div>
+
+          <br>
+      <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>   Accomplishments</p><br>
+
+
+    <div class="row">
+        <div class="input-field col s6" >
+          <select name="Accomplishments" id="accomplishments" name="accomplishments">
+                <option value="" disabled="" selected="">Sector</option>
+                <option value="1">Certification</option>
+                <option value="2">Patent</option>
+                <option value="3">Course</option>
+                <option value="4">Project(IEEE)</option>
+                <option value="5">Honour/award</option>
+                <option value="6">Test score</option>
+                <option value="7">Language</option>
+                <option value="8">Freelancing/startUp</option>
+              </select>
+              <label>Achievements</label>
+      </div>
+       <div class="input-field col s6"><br>
+         <p>
+      <label>
+        <input type="checkbox" id="interns" name="interns" />
+        <span>Any previous interns</span>
+      </label>
+    </p>
+       </div>
+      </div>
+      <div style="display: none;" id="intern_hide">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">donut_large</i>
+          <textarea id="intern_company" class="materialize-textarea" name="intern_company"></textarea>
+          <label for="intern_company">Interned at </label>
+        </div>
+         <div class="col s6" id="field_hide">
+            <div class="input-field col s12">
+              <select name="field" id="field">
+                <option value="" disabled="" selected="">Type of industry</option>
+                <option value="Software">Software</option>
+                <option value="Government sector">Government sector</option>
+                <option value="Non IT - private sectors">Non IT -private sectors</option>
+                <option value="IIT,NIT,IIM">IIT's,NIT's/IIM's</option>
+                <option value="Foreign Universities">Foreign Universities</option>
+              </select>
+              <label>Industry</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+       <div class="input-field col s6">
+          <i class="material-icons prefix">chevron_right</i>
+          <input id="intern_duration" type="number" class="validate" name="intern_duration">
+          <label for="intern_duration">Duration</label>
+        </div>
+         <div class="col s6" id="field_hide">
+            <div class="input-field col s12">
+              <select name="offer" id="offer">
+                <option value="" disabled="" selected="">Offer via</option>
+                <option value="Online job sites">Online job sites</option>
+                <option value="Employee referal">Employee referal</option>
+                <option value="Alumni referal">ALumni referal</option>
+                <option value="Competitions">Competitions</option>
+                <option value="Staffs referal">Staffs referal</option>
+              </select>
+              <label>Chance given by</label>
+            </div>
+          </div>
+      </div></div>
+      <div class="row">
+        <div class="input-field col s12" style="display: none;" id="title_hide">
+          <i class="material-icons prefix">donut_large</i>
+          <textarea id="title" class="materialize-textarea" name="title"></textarea>
+          <label for="title">Title </label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s6" style="display: none;" id="publisher_hide">
+          <i class="material-icons prefix">done_all</i>
+          <textarea id="publisher" class="materialize-textarea" name="publisher"></textarea>
+          <label for="publisher">Publisher/publication</label>
+        </div>
+        <div class="input-field col s6" style="display: none;" id="expire_hide">
+           <p>
+      <label>
+        <input type="checkbox" name="expire" />
+        <span>This does not expire</span>
+      </label>
+    </p>
+        </div>
+      </div>
+       <div class="row" style="display: none;" id="company_hide">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">domain</i>
+          <textarea id="company_name" class="materialize-textarea" name="company_name"></textarea>
+          <label for="company_name">CompanyName</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">event_seat</i>
+          <textarea id="position_at" class="materialize-textarea" name="position_at"></textarea>
+          <label for="position_at">Position/role</label>
+        </div>
+      </div>
+      <div class="row" style="display: none;" id="description_hide">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">equalizer</i>
+          <textarea id="role_description" class="materialize-textarea" name="role_description"></textarea>
+          <label for="role_description">Description </label>
+        </div>
+      </div>
+      <div class="row" style="display: none;" id="issuer_hide">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">done</i>
+          <textarea id="issuer" class="materialize-textarea" name="issuer"></textarea>
+          <label for="issuer">Issuing authority </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6" style="display: none;" id="date1_hide">
+          <i class="material-icons prefix">check</i>
+          <input type="text" class="datepicker" id="date1" name="date1">
+          <label for="date1">Date</label>
+          <small>Recognised at</small>
+        </div>
+        <div class="input-field col s6" style="display: none;" id="duration_hide">
+          <i class="material-icons prefix">chevron_right</i>
+          <input id="duration" type="number" class="validate" name="duration">
+          <label for="duration">Duration</label>
+        </div>
+      </div>
+      <div class="row">
+         <div class="input-field col s6" style="display: none;" id="ongoing_hide">
+           <p>
+      <label>
+        <input type="checkbox" name="ongoing" id="ongoing" />
+        <span>Ongoing</span>
+      </label>
+    </p>
+        </div>
+        <div class="input-field col s6" style="display: none;" id="mentor_hide">
+           <p>
+      <label>
+        <input type="checkbox" id="mentor" />
+        <span>Have any mentor/guide</span>
+      </label>
+    </p>
+        </div>
+      </div>
+<div class="row" style="display: none;" id="date_hide">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">details</i>
+          <input type="text" class="datepicker" id="date2" name="date2">
+          <label for="date2">Start Date </label>
+        </div>
+
+
+        <div class="input-field col s6">
+          <i class="material-icons prefix">eject</i>
+          <input type="text" class="datepicker" id="date3" name="date3">
+          <label for="date3">End Date </label>
+        </div>
+      </div>
+       <div class="row">
+        <div style="display: none;" id="grade_hide">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">grade</i>
+        <label for="score">Score/proficiency</label><br><br>
+      </div><br><br>
+        <div class="input-field col s6">
+
+        <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" name="score" />
+
+    </p>
+    </div>
+    </div>
+    <div class="input-field col s6" style="display: none;" id="lang_hide">
+          <select name="lang_prof" id="lang_prof" name="lang_prof">
+                <option value="" disabled="" selected="">Level</option>
+                <option value="Elementary">Elementary</option>
+                <option value="Limited working proficiency">Limited working proficiency</option>
+                <option value="Professional">Professional certified</option>
+                <option value="native">Native or bilingual</option>
+
+              </select>
+              <label>Proficiency</label>
+      </div>
+      </div>
+
+      <div class="row" style="display: none;" id="mentor_details_hide">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">face</i>
+          <textarea id="mentor_name" class="materialize-textarea" name="mentor_name"></textarea>
+          <label for="mentor_name">Mentor name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">grain</i>
+          <textarea id="mentor_position" class="materialize-textarea" name="mentor_position"></textarea>
+          <label for="mentor_position">Mentor Position</label>
+        </div>
+      </div>
+      <div class="card-action">
+         <div class="row center">
+        <button class="btn-large waves-effect waves pink darken-3" type="submit">Complete It</button> <br><br>
+
+      </div>
+    </form>
+  </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<br>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Our Moto</h5>
+          <p class="grey-text text-lighten-4">When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Utilities</h5>
+          <ul>
+            <li><a class="white-text" href="/projects/codemate" target="_blank">CodeMate</a></li>
+            <li><a class="white-text" href="/projects/offlinides" target="_blank">Offlinides</a></li>
+            <li><a class="white-text" href="/projects/novicenet" target="_blank">NoviceNet</a></li>
+            <li><a class="white-text" href="/explore" target="_blank">DiscussHub</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connections</h5>
+          <ul>
+            <li><a class="white-text" href="#!">CodeSuite</a></li>
+            <li><a class="white-text" href="#!">Blog</a></li>
+            <li><a class="white-text" href="#!">ACCETOSA</a></li>
+            <li><a class="white-text" href="#!">ACGCET startUp Wallet</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with love by <a class="orange-text text-lighten-3" href="http://materializecss.com">THIRAN webTeam</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <script src="js/init.js"></script>
+<script type="text/javascript">
+ $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+      data: {
+        'Hadoop': null,
+        'MySQL': null,
+        'Oracle': null,
+        'PHP':null,
+        'Node.js':null,
+        'JavaScript':null,
+        'matlab':null,
+        'python':null,
+        'java':null,
+        '.NET':null,
+        'C#':null,
+        'Excel':null,
+        'amazon aws':null,
+        'jQuery':null,
+        'c':null,
+        'c++':null,
+        'deluge':null,
+        'blogging':null,
+        'UI/UX designing':null,
+        'Photoshop':null,
+        'Animations':null,
+        'android':null,
+        'flutter':null,
+        'redux':null,
+        'react native':null,
+        'react':null,
+        'cassandra':null,
+        'angularjs':null,
+        'linux':null,
+        'algorithms':null,
+        'mongodb':null,
+        'SQL':null,
+        'ruby':null
+
+
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+
+
+
+
+  for (i = 2030; i >= new Date().getFullYear(); i--)
+{
+    $('#yearpicker').append($('<option />').val(i).html(i));
+}
+ setTimeout(function() {
+    fullyLoaded();
+    }, 1000);
+
+function fullyLoaded() {
+    $("#loader").fadeOut("slow");
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+
+$('#accomplishments').on('change',function(){
+  if($(this).val()=="1"){
+    $("#title_hide").show();
+    $("#description_hide").show();
+    $("#duration_hide").show();
+    $("#grade_hide").show();
+    $("#publisher_hide").hide();
+    $("#expire_hide").hide();
+    $("#company_hide").hide();
+    $("#issuer_hide").show();
+    $("#date1_hide").hide();
+    $("#date_hide").hide();
+    $("#lang_hide").hide();
+    $("#ongoing_hide").hide();
+    $("#mentor_hide").hide();
+
+  }else if($(this).val()=="2"){
+    $("#date_hide").hide();
+    $("#lang_hide").hide();
+    $("#ongoing_hide").hide();
+    $("#mentor_hide").hide();
+    $("#company_hide").hide();
+    $("#issuer_hide").hide();
+    $("#grade_hide").hide();
+    $("#duration_hide").hide();
+    $("#title_hide").show();
+    $("#description_hide").show();
+    $("#expire_hide").show();
+    $("#publisher_hide").show();
+    $("#date1_hide").show();
+  }
+  else if($(this).val()=="3"){
+    $("#issuer_hide").hide();
+     $("#company_hide").hide();
+    $("#publisher_hide").hide();
+    $("#date1_hide").hide();
+    $("#date_hide").hide();
+    $("#lang_hide").hide();
+   $("#expire_hide").hide();
+    $("#mentor_hide").hide();
+    $("#ongoing_hide").show();
+    $("#title_hide").show();
+    $("#description_hide").show();
+    $("#duration_hide").show();
+    $("#grade_hide").show();
+  }else if($(this).val()=="4"){
+    $("#grade_hide").hide();
+     $("#ongoing_hide").hide();
+    $("#expire_hide").hide();
+    $("#date_hide").hide();
+    $("#lang_hide").hide();
+     $("#date1_hide").hide();
+    $("#issuer_hide").hide();
+     $("#company_hide").hide();
+    $("#title_hide").show();
+    $("#description_hide").show();
+    $("#publisher_hide").show();
+     $("#duration_hide").show();
+     $("#mentor_hide").show();
+  }
+  else if($(this).val()=="5"){
+    $("#date_hide").hide();
+    $("#lang_hide").hide();
+   $("#expire_hide").hide();
+    $("#mentor_hide").hide();
+    $("#ongoing_hide").hide();
+     $("#company_hide").hide();
+    $("#publisher_hide").hide();
+     $("#duration_hide").hide();
+     $("#title_hide").show();
+    $("#description_hide").show();
+    $("#issuer_hide").show();
+    $("#date1_hide").show();
+  }else if($(this).val()=="6"){
+     $("#date1_hide").hide();
+     $("#date_hide").hide();
+    $("#lang_hide").hide();
+   $("#expire_hide").show();
+    $("#mentor_hide").hide();
+    $("#ongoing_hide").hide();
+    $("#issuer_hide").hide();
+     $("#company_hide").hide();
+    $("#publisher_hide").hide();
+     $("#duration_hide").hide();
+    $("#title_hide").show();
+    $("#description_hide").show();
+    $("#grade_hide").show();
+  }else if($(this).val()=="7"){
+    $("#expire_hide").hide();
+    $("#mentor_hide").hide();
+    $("#ongoing_hide").hide();
+    $("#issuer_hide").hide();
+     $("#company_hide").hide();
+    $("#publisher_hide").hide();
+     $("#duration_hide").hide();
+    $("#date1_hide").hide();
+     $("#date_hide").hide();
+    $("#title_hide").show();
+     $("#grade_hide").show();
+     $("#lang_hide").show();
+     $("#description_hide").hide();
+  }
+  else if($(this).val()=="8"){
+    $("#grade_hide").hide();
+    $("#lang_hide").show();
+      $("#publisher_hide").hide();
+     $("#duration_hide").hide();
+    $("#date1_hide").hide();
+     $("#date_hide").hide();
+    $("#expire_hide").hide();
+    $("#mentor_hide").hide();
+    $("#ongoing_hide").hide();
+    $("#issuer_hide").hide();
+    $("#company_hide").show();
+    $("#description_hide").show();
+    $("#title_hide").hide();
+  }
+})
+$("#ongoing").click(function(){
+  $("#grade_hide").fadeToggle();
+  $("#date_hide").fadeToggle();
+})
+
+$("#interns").click(function(){
+  $("#intern_hide").fadeToggle();
+})
+
+$("#mentor").click(function(){
+  $("#mentor_details_hide").fadeToggle();
+})
+
+   $('.datepicker').datepicker();
+ $('select').formSelect();
+    $('input.autocomplete').autocomplete({
+      data: {
+       "Ariyalur":null,
+       "Chennai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Coimbatore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cuddalore":null,"Dharmapuri":null,"Dindigal":null,"Erode":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kancheepuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Karur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Krishnagiri":null,"Madurai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Nagapattinam":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"kanyakumari":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Namakkal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Perambalur":null,"Pudukottai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ramanathapuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Salem":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Sivagangai":null,"Thanjavur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Theni":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruvallur":null,"Thiruvarur":null,"Tuticorin":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Tirunelveli":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruchirapalli":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Tiruppur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruvannamalai":null,"The Nilgiris":null,"vellore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Vilupuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Virudhunagar":'https://www.utalkphil.com/assets/website_resource/images/loading.gif'
+      },
+    });
+  });
+
+</script>
+  </body>
+</html>

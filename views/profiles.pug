@@ -1,0 +1,214 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+    title  THIRAN GEMS PORTAL - Jobs made easy
+  style(type='text/css').
+    .text{
+    font-family: Proxima Nova;
+    color: white;
+    }
+    .a:hover{
+    color: hotpink;
+    }
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href='/projects/home') Thiran Home
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='#')
+              i.fa.fa-bank
+              |   Gems 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/projects/about') About THIRAN
+          li.nav-item
+            a.nav-link(href='https://accetosaweb.wordpress.com/' target="_blank") ACCETOSA
+          li.nav-item
+            a.nav-link(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration' target="_blank") StartUp Wallet
+    .container
+      br
+      .card
+        .card-header
+          
+          | Jobs made easy
+          i.material-icons golf_course
+        .card-body
+          h5.card-title 
+            | A place to hunt talents
+          
+          
+          p.card-text Track talents from our ACGCET Bucket
+          
+          a.btn.btn-outline-primary(href='/projects/gems_profile1' target='_blank') Post new job    
+            i.fa.fa-heartbeat
+
+      br
+      h4.text-dark Our Talent Pool - pick the best
+      br
+      ul.list-group
+        each profile, i in profiles
+          li.list-group-item
+            .alert.alert-primary(role='alert')
+              p.alert-heading
+                if profile.name && profile.name!="not mentioned" 
+                  h3 Candidate Name : 
+                    a(href="/forum/profile/"+profile._id)= profile.name
+                br
+                if profile.email && profile.email!="not mentioned" 
+                  span Candidate Email :
+                  small.text-info  #{profile.email}
+                p 
+                if profile.domain && profile.domain!="not mentioned" 
+                  small Domain : 
+                  small.text-info #{profile.domain}
+                br
+              
+              p
+                if profile.phoneno && profile.phoneno!="not mentioned" 
+                  small Contact.No :
+                  span.text-secondary #{profile.phoneno}
+              p
+                if profile.cutoff2 && profile.cutoff2!="not mentioned" 
+                  small Percentage of marks - 12 th grade :
+                  span.text-secondary #{profile.cutoff2}
+              p
+                if profile.cutoff1 && profile.cutoff1!="not mentioned" 
+                  small Percentage of marks - 10th grade :
+                  span.text-secondary #{profile.cutoff1}
+              p
+                if profile.intern_company && profile.intern_company!="not mentioned" 
+                  small Interned at :
+                  span.text-secondary #{profile.intern_company}
+              hr
+              
+                  
+              p.mb-0
+                button(class='btn btn-outline-primary upvote' data-id=profile._id)
+                  i.fa.fa-thumbs-o-up
+                  |  Endorse
+                  
+                button(class='btn btn-default upvote_cnt-'+profile._id)
+            
+                a(class='btn btn-outline-primary upvote' href="/projects/interview_call" style="margin:10px;")
+                  i.fa.fa-thumbs-o-up
+                  |  Call for interview
+                a(class='btn btn-outline-primary upvote' href="/forum/profile/"+profile._id style="margin:10px;")
+                  i.fa.fa-thumbs-o-up
+                  |  View more Details
+                
+                
+            
+          
+            
+    br
+    nav.navbar.navbar-bottom.navbar-expand-sm.navbar-dark.bg-dark
+      // Footer Links
+      .container-fluid.text-center.text-md-left
+        // Grid row
+        .row
+          // Grid column
+          .col-md-6.mt-md-0.mt-3
+            // Content
+            br
+            h5.text-uppercase.text THIRAN
+            p.text Express,encourage and grow together.
+            p.text THIRAN is all about sharing and connecting interests.
+          // Grid column
+          hr.clearfix.w-100.d-md-none.pb-3
+          // Grid column
+          .col-md-3.mb-md-0.mb-3
+            // Links
+            br
+            h5.text-uppercase.text Utilities
+            ul.list-unstyled
+              li
+                a.text.a(href='/projects/codemate' target="_blank") 
+                  i.fa.fa-angle-right 
+                  |   CodeMate
+              li
+                a.text.a(href='/projects/offlinides' target="_blank")
+                  i.fa.fa-angle-right 
+                  |  Offlinides
+              li
+                a.text.a(href='/projects/novicenet' target="_blank") 
+                  i.fa.fa-angle-right 
+                  |  NoviceNet
+              li
+                a.text.a(href='/projects/yetxplore' target="_blank") 
+                  i.fa.fa-angle-right 
+                  |   YetExplore
+          // Grid column
+          // Grid column
+          .col-md-3.mb-md-0.mb-3
+            // Links
+            br
+            h5.text-uppercase.text.a Family
+            ul.list-unstyled
+              li
+                a.text.a(href='https://accetosaweb.wordpress.com/' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |   ACCETOSA
+              li
+                a.text.a(href='https:/read.thiran.in' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |  THIRAN Blog
+              li
+                a.text.a(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |  StartUp Wallet
+              li
+                a.text.a(href='/projects/codesuite' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |  CodeSuite
+          // Grid column
+        // Grid row
+      // Footer Links
+      br
+      // Copyright
+      .footer-copyright.text-center.py-3.text
+        | © 2018 Copyright:
+        a.text.a(href='https://read.thiran.in') thiran.in
+      // Copyright
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      $('.upvote').on('click',function(){
+      var id = $(this).data('id');
+      // console.log(id);
+      $.ajax({
+      url:'/forum/addupvote_profile/'+id,
+      method:"POST"
+      });
+      });
+      refresh();
+      });
+      function refresh(){
+      $.ajax({
+      url: "/forum/getvotes_profile/",
+      contentType: "application/json",
+      method: "GET",
+      success: function(response) {
+      // console.log(response);
+      $.each(response, function(index) {
+      // console.log(response[index].likes);
+      $(".upvote_cnt-" + response[index]._id).first().html( response[index].upvotes );
+      });
+      setTimeout(refresh, 500);
+      }
+      });
+      }

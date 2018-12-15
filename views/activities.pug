@@ -1,0 +1,458 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title KnowledgeBase - THIRAN ACTIVITIES
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css', rel='stylesheet')
+    // Your custom styles (optional)
+    link(href='/css/style1.min.css', rel='stylesheet')
+    style(type='text/css').
+      .content {display:none;}
+      .preload { width:100px;
+      height: 100px;
+      position: fixed;
+      top: 4%;
+      left: 20%;}
+      .accordion.accordion-5 .card {
+      border: 0;
+      background-color: transparent; }
+      .accordion.accordion-5 .card .card-header {
+      border: 0;
+      background-color: Azure;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .accordion.accordion-5 .card .card-header:hover {
+      -webkit-transition: .3s;
+      transition: .3s;
+      background-color: lightgrey; }
+      .accordion.accordion-5 .card .card-header .fa {
+      background-color: #fff;
+      border-top-left-radius: 3px; }
+      .accordion.accordion-5 .card .card-body {
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px; }
+      body{
+      font-style: Proxima Nova;
+      }
+  body
+    .preload
+      img(src='https://cdn.dribbble.com/users/594619/screenshots/2339770/full_speed.gif')
+    .content
+      nav.navbar.navbar-expand-lg.navbar-dark.indigo.fixed-top.scrolling-navbar
+        // Navbar brand
+        a.navbar-brand(href='/') THIRAN
+        // Collapse button
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#basicExampleNav', aria-controls='basicExampleNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        // Collapsible content
+        #basicExampleNav.collapse.navbar-collapse
+          // Links
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | THIRAN ActivitiesHub
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/projects/about') Tour
+            // Dropdown
+            li.nav-item.dropdown
+              a#navbarDropdownMenuLink.nav-link.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Resources
+              .dropdown-menu.dropdown-primary(aria-labelledby='navbarDropdownMenuLink')
+                a.dropdown-item(href='/projects/codesuite', target='_blank') CodeSuite
+                a.dropdown-item(href='/forum/discusshub', target='_blank') DiscussHub
+                a.dropdown-item(href='/projects/about_startup', target='_blank') StartUp Wallet
+                a.dropdown-item(href='https://read.thiran.in', target='_blank') Blog
+          .md-form.my-0
+            ul.navbar-nav.mr-auto
+              li.nav-item
+                a.nav-link(href='/projects/home') THIRAN HOME
+              li.nav-item
+                a.nav-link(href='https://accetosaweb.wordpress.com/', target='_blank') ACCETOSA
+        // Collapsible content
+      br
+      br
+      .container(style='padding-top: 20px;')
+        // Section: Main info
+        section.mt-5.wow.fadeIn
+          // Grid row
+          .row
+            // Grid column
+            .col-md-6.mb-4
+              img.img-fluid.z-depth-1-half(src='/img/thiran.png', alt='', width='470px', height='600px')
+            // Grid column
+            // Grid column
+            .col-md-6.mb-3
+              // Main heading
+              h3.h3.mb-3 Let the let decide the rest.Try searching for fascinating stuffs hard..
+              p
+                strong THIRAN
+                |  Make the difference in you.
+              p Redefining creativity
+              // Main heading
+              hr
+      .container
+        h2 Filter from our activities basket
+        p Type your queries or doubts,let me see if I could help you some way..
+        input#myInput.form-control(type='text', placeholder='Search..')
+        br
+        br
+        #myDIV
+          // Card
+          .card.card-image(style='background-image: url(http://sfwallpaper.com/images/free-space-background-1.jpg);')
+            // Content
+            .rgba-black-strong.py-5.px-4
+              .row.d-flex.justify-content-center
+                .col-md-10.col-xl-8
+                  // Accordion wrapper
+                  #accordionEx5.accordion.accordion-5(role='tablist', aria-multiselectable='true')
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading30.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse30', aria-expanded='true', aria-controls='collapse30')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 Who can register projects?
+                      // Card body
+                      #collapse30.collapse.show(role='tabpanel', aria-labelledby='heading30', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Only students who are pursuing your degree at present,year is not a concern.If any of the alumni or members who didn't reveal your role inadvently trying to access the registration form you will be restricted.So if one is facing any problems inspite of registering as students,please do contact us and if you didn't register your role yet please mention it aside.Thank you!
+                    // Accordion card
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading31.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse31', aria-expanded='true', aria-controls='collapse31')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 Who can attend the events and how to know about them?
+                      // Card body
+                      #collapse31.collapse(role='tabpanel', aria-labelledby='heading31', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Coming to events part,if you are student you are free enough to attent any event regardless of your core(conditions may apply).
+                            | If you like to know more about the events,register.You will get a detailed newsletter.And if alumni wish to know about the events we will post at times the updates in our blog and other social media connections.You can also make use of the discussHub,cool!
+                    // Accordion card
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading32.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse32', aria-expanded='true', aria-controls='collapse32')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 What kind of events are generally conducted?
+                      // Card body
+                      #collapse32.collapse.show(role='tabpanel', aria-labelledby='heading32', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | It depends upon the current trends,needs,students interest and alumni support.The detailed list of available events will be given with guidelines and links in the website itself.Incase of any new entries,you will be informed accordingly.Please do follow us!
+                    // Accordion card
+                  // /.Accordion wrapper
+                  // Accordion wrapper
+                  #accordionEx5.accordion.accordion-5(role='tablist', aria-multiselectable='true')
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading33.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse33', aria-expanded='true', aria-controls='collapse33')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 Why I couldn't access Admin Panel?
+                      // Card body
+                      #collapse33.collapse.show(role='tabpanel', aria-labelledby='heading33', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Oops! I guess you don't have the required access permissions or you may have given them wrong
+                            | Please check your credentials once and try again
+                            | If you are sure you have the proper credentials (as alumni member) and if the problem persists please do contact us.
+                            a(href='/projects/contact')   Here
+                    // Accordion card
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading34.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse34', aria-expanded='true', aria-controls='collapse31')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 I've registered with my project,how do I get further upates?
+                      // Card body
+                      #collapse34.collapse(role='tabpanel', aria-labelledby='heading34', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Follow our blog
+                            a(href='https://read.thiran.in', target='_blank')  read.thiran.in
+                            |  Also track us on all social media platforms(you can get the details in our site)
+                            |                           For further queries rise out at 
+                            a(href='/forumhome', target='_blank')   DiscussHub
+                    // Accordion card
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading35.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse35', aria-expanded='true', aria-controls='collapse35')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 What kind of events can an Alumni conduct?
+                      // Card body
+                      #collapse35.collapse(role='tabpanel', aria-labelledby='heading35', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | We are honoured to answer this question.You can conduct any sort of technical.non-technical or social events without any hesitation.In case of any requirements or difficulties please do reach us through the
+                            a(href='https://read.thiran.in', target='_blank')   blog
+                            |   or through our
+                            a(href='/forumhome')   dicussion forum
+                            |  or drop a mail through our
+                            a(href='/projects/contact')   contact form
+                            |   We are ready to respond,thank you!
+                    // Accordion card
+                  // /.Accordion wrapper
+                  // Accordion wrapper
+                  #accordionEx5.accordion.accordion-5(role='tablist', aria-multiselectable='true')
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading36.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse36', aria-expanded='true', aria-controls='collapse36')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 What if I couldn't attend the event?
+                      // Card body
+                      #collapse36.collapse(role='tabpanel', aria-labelledby='heading36', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Please do inform us through the
+                            a(href='/forumhome', target='_blank')  discussion forum
+                            |   Or drop a mail through
+                            a(href='/projects/contact', target='_blank')  contact
+                            |   If couldn't just leave it to our side,we will switch it off for you.
+                    // Accordion card
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading37.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse37', aria-expanded='true', aria-controls='collapse37')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 What about the event timings and venue?
+                      // Card body
+                      #collapse37.collapse.show(role='tabpanel', aria-labelledby='heading37', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Thanks for reaching us! Once you got registered with proper credentials,you will be contacted by our team regularly.You will receive mail updates and mentorship at hands.If we missed you at any case please let us know.
+                            | Drop a mail to us on
+                            a(href='/projects/contact', target='_blank')   Contact Us
+                            |   Or reach us through 
+                            a(href='/forumhome')   discussHub
+                    // Accordion card
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading38.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse38', aria-expanded='true', aria-controls='collapse38')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 I registered already but didn't get any confirmation yet,why?
+                      // Card body
+                      #collapse38.collapse(role='tabpanel', aria-labelledby='heading38', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Sorry for the inconvinience,it may be due to any technical issues from our side.We will solve it soon.Please do contact our OGC memebers or reach us through all other connection like social media for now.
+                    // Accordion card
+                  // /.Accordion wrapper
+                  // Accordion wrapper
+                  #accordionEx5.accordion.accordion-5(role='tablist', aria-multiselectable='true')
+                    // Accordion card
+                    .card.mb-4
+                      // Card header
+                      #heading39.card-header.p-0.z-depth-1(role='tab')
+                        a(data-toggle='collapse', data-parent='#accordionEx5', href='#collapse39', aria-expanded='true', aria-controls='collapse39')
+                          i.fa.fa-angle-double-right.fa-2x.p-3.mr-4.float-left.black-text(aria-hidden='true')
+                          h4.text-uppercase.black-text.mb-0.py-3.mt-1 What If I wish to change the event date being an alumni who registered there?
+                      // Card body
+                      #collapse39.collapse(role='tabpanel', aria-labelledby='heading39', data-parent='#accordionEx5')
+                        .card-body.rgba-black-light.white-text.z-depth-1
+                          p.p-md-4.mb-0
+                            | Ofcourse we love to stay flexible that's why we ask you for alternate date in the form itself,you can go with it.If any further changes has to be done,please do contact us
+                            a(href='/projects/contact', target='_blank')   Contact
+              // Content
+            // Card
+      // Steps form
+      hr.mb-4
+      .container
+        .row
+          .col.s9
+            // Card
+            .card.mb-4.wow.fadeIn
+              // Card content
+              .card-body.text-center
+                p.h5.my-4
+                  i.fa.fa-bullhorn(aria-hidden='true')
+                  |  Our other activities
+                p
+                  | At thiran we focus on things that matter a lot for students.Thiran knows the way to do it,and shows the same.
+                p
+                  | We have an active discussion forum where you can raise your queries and get help.Visit thiran home to have a look at surprising element we gift you exclusively at thiran.
+                h5.my-4
+                  strong THIRAN - Place to dwell in excitement and grow together.
+                // Logo carousel
+                #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel', data-interval='1800')
+                  .carousel-inner
+                    // First slide
+                    .carousel-item
+                      // Grid row
+                      .row
+                        // First column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://freeiconshop.com/wp-content/uploads/edd/code-flat.png', alt='Nike - logo', style='max-height: 40px;')
+                        // /First column
+                        // Second column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://previews.123rf.com/images/braverabbit/braverabbit1203/braverabbit120300001/12859379-niedlichen-cartoon-junge-sitzt-auf-b%C3%BCcher-zu-lesen-hochwertige-3d-darstellung.jpg', alt='Amazon - logo', style='max-height: 40px;')
+                        // /Second column
+                        // Third column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='http://ic2.utexas.edu/global/wp-content/uploads/training-lightbulb-300x300.jpg', alt='Sony - logo', style='max-height: 40px;')
+                        // /Third column
+                        // Fourth column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://pbs.twimg.com/profile_images/609397371659616256/9IPFe4lI_400x400.png', alt='Samsung - logo', style='max-height: 40px;')
+                        // /Fourth column
+                      // /Grid row
+                    // First slide
+                    // Second slide
+                    .carousel-item.active.carousel-item-left
+                      // Grid row
+                      .row
+                        // First column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/NightViewAccetEntrance.jpg/220px-NightViewAccetEntrance.jpg', alt='Airbus - logo', style='max-height: 40px;')
+                        // /First column
+                        // Second column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img(src='http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Azhagappa_Statue.jpg/220px-Azhagappa_Statue.jpg', alt='Yahoo - logo', style='max-height: 40px;')
+                        // /Second column
+                        // Third column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://xprezaccet.files.wordpress.com/2015/02/cropped-img_7455_res1.jpg', alt='Deloitte - logo', style='max-height: 40px;')
+                        // /Third column
+                        // Fourth column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://accetosaweb.files.wordpress.com/2017/06/img_00192-1.jpg', alt='GE - logo', style='max-height: 40px;')
+                        // /Fourth column
+                      // /Grid row
+                    // Second slide
+                    // Third slide
+                    .carousel-item.carousel-item-next.carousel-item-left
+                      // Grid row
+                      .row
+                        // First column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://4.bp.blogspot.com/-AQ04wkylR7k/WK8kGbINpLI/AAAAAAAACfU/um_xCiwGtkcvesCjLtEGV_Wg0yMRcSojACLcB/s1600/IMG-20170218-WA0001.jpg', alt='KPMG - logo', style='max-height: 40px;')
+                        // /First column
+                        // Second column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://img.dtnext.in/Images/Article/201705040131480522_Founders-quota-in-Alagappa-Engineering-College-scrapped_SECVPF.gif', alt='Unity - logo', style='max-height: 40px;')
+                        // /Second column
+                        // Third column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/ACCETLibrary.jpg/220px-ACCETLibrary.jpg', alt='Ikea - logo', style='max-height: 40px;')
+                        // /Third column
+                        // Fourth column
+                        .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                          img.img-fluid.px-4(src='http://2.bp.blogspot.com/-iAFV-46jfag/VbD5s1jpECI/AAAAAAAAA00/bG5rhJxgSZs/s320/unnamed.png', alt='Aegon - logo', style='max-height: 40px;')
+                        // /Fourth column
+                      // /Grid row
+                    // Third slide
+                // Logo carousel
+                hr
+                a.btn.btn-outline-primary.mb-4(href='https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md', role='button', target='_blank')
+                  | Thiran GitHub
+                  i.fa.fa-download.ml-2
+            // /.Card
+          .col-s6
+            // Card : Dynamic content wrapper
+            .input-container.w-50.mx-auto
+              #errors
+                if errors
+                  ul(class='alert-error')
+                    each error, i in errors
+                      div(class="alert alert-danger") #{error} 
+                if success
+                  div(class="alert alert-success" style="padding: 20px;background-color: #f8bbd0;color: black;margin-bottom: 15px;") #{success} 
+            .card.mb-4.text-center.wow.fadeIn
+              .card-header Could not find what you are looking for?
+              // Card content
+              .card-body
+                // Default form login
+                form#key(method='POST' action='/projects/query')
+                  // Default input email
+                  label.grey-text(for='defaultFormEmailEx') Your email
+                  input#defaultFormLoginEmailEx.form-control(type='email' name='email')
+                  br
+                  // Default input password
+                  label.grey-text(for='defaultFormNameEx') Your name
+                  input#defaultFormNameEx.form-control(type='text' name='username')
+                  // Default input password
+                  label.grey-text(for='defaultFormBookNameEx') Your query?
+                  textarea#defaultFormBookNameEx.form-control(name='body')
+                  .text-center.mt-4.mb-4
+                    button.btn.btn-info.btn-md(type='submit') Submit
+                // Default form login
+      // Footer
+      footer.page-footer.text-center.font-small.mt-4.wow.fadeIn
+        // Call to action
+        .pt-4
+          a.btn.btn-outline-white(href='https://read.thiran.in', target='_blank', role='button')
+            | BLOG
+            i.fa.fa-puzzle-piece(aria-hidden='true', style='padding-left: 5px;')
+          a.btn.btn-outline-white(href='/projects/contact', target='_blank', role='button')
+            | Reach us 
+            i.fa.fa-heart(aria-hidden='true', style='padding-left: 5px;')
+        // /.Call to action
+        hr.my-4
+        // Social icons
+        .pb-4
+          a(href='https://www.facebook.com/accetthiran', target='_blank')
+            i.fa.fa-facebook.mr-3
+          a(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+            i.fa.fa-twitter.mr-3
+          a(href='https://www.youtube.com/user/ACCETthiran', target='_blank')
+            i.fa.fa-youtube.mr-3
+          a(href='https://plus.google.com/116707854087495862030', target='_blank')
+            i.fa.fa-google-plus.mr-3
+          a(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+            i.fa.fa-github.mr-3
+          a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+            i.fa.fa-linkedin.mr-3
+          a(href='https://www.instagram.com/thiran2k18/?hl=en', target='_blank')
+            i.fa.fa-instagram.mr-3
+        // Social icons
+        // Copyright
+        .footer-copyright.py-3
+          | © 2018 Copyright:
+          a(href='/', target='_blank')  thiran.in 
+        // /.Copyright
+      // /.Footer
+      // SCRIPTS
+      // JQuery
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+      // Bootstrap tooltips
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+      // Bootstrap core JavaScript
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+      // MDB core JavaScript
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+      // Initializations
+      script(type='text/javascript').
+        $(function() {
+        $(".preload").fadeOut(2000, function() {
+        $(".content").fadeIn(1000);
+        });
+        });
+        $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myDIV *").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+        });
+        });

@@ -1,0 +1,128 @@
+doctype html
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0')
+  title DiscussHub - Share your stories with us
+  // Import Google Icon Font
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  // Import materialize.css
+  // Compiled and minified CSS
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+  // Let browser know website is optimized for mobile
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+style(type='text/css').
+nav.light-blue.lighten-1(role='navigation')
+  .nav-wrapper.container
+    a#logo-container.brand-logo(href='#')
+      i.material-icons dashboard
+      | DiscusHub
+    ul.right.hide-on-med-and-down
+      li
+        a(href='/forumhome' target='_blank') Stories
+    ul#nav-mobile.sidenav
+      li
+        a(href='/')
+          i.material-icons account_balance
+          | THIRAN
+      li
+        a(href='/projects/codesuite' target='_blank')
+          i.material-icons domain
+          | CodeSuite
+      li
+        a(href='/projects/yetxplore#cloud')
+          i.material-icons language
+          | CloudRunz
+      li
+        a(href='/projects/yetxplore#dev')
+          i.material-icons invert_colors
+          | DevToolz
+      li
+        a(href='/projects/novicenet' target='_blank')
+          i.material-icons network_check
+          | NoviceNet
+      li
+        a(href='/projects/offlinides' target='_blank')
+          i.material-icons library_books
+          | Offlinides
+      li
+        a(href='/projects/codemate' target='_blank')
+          i.material-icons graphic_eq
+          | CodeMate
+      li
+        a(href='/projects/codemate' target='_blank')
+          i.material-icons account_balance
+          | DiscussHub Home
+    a.sidenav-trigger(href='#' data-target='nav-mobile')
+      i.material-icons menu
+.container
+  .col.s12.m7
+    h4.header Edit your story
+    br
+    .card.horizontal
+      .card-stacked
+        .card-content
+          .row
+            form.col.s12(method='POST' action='/forum/edit/'+post._id)
+              .row
+                .input-field.col.s12
+                  i.material-icons.prefix face
+                  textarea#icon_prefix1.materialize-textarea(name="name")=post.username
+                  label(for='icon_prefix1') Your Name
+              .row
+                .input-field.col.s12
+                  i.material-icons.prefix add_circle_outline
+                  textarea#icon_prefix2.materialize-textarea(name="title")=post.title
+                  label(for='icon_prefix2') Post Title
+              .row
+                .input-field.col.s12
+                  i.material-icons.prefix mode_edit
+                  textarea#icon_prefix3.materialize-textarea(name="body")=post.body
+                  label(for='icon_prefix3') Post a story
+              .card-action
+                .row.center
+                  button.btn-large.waves-effect.waves-light.blue(type='submit') Save Edits
+                  br
+                  br
+br
+footer.page-footer.black
+  .container
+    .row
+      .col.l6.s12
+        h5.white-text Our Moto
+        p.grey-text.text-lighten-4
+          | When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..
+      .col.l3.s12
+        h5.white-text Utilities
+        ul
+          li
+            a.white-text(href='/projects/codemate' target='_blank') CodeMate
+          li
+            a.white-text(href='/projects/offlinides' target='_blank') Offlinides
+          li
+            a.white-text(href='/projects/novicenet' target='_blank') NoviceNet
+          li
+            a.white-text(href='/forumhome' target='_blank') DiscussHub
+      .col.l3.s12
+        h5.white-text Connections
+        ul
+          li
+            a.white-text(href='/projects/codesuite' target="_blank") CodeSuite
+          li
+            a.white-text(href='https://read.thiran.in' target="_blank") Blog
+          li
+            a.white-text(href='https://accetosaweb.wordpress.com/' target="_blank") ACCETOSA
+          li
+            a.white-text(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration' target="_blank") ACGCET startUp Wallet
+  .footer-copyright
+    .container
+      | Made with love by 
+      a.orange-text.text-lighten-3(href='/projects/contact') THIRAN webTeam
+script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+// Compiled and minified JavaScript
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+script(src='/js/init.js')
+script(type='text/javascript').
+  $(document).ready(function(){
+  $('.modal').modal();
+  $('.carousel').carousel();
+  $('.collapsible').collapsible();

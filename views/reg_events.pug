@@ -1,0 +1,618 @@
+doctype html
+html
+  head
+    title THIRAN - Register for events
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Import materialize.css
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  style(type='text/css').
+    .container {
+    margin: 20px auto;
+    max-width: 1280px;
+    width: 90%;
+    }
+    @media only screen and (min-width: 601px) {
+    .container {
+    width: 85%;
+    }
+    }
+    @media only screen and (min-width: 993px) {
+    .container {
+    width: 60%;
+    }
+    }
+    @media all and (max-width: 480px) {
+    .c1 { display: none; }
+    }
+    .c1{
+    padding-top: 20px;
+    }
+    .shape-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    // height: 1200px;
+    // background: grey;
+    }
+    .shape-7 {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    }
+    .shape-1 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    }
+    .shape-2 {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    }
+    .shape-3 {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    }
+    .shape-4 {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    }
+    .shape-5{
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    }
+    .shape-6{
+    position: absolute;
+    top: 10px;
+    left: 1100px;
+    }
+    .shape-8{
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    }
+    .shape-bg {
+    position: absolute;
+    width: 61px;
+    height: 11px;
+    }
+    .shape-bg-blue-light {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#1CDFFE' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-blue-mid {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#059ADC' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-manatee-dark {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#181F22' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-blue-light {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#1CDFFE' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-blue-mid {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#059ADC' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-manatee-dark {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#181F22' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .anim-float {
+    animation-name: anim-float;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes anim-float {
+    from { transform: translateY(0px); }
+    65% { transform: translateY(16px); }
+    to { transform: translateY(0px); }
+    }
+    .base-rotate--45 {
+    transform: rotate(-45deg);
+    }
+    .base-rotate-45 {
+    transform: rotate(45deg);
+    }
+    .base-rotate-20 {
+    transform: rotate(20deg);
+    }
+    .base-rotate-80 {
+    transform: rotate(80deg);
+    }
+    .offset-1 {
+    animation-delay: 1s;
+    }
+    .offset-2 {
+    animation-delay: 2s;
+    }
+    .offset-3 {
+    animation-delay: 3s;
+    }
+    #q1{
+    color: #2980b9;
+    }
+    #q2{
+    color: #009688;
+    }
+    body {
+    background: url('/img/paper.gif');
+    }
+    // rotations
+    .anim-rotate {
+    animation-name: anim-rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    @keyframes anim-rotate {
+    from { transform: rotate(0deg); }
+    65% { transform: rotate(8deg); }
+    to { transform: rotate(0deg); }
+    }
+    
+  body
+    #modal1.modal
+      .modal-content
+        h4 Here are few resources for the beginners
+        p Let's make our hands dirty with some code
+        .container
+          ul.collapsible.popout
+            li
+              .collapsible-header
+                i.material-icons explore
+                | Featured sites
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='https://www.tutorialspoint.com/cprogramming/', target='_blank') Tutorials Point C-programming
+                    a.collection-item(href='https://www.tutorialspoint.com/java/', target='_blank') Java
+                    a.collection-item(href='https://www.tutorialspoint.com/python/', target='_blank') Python
+                    a.collection-item(href='https://www.codecademy.com/', target='_blank') Codeacademy
+                    a.collection-item(href='https://www.edx.org/', target='_blank') edX
+                    a.collection-item(href='https://www.geeksforgeeks.org/', target='_blank') Geeks for geeks
+                    a.collection-item(href='http://www.codesdope.com/', target='_blank') Codesdope
+            li
+              .collapsible-header
+                i.material-icons filter2
+                | Coding Platforms
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='http://www.codechef.com/', target='_blank') Codechef
+                    a.collection-item(href='http://codeforces.com/', target='_blank') CodeForces
+                    a.collection-item(href='http://www.spoj.com/', target='_blank') Spoj
+                    a.collection-item(href='https://www.hackerrank.com/', target='_blank') Hackerrank
+                    a.collection-item(href='http://community.topcoder.com/tc', target='_blank') Topcoder
+      .modal-footer
+        a.modal-close.waves-effect.waves-green.btn.btn-primary(href='#!') Close
+    #modal2.modal
+      .modal-content
+        h4 Brush up your skills with these resources
+        p Let's make our hands dirty with some code
+        .container
+          ul.collapsible.popout
+            li
+              .collapsible-header
+                i.material-icons explore
+                | Featured sites
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='http://www.practiceds.com/') Data structures
+                    a.collection-item(href='http://web.stanford.edu/class/cs166/', target='_blank') Stanford.edu
+                    a.collection-item(href='https://www.interviewbit.com/invite/bcchhb') InterviewBit
+                    a.collection-item(href='https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P', target='_blank') MycodeSchool
+                    a.collection-item(href='https://www.youtube.com/playlist?list=PLgj_V-ZKxRKrxgFyOutPJpoLFBaQMOpK-', target='_blank') NPTEL
+                    a.collection-item(href='https://www.geeksforgeeks.org/', target='_blank') Geeks for geeks
+            li
+              .collapsible-header
+                i.material-icons filter2
+                | Coding Platforms
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='http://www.codechef.com/', target='_blank') Codechef
+                    a.collection-item(href='http://codeforces.com/', target='_blank') CodeForces
+                    a.collection-item(href='http://www.spoj.com/', target='_blank') Spoj
+                    a.collection-item(href='https://www.hackerrank.com/', target='_blank') Hackerrank
+                    a.collection-item(href='http://community.topcoder.com/tc', target='_blank') Topcoder
+      .modal-footer
+        a.modal-close.waves-effect.waves-green.btn.btn-primary(href='#!') Close
+    .c1
+      .shape-wrapper.container
+        .anim-float.offset-1
+          .shape-7.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float
+          .shape-1.base-rotate-45
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-3
+          .shape-2.base-rotate-20
+            .shape-bg.shape-bg-blue-mid.anim-rotate
+        .anim-float.offset-1
+          .shape-3.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-4.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-2
+          .shape-4.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-5.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-6.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-8.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-1
+          .shape-5.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-6.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-8.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-1
+          .shape-5.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-6.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-8.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .card-panel.hoverable.container
+      .row
+        form#reg_project.col.s12(method='POST',action='/events/reg_event')
+          .row
+            .col.s12
+              br
+              br
+              h6#q2.center-align Awesome,Let's have some fun #{user.username}
+              br
+              hr(style='width: 250px')
+              br
+              .row
+                h5.center-align Participation in and of itself is an act against hopelessness
+              h6#q1.center-align Cool,Let's get started
+              br
+              br
+            .row
+              .col.s6
+                .input-field.col.s12
+                  input#name.validate(type='text', value=username, name='name')
+                  label(for='name') Name
+                  span.helper-text(data-error='Oops,fill me', data-success='cool,nice name champ!')
+              #dep_hide.col.s6
+                .input-field.col.s12
+                  select#dep(name='dep')
+                    option(value='', disabled='', selected='') Department
+                    option(value='1') MECH
+                    option(value='2') CIVIL
+                    option(value='3') CSE
+                    option(value='4') EEE
+                    option(value='5') ECE
+                    option(value='6') MCA
+                    option(value='7') OTHERS
+                  label Home of your passion
+              #dep_show.col.s6
+                #otherType(style='display:none;')
+                  .input-field.col.s12
+                    input.validate(type='text', name='dep', placeholder='Specify your domain')
+                    label(for='dep') Field
+                    span.helper-text(data-error='Oops!you missed me', data-success='Please mention your core of interest')
+            .row
+              .col.s6
+                .input-field.col.s12
+                  input#email.validate(type='email', name='email', value=email)
+                  label(for='email') Email
+                  span.helper-text(data-error='Oops!you missed me', data-success='Cheers!email ok')
+              .col.s6
+                .input-field.col.s12
+                  select#yr(name='yr')
+                    option(value='', disabled='', selected='') YEAR
+                    option(value='8') FIRST YEAR
+                    option(value='9') SECOND YEAR
+                    option(value='10') THIRD YEAR
+                    option(value='11') FOURTH YEAR
+                  label Bootstrapping my
+            .row
+              .col.s6
+                p
+                  label.col.s6
+                    input.with-gap(name='position', type='radio', value='team', checked='')
+                    span Team
+                  label.col.s6
+                    input.with-gap(name='position', type='radio', value='individual')
+                    span Lone Wolf
+              .col.s6
+                p
+                  // Switch
+                  label.col.s6 Join hands with my peers
+                  .switch
+                    label
+                      | Yes
+                      input#button1(type='checkbox')
+                      span.lever
+                      |                 No
+            .row
+              #hide.col.s6
+                #test_teams.input-field.col.s12
+                  label
+                    | Teamnames/ID
+                    select#teamname.browser-default(name="teamname")
+                      option(value='', disabled='', selected='') Choose your troop
+              #div1.col.s6(style='display: none')
+                .input-field.col.s12
+                  input#teamname.validate(type='text', name='teamname')
+                  label(for='teamname') Team Name
+                  small Or Your individual ID(name)
+                  span.helper-text(data-error='Oops,fill me or try to revert back to pick one', data-success='cool,all the best!')
+              #div3.col.s6
+                .input-field.col.s12
+                  input#phoneno.validate(type='text', name='phoneno')
+                  label(for='phoneno') Contact no
+                  span.helper-text(data-error="Ahem,we couldn't help you much without sufficient contact no", data-success='Done,we will contact you soon')
+            .row
+              .col.s6
+                br
+                // Switch
+                label.col.s6 Attended thiran events before?
+                .switch
+                  label
+                    | Yes 
+                    input#button2(type='checkbox', name='experience')
+                    span.lever
+                    |             No
+              #events_hide.col.s6
+                .input-field.col.s12
+                  select#events_list1(multiple='', name='events_list1')
+                    optgroup(label='General')
+                      option(value='12') Workshops
+                      option(value='13') Seminars/Conference
+                    optgroup(label='Online events')
+                      option#s1(value='14') CodeHunt
+                      option(value='15') Webinar
+                    optgroup(label='Offline events')
+                      option(value='16') Placement Training
+                      option(value='17') ACGCET alumni talks
+                      option(value='18') Hackathon
+                      option(value='19') BPlan contest
+                      option(value='20') App building contest
+                      option(value='21') MathIt
+                      option(value='22') Softskill training
+                    optgroup(label='Engineering events')
+                      option(value='23') Robotics contest
+                      option(value='24') CAD design contest
+                      option(value='25') Entrepreuneurship summit
+                      option(value='26') Aurdino challenge
+                      option(value='27') Reverse enginnering contest
+                  label Events
+              #events_1.col.s6(style='display: none;')
+                .input-field.col.s12
+                  select#events_list2(multiple='', name='events_list2')
+                    optgroup(label='Starter events')
+                      option(value='28') Programming bootcamp
+                      option(value='29') Mathematics bootcamp
+                    optgroup(label='Online events')
+                      option(value='30') Photography contest
+                      option(value='31') Webinar trainings
+                    optgroup(label='Awareness programmes')
+                      option(value='32') Higher studies guidance
+                      option(value='33') Competitive exams guidance
+                    optgroup(label='Engineering events')
+                      option(value='34') Science projects Expo
+                      option(value='35') Survey contest
+                      option(value='36') Paper presentation
+                      option(value='37') Reverse enginnering contest
+                  label Events
+            br
+          #skillset_1.row(style='display: none')
+            .col.s12
+              p
+                label.col.s3
+                  input#beginner.with-gap(name='skills', type='radio', value='beginner')
+                  span Beginner
+                label.col.s3
+                  input#intermediate.with-gap(name='skills', type='radio', value='intermediate')
+                  span Intermediate
+                label.col.s3
+                  input#advanced.with-gap(name='skills', type='radio', value='advanced')
+                  span Advanced
+                small What is your level in coding?
+          #advanced_profile.row(style='display: none;')
+            #platform_hide.col.s6
+              .input-field.col.s12
+                select#platform(name='platform')
+                  option(value='', disabled='', selected='') Platforms
+                  option(value='38') HackerRank
+                  option(value='39') HackerEarth
+                  option(value='40') SPOJ
+                  option(value='41') TopCoder
+                  option(value='42') CodeChef
+                  option(value='43') LeetCode
+                  option(value='44') CodeJam
+                  option(value='45') Geeks for Geeks
+                  option(value='46') InterviewBit
+                  option(value='47') CodeCup
+                  option(value='48') CodingBat
+                  option(value='49') CoderByte
+                  option(value='50') CodeWars
+                  option(value='51') CodeForces
+                  option(value='52') Google Code Jam
+                  option(value='53') OTHERS
+                label Home of your passion
+            #platform_show.col.s6
+              #otherplatform(style='display:none;')
+                .input-field.col.s12
+                  input.validate(type='text', name='platform', placeholder='Specify your platform')
+                  label(for='platform') Your coding ground
+                  span.helper-text(data-error='Oops!you missed me', data-success='Please mention the name of the platform you practice')
+            .col.s6
+              .input-field.col.s12
+                input#profile_link.validate(type='url', name='profile_link')
+                label(for='profile_link') Link to your star profile
+                span.helper-text(data-error='Oops,please enter a valid url', data-success='Impressive')
+          #app.row(style='display: none;')
+            .col.s6
+              .input-field.col.s12
+                select#app1(name='app1')
+                  option(value='', disabled='', selected='') Type of the app
+                  option(value='54') Android app
+                  option(value='55') IOS app
+                  option(value='56') Hybrid apps
+                  option(value='57') Web app
+                  option(value='58') 3rd party integratons
+                  option(value='59') ChatBot
+                  option(value='60') Others
+                label Type of your application
+            .col.s6
+              .input-field.col.s12
+                input#app_title.validate(type='text', name='app_title')
+                label(for='app_title') Give a title for your app
+                span.helper-text(data-error='Oops,fill me', data-success='All the best!')
+            .col.s12
+              .input-field.col.s12
+                textarea#app_description.materialize-textarea.validate(name='app_description')
+                label(for='project_description') App Description
+                span.helper-text(data-error='Ahem,please tell us about your app', data-success='Super cool!')
+          .row
+            .col.s12.div2
+              .input-field.col.s12
+                textarea#feedback.materialize-textarea(name='feedback')
+                label(for='feedback') Expectation from us
+                span.helper-text(data-error='Ahem,your feedbacks help us serve better', data-success='Thanks champ!')
+                small Share a few words from your experience with thiran
+          .row
+            .center-align
+              input.waves-effect.waves-light.btn.btn-large(type='submit', name='submit', value='submit')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+    script(src='/js/main.js')
+    script(type='text/javascript').
+      // Or with jQuery
+      $(document).ready(function(){
+      $('.collapsible').collapsible();
+      $('.modal').modal();
+      $("#test").click(function(){
+      $("#modal1").show();
+      });
+      $("#modal_close").click(function(){
+      $("#modal1").hide();
+      });
+      $('#platform').on('change',function(){
+      if( $(this).val()==="53"){
+      $("#platform_hide").hide();
+      $("#otherplatform").show();
+      }
+      else{
+      $("#otherplatform").hide();
+      }
+      });
+      $('select').formSelect();
+      $("#button1").click(function(){
+      $('#hide').fadeToggle();
+      $("#div1").fadeToggle();
+      });
+      $("#button2").click(function(){
+      $(".div2").fadeToggle(800);
+      });
+      $("#button3").click(function(){
+      $("#div3").fadeToggle(800);
+      });
+      });
+      $("#yesbox1").click(function(){
+      $("#event_rating").fadeToggle();
+      })
+      $("#beginner").on('change',function(){
+      console.log(" begchaged");
+      $("#advanced_profile").hide();
+      M.Toast.dismissAll();
+      var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#modal1">Few beginner resourses<br>Practice a lot</a>';
+      M.toast({html: toastHTML,displayLength: Infinity,classes:'white'});
+      })
+      $("#intermediate").on('change',function(){
+      $("#advanced_profile").hide();
+      console.log("intchaged");
+      M.Toast.dismissAll();
+      var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#modal2">Few resources to push you<br>CodeHub</a>';
+      M.toast({html: toastHTML,displayLength: Infinity,classes:'white'});
+      })
+      $("#advanced").on('change',function(){
+      M.Toast.dismissAll();
+      $("#advanced_profile").show();
+      })
+      $('#events_list2').on('change',function(){
+      var events=$(this).val();
+      console.log(events);
+      if(events!=null){
+      M.Toast.dismissAll();
+      var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#">Cool,we will mail you all the other details about the event<br>All the best!</a>';
+      M.toast({html: toastHTML,displayLength: 3000,classes:'white'});
+      }else{
+      M.Toast.dismissAll();
+      }
+      });
+      $('#events_list1').on('change',function(){
+      //console.log($(this).val());
+      var events=$(this).val();
+      console.log(events);
+      if(events===null){
+      $("#yes1").hide();
+      $("#skillset_1").hide();
+      M.Toast.dismissAll();
+      $("#event_rating").hide();
+      $("#app").hide();
+      $("#advanced_profile").hide();
+      }else{
+      for(i=0;i<events.length;i++){
+      if(events[i]==="14"||events[i]==="18"){
+      $("#skillset_1").show();
+      }
+      else if(events[i]==="20"){
+      $("#app").show();
+      }
+      else{
+      M.Toast.dismissAll();
+      var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#">Cool,we will mail you all the other details about the event<br>All the best!</a>';
+      M.toast({html: toastHTML,displayLength: 3000,classes:'white'});
+      }
+      }
+      }
+      })
+      $('#yr').on('change',function(){
+      if( $(this).val()==="8"){
+      $("#events_hide").hide();
+      $("#events_1").show();
+      }
+      else{
+      $("#events_1").hide();
+      $("#events_hide").show();
+      }
+      });
+      $('#dep').on('change',function(){
+      if( $(this).val()==="7"){
+      $("#dep_hide").hide();
+      $("#otherType").show();
+      }
+      else{
+      $("#otherType").hide();
+      }
+      });

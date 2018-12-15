@@ -1,0 +1,768 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title CodeMate - Spirit of Competing
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='css/mdb.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css')
+    // Your custom styles (optional)
+    link(href='/css/style_g.min.css', rel='stylesheet')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://cdn.dribbble.com/users/494229/screenshots/1601132/loadingicon14.gif') 50% 50% no-repeat white;
+      }
+      .navbar .mega-dropdown {
+      position: static !important; }
+      .navbar .dropdown-menu.mega-menu {
+      width: 100%;
+      border: none;
+      border-radius: 0; }
+      .navbar .dropdown-menu.mega-menu.v-2 a {
+      padding: 15px 10px 10px 35px; }
+      .navbar .dropdown-menu.mega-menu.v-2 a.news-title-2 {
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      -webkit-transition: .2s;
+      transition: .2s;
+      color: #fff !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 a.news-title-2:hover {
+      color: #d0d6e2 !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul {
+      list-style: none; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li {
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li a:after {
+      font-family: "fontAwesome";
+      content: '\f0da';
+      position: absolute;
+      left: 0.5rem;
+      font-size: 12px;
+      top: 1rem; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item {
+      color: #fff !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item:hover {
+      color: #fff !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-title {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid; }
+      .navbar .dropdown-menu.mega-menu.v-2 .font-small {
+      font-size: 0.85rem; }
+      .nav a.white-text:hover {
+      color: #e0e0e0!important;
+      }
+      .nav a.dark-grey-text:hover {
+      color: #78909c!important;
+      }
+      .nav a.indigo-text:hover {
+      color: #7986cb!important;
+      }
+  body
+    #loader
+    // Navbar
+    nav.navbar.navbar-expand-lg.navbar-dark.special-color-dark
+      // Navbar brand
+      a.navbar-brand.text-uppercase(href='#') CodeMate
+      // Collapse button
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent1', aria-controls='navbarSupportedContent1', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      // Collapsible content
+      #navbarSupportedContent1.collapse.navbar-collapse
+        // Links
+        ul.navbar-nav.mr-auto
+          li.nav-item.dropdown.mega-dropdown.active
+            a#navbarDropdownMenuLink1.nav-link.dropdown-toggle.text-uppercase.no-caret(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') GuideMe
+            .dropdown-menu.mega-menu.v-2.row.z-depth-1.special-color(aria-labelledby='navbarDropdownMenuLink1')
+              .row.mx-md-4.mx-1
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-5.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text WH? _search
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item.mb-0(href='https://www.quora.com/What-is-competitive-programming-2', target='_blank') What is competitive programming?
+                    li
+                      a.menu-item(href='https://www.quora.com/Why-is-competitive-Programming-important', target='_blank') Why is competitive Programming important?
+                    li
+                      a.menu-item(href='https://www.quora.com/How-do-I-learn-competitive-programming-as-a-beginner', target='_blank') How do I learn competitive programming as a beginner?
+                    li
+                      a.menu-item(href='https://www.quora.com/How-should-I-start-competitive-programming-from-scratch', target='_blank') How should I start competitive programming from scratch?
+                    li
+                      a.menu-item(href='https://www.quora.com/How-has-competitive-programming-helped-you-get-a-job', target='_blank') How has competitive programming helped you get a job?
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-md-5.mt-4.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Getting started
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.quora.com/topic/Competitive-Programming', target='_blank') WH_bank?
+                    li
+                      a.menu-item(href='https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/', target='_blank') Getting started - HackerEarth
+                    li
+                      a.menu-item(href='https://gist.github.com/sharmaeklavya2/5299a4cd059a6f6f8699', target='_blank') Start Now - GitHub
+                    li
+                      a.menu-item(href='https://www.geeksforgeeks.org/how-to-begin-with-competitive-programming/', target='_blank') Article - geeksforgeeks
+                    li
+                      a.menu-item(href='https://www.codechef.com/getting-started', target='_blank') Guide from - CodeChef
+                    li
+                      a.menu-item(href='https://www.youtube.com/watch?v=YBZyBjoHXSY', target='_blank') Video - Unacademy
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Success Stories
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://medium.com/@amangoeliitb/build-a-solid-career-in-tech-without-a-cs-major-39cdef86013', target='_blank') Build a solid career in tech without a CS major
+                    li
+                      a.menu-item(href='https://www.geeksforgeeks.org/geek-on-the-top-sumeet-vama-actual-fun-begins-when-you-solely-concentrate-on-finding-algo-to-solve-problem/', target='_blank') Geek on the Top
+                    li
+                      a.menu-item(href='https://www.quora.com/How-did-Anudeep-Nekkanti-become-so-good-at-competitive-programming/answer/Anudeep-Nekkanti', target='_blank') How did Anudeep Nekkanti become so good at competitive programming?
+                    li
+                      a.menu-item(href='https://www.quora.com/Whats-the-success-story-of-Adam-DAngelo-founder-and-CEO-of-Quora', target='_blank')
+                        | Future is about creating more knowledge and adding a layer of reputation to the fast-growing internet at very young age
+                    li
+                      a.menu-item(href='https://www.bloomberg.com/news/features/2015-09-25/the-jocks-of-computer-code-do-it-for-the-job-offers', target='_blank') The Jocks of Computer Code Do It for the Job Offers
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-5
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Popular
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://code.google.com/codejam/', target='_blank') Google Code Jam
+                    li
+                      a.menu-item(href='https://www.facebook.com/hackercup', target='_blank') Facebook Hacker Cup | Facebook.
+                    li
+                      a.menu-item(href='https://icpc.baylor.edu/', target='_blank') The ACM-ICPC International Collegiate Programming Contest.
+                    li
+                      a.menu-item(href='https://www.hackerearth.com/challenge/competitive/algorithms-india-hacks-2016/', target='_blank') IndiaHacks: Algorithms.
+                    li
+                      a.menu-item(href='https://summerofcode.withgoogle.com/', target='_blank')  Google Summer of Code
+          li.nav-item.dropdown.mega-dropdown
+            a#navbarDropdownMenuLink1.nav-link.dropdown-toggle.text-uppercase.no-caret(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Key concepts
+            .dropdown-menu.mega-menu.v-2.row.z-depth-1.special-color(aria-labelledby='navbarDropdownMenuLink1')
+              .row.mx-md-4.mx-1
+                .col-md-12.col-lg-4.sub-menu.my-lg-5.mt-5.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Featured
+                  // Featured image
+                  .view.overlay.mb-3.z-depth-1
+                    img.img-fluid(src='https://i.imgur.com/VW3m9xM.jpg', alt='First sample image', style='height: 240px;')
+                    .mask.rgba-white-slight.flex-center
+                      p
+                  h4.mb-2
+                    a.news-title-2.pl-0(href='https://www.geeksforgeeks.org/the-c-standard-template-library-stl/', target='_blank') STL - Standard Template Library
+                  p.font-small.text-uppercase.white-text
+                    i.fa.fa-comments-o.pr-2(aria-hidden='true')
+                    |  vector, lists, stacks ... 
+                    i.fa.fa-code.px-1(aria-hidden='true')
+                    |  4 major components
+                .col-md-6.col-lg-4.sub-menu.my-lg-5.my-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Algorithms
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.geeksforgeeks.org/fundamentals-of-algorithms/#GreedyAlgorithms', target='_blank') Greedy Algorithms
+                    li
+                      a.menu-item(href='https://www.geeksforgeeks.org/fundamentals-of-algorithms/#DynamicProgramming', target='_blank') Dynamic Programming
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/sorting-algorithms/', target='_blank') Sorting
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/searching-algorithms/', target='_blank') Search/Path-finding
+                    li
+                      a.menu-item(href='https://www.geeksforgeeks.org/fundamentals-of-algorithms/#MathematicalAlgorithms', target='_blank') Combinatorial  (Permutations, Calendrical Calculations)
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/matrix/', target='_blank') Matrix
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/string-data-structure/', target='_blank') Strings
+                .col-md-6.col-lg-4.sub-menu.my-lg-5.my-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Data Structure Concepts
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/array-data-structure/', target='_blank') Arrays
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/data-structures/linked-list/', target='_blank') Linked List
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/stack-data-structure/', target='_blank') Stack
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/data-structures/', target='_blank') Trees
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/', target='_blank') Graphs
+                    li
+                      a.menu-item(href='http://www.geeksforgeeks.org/hashing-data-structure/', target='_blank') Hashing
+          li.nav-item.dropdown.mega-dropdown
+            a#navbarDropdownMenuLink1.nav-link.dropdown-toggle.text-uppercase.no-caret(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Related
+            .dropdown-menu.mega-menu.v-2.row.z-depth-1.special-color(aria-labelledby='navbarDropdownMenuLink1')
+              .row.mx-md-4.mx-1
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-5.mb-4
+                  a(href='/projects/novicenet', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text NoviceNet
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item.mb-0(href='/projects/novicenet', target='_blank') Programming
+                    li
+                      a.menu-item(href='/projects/novicenet', target='_blank') Aptitute
+                    li
+                      a.menu-item(href='/projects/novicenet', target='_blank') Gate/competitive exams
+                    li
+                      a.menu-item(href='/projects/novicenet', target='_blank') Technical interview preparation
+                    li
+                      a.menu-item(href='/projects/novicenet', target='_blank') Quiz/puzzles
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-md-5.mt-4.mb-4
+                  a(href='/projects/cloudrunz', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text CloudRunz
+                  // Featured image
+                  .view.overlay.mb-3.z-depth-1
+                    img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg', alt='First sample image')
+                    .mask.rgba-white-slight.flex-center
+                      p
+                  h4.mb-2
+                    a.news-title-2.pl-0(href='/projects/yetxplore#cloud', target='_blank') Platforms On cloud
+                  p.font-small.text-uppercase.white-text
+                    i.fa.fa-code.pr-2(aria-hidden='true')
+                    | Connect online / 
+                    i.fa.fa-comments-o.px-1(aria-hidden='true')
+                    |  More..
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-4
+                  a(href='/projects/devtoolz', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text DevToolz
+                  // Featured image
+                  .view.overlay.mb-3.z-depth-1
+                    img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg', alt='First sample image')
+                    .mask.rgba-white-slight.flex-center
+                      p
+                  h4.mb-2
+                    a.news-title-2.pl-0(href='/projects/yetxplore#dev', target='_blank') Explore handy dev tools
+                  p.font-small.text-uppercase.white-text
+                    i.fa.fa-code.pr-2(aria-hidden='true')
+                    | Makes easier 
+                    i.fa.fa-cloud.px-1(aria-hidden='true')
+                    |  More..
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-5
+                  a(href='/projects/yetxplore', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text YetXplore
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.thesimpledollar.com/30-essential-pieces-of-free-and-open-software-for-windows/', target='_blank') Open Source Softwares
+                    li
+                      a.menu-item(href='/projects/yetxplore#contest', target='_blank') Interesting Contests
+                    li
+                      a.menu-item(href='https://www.npmjs.com/', target='_blank') NPM
+                    li
+                      a.menu-item(href='http://www.phontron.com/nlptools.php', target='_blank') NLP(Python NTLK,stanford..)
+                    li
+                      a.menu-item(href='https://market.mashape.com/explore', target='_blank') Power of API's
+        // Links
+        a(href='/projects/offlinides', target='_blank')
+          h6.sub-title.text-uppercase.font-weight-bold.white-text
+            | Offlinides
+            i.fa.fa-download.px-1(aria-hidden='true')
+      // Collapsible content
+    // /.Navbar
+    hr.mb-4
+    .container
+      // Logo carousel
+      #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel', data-interval='1800')
+        .carousel-inner
+          // First slide
+          .carousel-item
+            // Grid row
+            .row
+              // First column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/1.jpg', alt='Nike - logo', style='max-height: 100px;')
+              // /First column
+              // Second column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/2.jpg', alt='Amazon - logo', style='max-height: 100px;')
+              // /Second column
+              // Third column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img(src='/img/3.jpg', alt='Sony - logo', style='max-height: 100px;')
+              // /Third column
+              // Fourth column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/4.jpg', alt='Samsung - logo', style='max-height: 100px;')
+              // /Fourth column
+            // /Grid row
+          // First slide
+          // Second slide
+          .carousel-item.active.carousel-item-left
+            // Grid row
+            .row
+              // First column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/5.jpg', alt='Airbus - logo', style='max-height: 100px;')
+              // /First column
+              // Second column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='https://pbs.twimg.com/profile_images/656895869480923136/ZlqENpWK_400x400.jpg', alt='Yahoo - logo', style='max-height: 100px;')
+              // /Second column
+              // Third column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/7.jpg', alt='Deloitte - logo', style='max-height: 100px;')
+              // /Third column
+              // Fourth column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/8.jpg', alt='GE - logo', style='max-height: 100px;')
+              // /Fourth column
+            // /Grid row
+          // Second slide
+          // Third slide
+          .carousel-item.carousel-item-next.carousel-item-left
+            // Grid row
+            .row
+              // First column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/9.jpg', alt='KPMG - logo', style='max-height: 100px;')
+              // /First column
+              // Second column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/10.jpg', alt='Unity - logo', style='max-height: 100px;')
+              // /Second column
+              // Third column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='http://www.win.tue.nl/~kverbeek/CPPS/figures/hackcup.jpg', alt='Ikea - logo', style='max-height: 100px;')
+              // /Third column
+              // Fourth column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/GSoC.png/220px-GSoC.png', alt='Aegon - logo', style='max-height: 100px;')
+              // /Fourth column
+            // /Grid row
+          // Third slide
+      // Logo carousel
+    .container
+      hr.mb-5
+      // News card
+      .card.mb-3.text-center.hoverable
+        .card-body
+          // Grid row
+          .row
+            // Grid column
+            .col-md-4.offset-md-1.mx-3.my-3
+              // Featured image
+              .view.overlay
+                img(src='https://avatars0.githubusercontent.com/u/6586321?s=280&v=4', alt='Sample image for first version of blog listing')
+                a
+                  .mask.rgba-white-slight
+            // Grid column
+            // Grid column
+            .col-md-7.text-left.ml-3.mt-3
+              // Excerpt
+              a.green-text(href='#test')
+                h6.font-bold.pb-1
+                  i.fa.fa-desktop
+                  |  Mess with code
+              h4.mb-4
+                strong CodeMate
+              p Practice like you have never won.Perform like you have never lost.
+              p
+                | Competitive Programming is a sport.Walk right into it, you will learn the unwritten rules of the game as you play harder and get better. And believe me, you don’t need to know any “fancy name” algorithm or data-structure to get started. Ever heard of “binary trees”, yet you’re the best batsman in your street, right?
+              p
+                a
+                  strong while(!succeed = try())
+                |  ,Happy coding!
+            // Grid column
+          // Grid row
+        // Content
+      .container
+        // Section: Not enough
+        hr.mb-5
+      .container
+        h4#test.mb-4
+          i.fa.fa-cubes(aria-hidden='true')
+          |   Quick Links
+        // Grid row
+        .row
+          // Grid column
+          .col-md-4
+            nav.nav.flex-column.pink.lighten-3.py-4.mb-r.font-weight-bold.z-depth-1
+              a.nav-link.active.dark-grey-text(href='https://www.quora.com/What-are-some-good-coding-competition-practice-sites') Featured
+              a.nav-link.white-text(href='https://www.hackerrank.com/domains', target='_blank')
+                i.fa.fa-check(aria-hidden='true')
+                |  HackerRank
+              a.nav-link.white-text(href='https://www.hackerearth.com/challenges/', target='_blank')
+                i.fa.fa-check(aria-hidden='true')
+                |  HackerEarth
+              a.nav-link.white-text(href='http://www.spoj.com/', target='_blank')
+                i.fa.fa-check(aria-hidden='true')
+                |  SPOJ
+              a.nav-link.white-text(href='https://www.codechef.com/', target='_blank')
+                i.fa.fa-check(aria-hidden='true')
+                |  CodeChef
+          // Grid column
+          // Grid column
+          .col-md-4
+            nav.nav.flex-column.amber.lighten-3.py-4.mb-r.font-weight-bold.z-depth-1
+              a.nav-link.active.indigo-text(href='https://www.linkedin.com/pulse/most-popular-programming-contest-sites-coding-practice-somenath-panda') Active
+              a.nav-link.dark-grey-text(href='https://www.topcoder.com/challenges/?pageIndex=1', target='_blank')
+                i.fa.fa-caret-square-o-right(aria-hidden='true')
+                |  TopCoder
+              a.nav-link.dark-grey-text(href='https://www.coderbyte.com/', target='_blank')
+                i.fa.fa-caret-square-o-right(aria-hidden='true')
+                |  CoderByte
+              a.nav-link.dark-grey-text(href='https://leetcode.com/', target='_blank')
+                i.fa.fa-caret-square-o-right(aria-hidden='true')
+                |  LeetCode
+              a.nav-link.dark-grey-text(href='https://www.codeeval.com/', target='_blank')
+                i.fa.fa-caret-square-o-right(aria-hidden='true')
+                |  CodeEval
+          // Grid column
+          // Grid column
+          .col-md-4
+            nav.nav.flex-column.cyan.lighten-3.py-4.mb-r.font-weight-bold.z-depth-1
+              a.nav-link.active.dark-grey-text(href='https://www.hongkiat.com/blog/sites-to-learn-coding-online/') New Tracks
+              a.nav-link.indigo-text(href='https://www.codingame.com/', target='_blank')
+                i.fa.fa-circle-o-notch(aria-hidden='true')
+                |  CodinGame
+              a.nav-link.indigo-text(href='https://projecteuler.net/', target='_blank')
+                i.fa.fa-circle-o-notch(aria-hidden='true')
+                |  ProjectEuler
+              a.nav-link.indigo-text(href='https://www.codewars.com/', target='_blank')
+                i.fa.fa-circle-o-notch(aria-hidden='true')
+                |  CodeWars
+              a.nav-link.indigo-text(href='http://acm.timus.ru/', target='_blank')
+                i.fa.fa-circle-o-notch(aria-hidden='true')
+                |  Timus
+          // Grid column
+        hr.mb-5
+        h4#start.mb-4
+          i.fa.fa-heartbeat(aria-hidden='true')
+          |   Confused ! Let me help you,just unblock any box randomly,read it and grab the way if it suits you..
+        hr.mb-5
+        .container
+          // Default unchecked
+          .row
+            .col-md-6.mb-4
+              .card.pink.lighten-2.text-center.z-depth-2
+                .card-body
+                  p.white-text.mb-0
+                    | Vishal is fairly a passionate youngster with good logical skills.At some point his well wishers adviced him to try competitive programming since he has no problem with basic maths and logics.Suddenly a spirit sparked,He decided to make his hands fuzzy with dirty codes.But confused which would be his platform to experiment?
+                  // Unique
+                  br
+                  button#button-vishal.btn.btn-pink(type='button')
+                    | Need suggestions that Vishal got? 
+                    i.fa.fa-gift(aria-hidden='true')
+            // /.Card Primary
+            br
+            #vishal.alert.alert-warning.col-md-12(role='alert', style='display: none;')
+              p.black-text
+                | Cool,I am 
+                strong vishal
+                | .
+              p.dark-grey-text
+                | Ahem,coming to your question,as I find no difficulty with logics and basic maths,found easy to adopt popular platforms at a short span.
+                br
+                | But,to be specific I love SPOJ.Sometimes I do prefer TopCoder,but better try it after getting a good grasp over algorithms and libraries.
+              p.black-text
+                | Wish you all the best.
+                | Let me make the work easier by providing the direct links to those..here we go
+              button.btn.btn-outline-warning.waves-effect(type='button')
+                a(href='http://www.spoj.com/', target='_blank')
+                  h6
+                    i.fa.fa-heart-o(aria-hidden='true')
+                    |  SPOJ
+              button.btn.btn-outline-warning.waves-effect(type='button')
+                a(href='https://www.topcoder.com/challenges/?pageIndex=1', target='_blank')
+                  h6
+                    i.fa.fa-star-o(aria-hidden='true')
+                    |  TopCoder
+            // Card Danger
+            .col-md-5.mb-4
+              // Card Primary
+              .card.indigo.text-center.z-depth-2
+                .card-body
+                  p.white-text.mb-0
+                    | Raju is in his second year of engineering.He is very much worried about his programming skills.Questions started tickling his mind?His inner soul praised competitive programming will be the best thing which would add weightage to his profile.He decides to give a try?But confused where to start and how?
+                  // Cyan
+                  button#button-raju.btn.btn-light-blue(type='button')
+                    | Know how Raju started? 
+                    i.fa.fa-history(aria-hidden='true')
+            // /.Card Danger
+            br
+            #raju.alert.alert-info.col-md-12(role='alert', style='display: none;')
+              p.dark-grey-text Hi,I am Raju - codeWiz,(:- my friends started refering me that way.Pee..
+              p.black-text
+                | This is the universal issue and concern ..most of us struggle to pick up a right start.But believe me,no matter how small you start,how fast you grow just keep moving
+              p.dark-grey-text
+                | I started of with HackerRank then gradually shifted to CodeChef.I love both.Hope you love too.Start experimenting
+              button.btn.btn-outline-primary.waves-effect(type='button')
+                a(href='https://www.hackerrank.com/domains', target='_blank')
+                  h6
+                    i.fa.fa-star-o(aria-hidden='true')
+                    |  HackerRank
+              button.btn.btn-outline-primary.waves-effect(type='button')
+                a(href='https://www.codechef.com/', target='_blank')
+                  h6
+                    i.fa.fa-heart-o(aria-hidden='true')
+                    |  CodeChef
+            // Card Success
+            .col-md-11.mb-4
+              .card.info-color.text-center.z-depth-2
+                .card-body
+                  p.white-text.mb-0
+                    | KaneWiz loves going deep with fuzzy logics,enjoys coding from scratch.Extremely sportive programmer,but unfortunately took a break for a while due to some reasons(still he maintains abstract).But now is missing the challenges and fun,thus decides to get back to the track.Yup!Where to start?
+                  // Indigo
+                  button#button-kane.btn.btn-cyan(type='button')
+                    | Hifi, 
+                    i.fa.fa-hand-paper-o(aria-hidden='true')
+                    |  I am in the same boat as him?Join Kane..
+              // /.Card Success
+          #kane.alert.alert-primary(role='alert', style='display: none;')
+            p.dark-grey-text Well,Let me jump straight to ypur question (:- because I am a geek,LOL!
+            p.black-text
+              | Really awesome memories of my coding battle days,never give up attitute,competitive spirit,excitement over crossing test cases..lot more.Barely,I left them.Had a tough time for a while.Then returned with a bang with the same spirit,joy and motivation.
+            p.dark-grey-text
+              | I chose InterviewBit,starnge right?Yah,found it cool,that's why gave a try.Awesome believe me..Then a while shifted right to my fav LeetCode (:-wow,nice UI,try it.
+            button.btn.btn-outline-primary.waves-effect(type='button')
+              a(href='https://leetcode.com/', target='_blank')
+                h6
+                  i.fa.fa-heart-o(aria-hidden='true')
+                  |  LeetCode
+            button.btn.btn-outline-primary.waves-effect(type='button')
+              a(href='https://www.interviewbit.com/', target='_blank')
+                h6
+                  i.fa.fa-star-o(aria-hidden='true')
+                  |  InterviewBit
+        // Default unchecked
+      hr.mb-5
+      hr.my-5
+      .container
+        // Section: Not enough
+        section
+          h2.my-5.h3.text-center What's the big deal in giving these links?
+          // First row
+          .row.features-small.mb-5.mt-3.wow.fadeIn
+            // First column
+            .col-md-4
+              // First row
+              .row
+                .col-2
+                  i.fa.fa-check-circle.fa-2x.indigo-text
+                .col-10
+                  h6.feature-title Hesitation
+                  p.grey-text
+                    | Bitter fact is that we never care about a problem until someone takes it up.What's the big deal in initiating,we never put our hands dirty in doing something that is really cool.Why not from now.Let's step up.
+                  div(style='height:15px;')
+              // /First row
+              // Second row
+              .row
+                .col-2
+                  i.fa.fa-check-circle.fa-2x.indigo-text
+                .col-10
+                  h6.feature-title Expecting everything to reach us so easy
+                  p.grey-text
+                    | Have you ever thought how hard is for someone to write a book or blog post to guide you? Is it fair to expect those to shower us without any effort from your side.Stay hungry,stay foolish.No one made the way to success that easy you imagine..So get set..,
+                  div(style='height:15px;')
+              // /Second row
+              // Third row
+              .row
+                .col-2
+                  i.fa.fa-check-circle.fa-2x.indigo-text
+                .col-10
+                  h6.feature-title Underestimating small stuffs
+                  p.grey-text
+                    | We never care to look if something has no colourful images,attractive entertainment related contents.Barely ignoring just because it's strange to our environment
+                  div(style='height:15px;')
+              // /Third row
+            // /First column
+            // Second column
+            .col-md-4.flex-center
+              img.z-depth-0.img-fluid(src='http://www.javatportal.org/images/building-links.png', style='padding-top: 50px;')
+            // /Second column
+            // Third column
+            .col-md-4.mt-2
+              // First row
+              .row
+                .col-2
+                  i.fa.fa-check-circle.fa-2x.indigo-text
+                .col-10
+                  h6.feature-title So,these made me analyse the problem behind..?
+                  p.grey-text
+                    | It's always better to start something,even if it is small,has minor impact towards the goal..,for sure it will groom the approach we undertake.
+                  div(style='height:15px;')
+              // /First row
+              // Second row
+              .row
+                .col-2
+                  i.fa.fa-check-circle.fa-2x.indigo-text
+                .col-10
+                  h6.feature-title Easy to initiate, but success ?
+                  p.grey-text
+                    | Yah,it's easy to initiate but demands consistency to attain any goal.Making it friendly,organised and intuitive can roll the ball for us..Opportunities knock us often ,but we miss them.Are we that busy? Probably no,we love packing stuffs for the future.Really nothing worth in doing so..
+                  div(style='height:15px;')
+              // /Second row
+              // Third row
+              .row
+                .col-2
+                  i.fa.fa-check-circle.fa-2x.indigo-text
+                .col-10
+                  h6.feature-title Is these links worthy?
+                  p.grey-text
+                    | OfCourse,lazyness is the key partner to quit.We lose our temper often in searching things..But,once you do will reallly enjoy them.However I will do the ramp for you,but it's up to you to extend further.
+                  div(style='height:15px;')
+              // /Third row
+            // /Third column
+          // /First row
+        hr.mb-5
+      // Grid row
+      .container
+        // Section: Testimonials v.1
+        section.text-center.my-5
+          // Section heading
+          h2#profile.h1-responsive.font-weight-bold.my-3 Inspirational Profiles
+          hr(style='width: 180px;')
+          // Section description
+          p.dark-grey-text.w-responsive.mx-auto.mb-5
+            | “…if you really look closely, most overnight successes took a long time.” — Steve Jobs
+          p.dark-grey-text.w-responsive.mx-auto.mb-5 Look at these geeks profile and get inspired !
+          // Grid row
+          .row
+            // Grid column
+            .col-lg-4.col-md-12.mb-lg-0.mb-4
+              // Card
+              .card.testimonial-card(style='padding-top: 20px;')
+                // Background color
+                .card-up.info-color
+                // Avatar
+                .avatar.mx-auto.white
+                  img.img-fluid.z-depth-1.rounded-circle(src='https://qph.fs.quoracdn.net/main-thumb-t-6687-200-oxxgnxgzapybmjrkyqgujvokqsryokes.jpeg', style='height: 200px;')
+                .card-body
+                  // Name
+                  a(href='https://www.quora.com/profile/Adam-DAngelo', target='_blank')
+                    h4.font-weight-bold.mb-4 Adam D'Angelo
+                  hr
+                  // Quotation
+                  small.dark-grey-text.mt-4
+                    i.fa.fa-quote-left.pr-2
+                    | Quora
+                  p.dark-grey-text.mt-4
+                    | I have a view that if you build something that's good,and you keep making it better,it lasts.
+              // Card
+            // Grid column
+            // Grid column
+            .col-lg-4.col-md-6.mb-md-0.mb-4
+              // Card
+              .card.testimonial-card(style='padding-top: 20px;')
+                // Background color
+                .card-up.blue-gradient
+                // Avatar
+                .avatar.mx-auto.white
+                  img.img-fluid.z-depth-1.rounded-circle(src='http://userpic.codeforces.com/422/title/6dd5ba0df6a2f834.jpg', style='height: 200px;')
+                .card-body
+                  // Name
+                  a(href='https://www.codechef.com/users/gennady.korotkevich', target='_blank')
+                    h4.font-weight-bold.mb-4 Gennady Korotkevic
+                  hr
+                  // Quotation
+                  small.dark-grey-text.mt-4
+                    i.fa.fa-quote-left.pr-2
+                    |           -tourist
+                  p.dark-grey-text.mt-4 I will be the best of them one day ... I promise.
+                  br
+              // Card
+            // Grid column
+            // Grid column
+            .col-lg-4.col-md-6
+              // Card
+              .card.testimonial-card(style='padding-top: 20px;')
+                // Background color
+                .card-up.indigo
+                // Avatar
+                .avatar.mx-auto.white
+                  img.img-fluid.z-depth-1.rounded-circle(src='https://qph.fs.quoracdn.net/main-thumb-51869294-200-kxiiqdxhvdetlxhydcjdqefwduszjqrh.jpeg', style='height: 200px;')
+                .card-body
+                  // Name
+                  a(href='https://codeforces.com/profile/Sumeet.Varma', target='_blank')
+                    h4.font-weight-bold.mb-4 Sumeet Varma
+                  hr
+                  // Quotation
+                  small.dark-grey-text.mt-4
+                    i.fa.fa-quote-left.pr-2
+                    | Competitive Programming Enthusiast.
+                  p.dark-grey-text.mt-4 Believe in yourself and just move on.No matter where you are.
+                  br
+              // Card
+            // Grid column
+          // Grid row
+        // Section: Testimonials v.1
+    // Footer
+    footer.page-footer.text-center.font-small.mdb-color.darken-2.mt-4.wow.fadeIn
+      // Call to action
+      .pt-4
+        a.btn.btn-outline-white(href='/projects/kbase', target='_blank', role='button')
+          | Have doubts ?
+          i.fa.fa-puzzle-piece(aria-hidden='true', style='padding-left: 5px;')
+        a.btn.btn-outline-white(href='/projects/contact', target='_blank', role='button')
+          | Reach us
+          i.fa.fa-heart(aria-hidden='true', style='padding-left: 5px;')
+      // /.Call to action
+      hr.my-4
+      .pb-4
+        a(href='https://www.facebook.com/accetthiran', target='_blank')
+          i.fa.fa-facebook.mr-3
+        a(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+          i.fa.fa-twitter.mr-3
+        a(href='https://www.youtube.com/user/ACCETthiran', target='_blank')
+          i.fa.fa-youtube.mr-3
+        a(href='https://plus.google.com/116707854087495862030', target='_blank')
+          i.fa.fa-google-plus.mr-3
+        a(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+          i.fa.fa-github.mr-3
+        a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+          i.fa.fa-linkedin.mr-3
+        a(href='https://www.instagram.com/thiran2k18/?hl=en', target='_blank')
+          i.fa.fa-instagram.mr-3
+      // Social icons
+      // Copyright
+      .footer-copyright.py-3
+        | © 2018 Copyright:
+        a(href='/', target='_blank')  thiran.in 
+      // /.Copyright
+    // /.Footer
+    // JQuery
+    script(type='text/javascript', src='js/jquery-3.3.1.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // Bootstrap tooltips
+    script(type='text/javascript', src='js/popper.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+    // Bootstrap core JavaScript
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+    script(type='text/javascript', src='js/mdb.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+    // Initializations
+    script(type='text/javascript', src='js/content.js')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      $('#button-raju').click(function(){
+      $('#vishal').hide();
+      $('#kane').hide();
+      $('#raju').fadeToggle(2000);
+      })
+      $('#button-vishal').click(function(){
+      $('#raju').hide();
+      $('#kane').hide();
+      $('#vishal').fadeToggle(2000);
+      })
+      $('#button-kane').click(function(){
+      $('#raju').hide();
+      $('#vishal').hide();
+      $('#kane').fadeToggle(2000);
+      })
+      });
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }

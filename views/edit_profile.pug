@@ -1,0 +1,617 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title THIRAN GEMS PORTAL - Jobs made easy
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Import materialize.css
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://camo.githubusercontent.com/32c7c4a15e2ff3600f7e808f2f7997ece27cd572/687474703a2f2f692e696d6775722e636f6d2f484333613675332e676966') 50% 50% no-repeat white;
+      }
+  body
+    #loader
+    .content
+      nav.pink.darken-4(role='navigation')
+        .nav-wrapper.container
+          a#logo-container.brand-logo(href='/projects/yetexplore')
+            i.material-icons dashboard
+            | Set up your profile
+          ul.right.hide-on-med-and-down
+            li
+              a(href='/projects/novicenet', target='_blank') Home
+            li
+              a(href='/projects/novicenet', target='_blank') Tour
+          ul#nav-mobile.sidenav
+            li
+              a(href='/')
+                i.material-icons account_balance
+                | THIRAN
+            li
+              a(href='/projects/codesuite', target='_blank')
+                i.material-icons domain
+                | CodeSuite
+            li
+              a(href='#cloudrunz')
+                i.material-icons language
+                | CloudRunz
+            li
+              a(href='#devtoolz')
+                i.material-icons invert_colors
+                | DevToolz
+            li
+              a(href='/projects/novicenet', target='_blank')
+                i.material-icons network_check
+                | NoviceNet
+            li
+              a(href='/projects/offlinides', target='_blank')
+                i.material-icons library_books
+                | Offlinides
+            li
+              a(href='/projects/codemate', target='_blank')
+                i.material-icons graphic_eq
+                | CodeMate
+            li
+              a(href='/projects/codemate', target='_blank')
+                i.material-icons account_balance
+                | DiscussHub Home
+          a.sidenav-trigger(href='#', data-target='nav-mobile')
+            i.material-icons menu
+      .container
+        .col.s12.m7
+          h4.header Phase 1 - Let's improvise your profile
+          br
+          .card.horizontal
+            .card-stacked
+              .card-content
+                .row
+                  p(style='margin-left: 20px')
+                    i.material-icons.prefix directions_bike
+                    |    Basic profile
+                  form.col.s12(method='POST', action='/projects/edit_profile/'+profile._id)
+                    .row
+                      .input-field.col.s12
+                        i.material-icons.prefix face
+                        textarea#icon_prefix1.materialize-textarea(name='name')=profile.name
+                        label(for='icon_prefix1') Your Name 
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix business
+                        input#autocomplete-input1.autocomplete(type='text', name='district_name', autocomplete='off' value=profile.district_name)
+                        label(for='autocomplete-input1') Native  
+                      .input-field.col.s6
+                        i.material-icons.prefix textsms
+                        input#phoneno.validate(type='number', name='phoneno' value=profile.phoneno)
+                        label(for='phoneno') Contact no
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix contact_mail
+                        input#email.validate(type='email', name='email' value=profile.email)
+                        label(for='email') Email
+                      .input-field.col.s6
+                        i.material-icons.prefix art_track
+                        select#dep(name='domain')=profile.domain
+                          option(value='', disabled='') Domain
+                          option(value='1') CSE
+                          option(value='2') MECH
+                          option(value='3') CIVIL
+                          option(value='4') ECE
+                          option(value='5') EEE
+                          option(value='6') MCA
+                          option(value='7') ME
+                        label Home
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix add
+                        select#year(name='year')=profile.year
+                          option(value='', disabled='') Year 
+                          option(value='1') 1st year
+                          option(value='2') 2nd year
+                          option(value='3') 3rd year
+                          option(value='4') 4th year
+                        label Study
+                      .input-field.col.s6
+                        .input-field.col.s12
+                          i.material-icons.prefix add_circle_outline
+                          select#yearpicker(name='year_of_passing')=profile.year_of_passing
+                          label Year of passing
+                          br
+                    br
+                    p(style='margin-left: 20px')
+                      i.material-icons.prefix directions_bike
+                      |    Education
+                    br
+                    .input-field.col.s12
+                      p
+                        label
+                          
+                          input#edu1_1.with-gap(name='edu1', type='radio', value='12th')
+                          span Higher secondary
+                        label
+                          input#edu1_2.with-gap(name='edu1', type='radio', value='le')
+                          span Polytechnic
+                        label
+                          input#edu1_3.with-gap(name='edu1', type='radio', value='both')
+                          span Both
+                        if profile.edu1=="12th"
+                          script.
+                            document.getElementById("edu1_1").setAttribute('checked', true);
+                        else if profile.edu1=="le"
+                          script.
+                            document.getElementById("edu1_2").setAttribute('checked', true);
+                        else if profile.edu=="both"
+                          script.
+                            document.getElementById("edu1_3").setAttribute('checked', true);
+                    br
+                    
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix blur_circular
+                        textarea#institution_name.materialize-textarea(name='institution_name1')=profile.institution_name1
+                        label(for='edu1') Institution 
+                      .input-field.col.s6
+                        i.material-icons.prefix device_hub
+                        input#autocomplete-input2.autocomplete(type='text', name='district1', autocomplete='off' value=profile.district1)
+                        label(for='autocomplete-input2') District
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix donut_small
+                        label(for='cutoff') Percentage %
+                      .input-field.col.s12
+                        p.range-field
+                          input#cutoff(type='range', min='0', max='100', name='cutoff1' value=profile.cutoff1)
+                    .input-field.col.s12
+                      p
+                        label
+                          input#edu2_1.with-gap(name='edu2', type='radio', value='stateboard')
+                          span State Board
+                        label
+                          input#edu2_2.with-gap(name='edu2', type='radio', value='cbsc')
+                          span CBSC
+                        label
+                          input#edu2_3.with-gap(name='edu2', type='radio', value='other')
+                          span Other
+                        if profile.edu2=="stateboard"
+                          script.
+                            document.getElementById("edu2_1").setAttribute('checked', true);
+                        else if profile.edu1=="cbsc"
+                          script.
+                            document.getElementById("edu2_2").setAttribute('checked', true);
+                        else if profile.edu=="other"
+                          script.
+                            document.getElementById("edu2_3").setAttribute('checked', true);              
+                    br
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix blur_circular
+                        textarea#institution_name2.materialize-textarea(name='institution_name2')=profile.institution_name2
+                        label(for='institution_name2') Institution 
+                      .input-field.col.s6
+                        i.material-icons.prefix device_hub
+                        input#autocomplete-input3.autocomplete(type='text', name='district2', autocomplete='off' value=profile.district2)
+                        label(for='autocomplete-input3') District
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix donut_small
+                        label(for='cutoff') Percentage %
+                      .input-field.col.s12
+                        p.range-field
+                          input#cutoff2(type='range', min='0', max='100', name='cutoff2' value=profile.cutoff2)
+                    br
+                    p(style='margin-left: 20px')
+                      i.material-icons.prefix directions_bike
+                      |    Skills
+                    br
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix devices_other
+                        label Software tools & technologies
+                        br
+                        #software_skills.chips.chips-autocomplete(name='software_skills' value=profile.software_skills)
+                      .input-field.col.s6
+                        i.material-icons.prefix extension
+                        label Other skillSet
+                        br
+                        #other_skills.chips.chips-autocomplete(name='other_skills' value=profile.other_skills)
+                    br
+                    p(style='margin-left: 20px')
+                      i.material-icons.prefix directions_bike
+                      |    Accomplishments
+                    br
+                    .row
+                      .input-field.col.s6
+                        select#accomplishments(name='Accomplishments')=profile.accomplishments
+                          option(value='', disabled='') Sector
+                          option(value='1') Certification
+                          option(value='2') Patent
+                          option(value='3') Course
+                          option(value='4') Project(IEEE)
+                          option(value='5') Honour/award
+                          option(value='6') Test score
+                          option(value='7') Language
+                          option(value='8') Freelancing/startUp
+                        label Achievements
+                      .input-field.col.s6
+                        br
+                        p
+                          label
+                            input#interns(type='checkbox', name='interns')
+                            span Any previous interns
+                            if profile.interns!="not mentioned"
+                              script.
+                                document.getElementById("interns").disabled=false;
+                    #intern_hide(style='display: none;')
+                      .row
+                        .input-field.col.s6
+                          i.material-icons.prefix donut_large
+                          textarea#intern_company.materialize-textarea(name='intern_company')=profile.intern_company
+                          label(for='intern_company') Interned at 
+                        #field_hide.col.s6
+                          .input-field.col.s12
+                            select#field(name='field')=profile.intern_company
+                              option(value='', disabled='') Type of industry
+                              option(value='1') Software
+                              option(value='2') Government sector
+                              option(value='3') Non IT -private sectors
+                              option(value='4') IIT's,NIT's/IIM's
+                              option(value='5') Foreign Universities
+                            label Industry
+                      .row
+                        .input-field.col.s6
+                          i.material-icons.prefix chevron_right
+                          input#intern_duration.validate(type='number', name='intern_duration' value=profile.intern_duration)
+                          label(for='intern_duration') Duration
+                        #field_hide.col.s6
+                          .input-field.col.s12
+                            select#offer(name='offer')=profile.offer
+                              option(value='', disabled='') Offer via
+                              option(value='1') Online job sites
+                              option(value='2') Employee referal
+                              option(value='3') ALumni referal
+                              option(value='4') Competitions
+                              option(value='5') Staffs referal
+                            label Chance given by
+                    .row
+                      #title_hide.input-field.col.s12(style='display: none;')
+                        i.material-icons.prefix donut_large
+                        textarea#title.materialize-textarea(name='title')=profile.title
+                        label(for='title') Title 
+                    .row
+                      #publisher_hide.input-field.col.s6(style='display: none;')
+                        i.material-icons.prefix done_all
+                        textarea#publisher.materialize-textarea(name='publisher')=profile.publisher
+                        label(for='publisher') Publisher/publication
+                      #expire_hide.input-field.col.s6(style='display: none;')
+                        p
+                          label
+                            input#expire(type='checkbox', name='expire')
+                            span This does not expire
+                            if profile.expire!="not mentioned"
+                              script.
+                                document.getElementById("expire").disabled=false;
+                    #company_hide.row(style='display: none;')
+                      .input-field.col.s6
+                        i.material-icons.prefix domain
+                        textarea#company_name.materialize-textarea(name='company_name')=profile.company_name
+                        label(for='company_name') CompanyName
+                      .input-field.col.s6
+                        i.material-icons.prefix event_seat
+                        textarea#position_at.materialize-textarea(name='position_at')=profile.position_at
+                        label(for='position_at') Position/role
+                    #description_hide.row(style='display: none;')
+                      .input-field.col.s12
+                        i.material-icons.prefix equalizer
+                        textarea#role_description.materialize-textarea(name='role_description')=profile.role_description
+                        label(for='role_description') Description 
+                    #issuer_hide.row(style='display: none;')
+                      .input-field.col.s12
+                        i.material-icons.prefix done
+                        textarea#issuer.materialize-textarea(name='issuer')=profile.issuer
+                        label(for='issuer') Issuing authority 
+                    .row
+                      #date1_hide.input-field.col.s6(style='display: none;')
+                        i.material-icons.prefix check
+                        input#date1.datepicker(type='text', name='date1' value=profile.date1)
+                        label(for='date1') Date
+                        small Recognised at
+                      #duration_hide.input-field.col.s6(style='display: none;')
+                        i.material-icons.prefix chevron_right
+                        input#duration.validate(type='number', name='duration' value=profile.duartion)
+                        label(for='duration') Duration
+                    .row
+                      #ongoing_hide.input-field.col.s6(style='display: none;')
+                        p
+                          label
+                            input#ongoing(type='checkbox', name='ongoing')
+                            span Ongoing
+                            if profile.ongoing!="not mentioned"
+                              script.
+                                document.getElementById("ongoing").disabled=false;
+                      #mentor_hide.input-field.col.s6(style='display: none;')
+                        p
+                          label
+                            input#mentor(type='checkbox')
+                            span Have any mentor/guide
+                    #date_hide.row(style='display: none;')
+                      .input-field.col.s6
+                        i.material-icons.prefix details
+                        input#date2.datepicker(type='text', name='date2' value=profile.date2)
+                        label(for='date2') Start Date 
+                      .input-field.col.s6
+                        i.material-icons.prefix eject
+                        input#date3.datepicker(type='text', name='date3' value=profile.date3)
+                        label(for='date3') End Date 
+                    .row
+                      #grade_hide(style='display: none;')
+                        .input-field.col.s12
+                          i.material-icons.prefix grade
+                          label(for='score') Score/proficiency
+                          br
+                          br
+                        br
+                        br
+                        .input-field.col.s6
+                          p.range-field
+                            input#test5(type='range', min='0', max='100', name='score' value=profile.score)
+                      #lang_hide.input-field.col.s6(style='display: none;')
+                        select#lang_prof(name='lang_prof')
+                          option(value='', disabled='', selected='') Level
+                          option(value='1') Elementary
+                          option(value='2') Limited working proficiency
+                          option(value='3') Professional certified
+                          option(value='4') Native or bilingual
+                        label Proficiency
+                    #mentor_details_hide.row(style='display: none;')
+                      .input-field.col.s6
+                        i.material-icons.prefix face
+                        textarea#mentor_name.materialize-textarea(name='mentor_name')=profile.mentor_name
+                        label(for='mentor_name') Mentor name
+                      .input-field.col.s6
+                        i.material-icons.prefix grain
+                        textarea#mentor_position.materialize-textarea(name='mentor_position')=profile.mentor_description
+                        label(for='mentor_position') Mentor Position
+                    .card-action
+                      .row.center
+                        button.btn-large.waves-effect.waves.pink.darken-3(type='submit') Update It
+                        br
+                        br
+      br
+      footer.page-footer.black
+        .container
+          .row
+            .col.l6.s12
+              h5.white-text Our Moto
+              p.grey-text.text-lighten-4
+                | When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..
+            .col.l3.s12
+              h5.white-text Utilities
+              ul
+                li
+                  a.white-text(href='/projects/codemate', target='_blank') CodeMate
+                li
+                  a.white-text(href='/projects/offlinides', target='_blank') Offlinides
+                li
+                  a.white-text(href='/projects/novicenet', target='_blank') NoviceNet
+                li
+                  a.white-text(href='/explore', target='_blank') DiscussHub
+            .col.l3.s12
+              h5.white-text Connections
+              ul
+                li
+                  a.white-text(href='#!') CodeSuite
+                li
+                  a.white-text(href='#!') Blog
+                li
+                  a.white-text(href='#!') ACCETOSA
+                li
+                  a.white-text(href='#!') ACGCET startUp Wallet
+        .footer-copyright
+          .container
+            | Made with love by 
+            a.orange-text.text-lighten-3(href='http://materializecss.com') THIRAN webTeam
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+    script(src='js/init.js')
+    script(type='text/javascript').
+      $('.chips-autocomplete').chips({
+      autocompleteOptions: {
+      data: {
+      'Hadoop': null,
+      'MySQL': null,
+      'Oracle': null,
+      'PHP':null,
+      'Node.js':null,
+      'JavaScript':null,
+      'matlab':null,
+      'python':null,
+      'java':null,
+      '.NET':null,
+      'C#':null,
+      'Excel':null,
+      'amazon aws':null,
+      'jQuery':null,
+      'c':null,
+      'c++':null,
+      'deluge':null,
+      'blogging':null,
+      'UI/UX designing':null,
+      'Photoshop':null,
+      'Animations':null,
+      'android':null,
+      'flutter':null,
+      'redux':null,
+      'react native':null,
+      'react':null,
+      'cassandra':null,
+      'angularjs':null,
+      'linux':null,
+      'algorithms':null,
+      'mongodb':null,
+      'SQL':null,
+      'ruby':null
+      },
+      limit: Infinity,
+      minLength: 1
+      }
+      });
+      for (i = 2030; i >= new Date().getFullYear(); i--)
+      {
+      $('#yearpicker').append($('<option />').val(i).html(i));
+      }
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }
+      $(document).ready(function(){
+      $('#accomplishments').on('change',function(){
+      if($(this).val()=="1"){
+      $("#title_hide").show();
+      $("#description_hide").show();
+      $("#duration_hide").show();
+      $("#grade_hide").show();
+      $("#publisher_hide").hide();
+      $("#expire_hide").hide();
+      $("#company_hide").hide();
+      $("#issuer_hide").show();
+      $("#date1_hide").hide();
+      $("#date_hide").hide();
+      $("#lang_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#mentor_hide").hide();
+      }else if($(this).val()=="2"){
+      $("#date_hide").hide();
+      $("#lang_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#mentor_hide").hide();
+      $("#company_hide").hide();
+      $("#issuer_hide").hide();
+      $("#grade_hide").hide();
+      $("#duration_hide").hide();
+      $("#title_hide").show();
+      $("#description_hide").show();
+      $("#expire_hide").show();
+      $("#publisher_hide").show();
+      $("#date1_hide").show();
+      }
+      else if($(this).val()=="3"){
+      $("#issuer_hide").hide();
+      $("#company_hide").hide();
+      $("#publisher_hide").hide();
+      $("#date1_hide").hide();
+      $("#date_hide").hide();
+      $("#lang_hide").hide();
+      $("#expire_hide").hide();
+      $("#mentor_hide").hide();
+      $("#ongoing_hide").show();
+      $("#title_hide").show();
+      $("#description_hide").show();
+      $("#duration_hide").show();
+      $("#grade_hide").show();
+      }else if($(this).val()=="4"){
+      $("#grade_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#expire_hide").hide();
+      $("#date_hide").hide();
+      $("#lang_hide").hide();
+      $("#date1_hide").hide();
+      $("#issuer_hide").hide();
+      $("#company_hide").hide();
+      $("#title_hide").show();
+      $("#description_hide").show();
+      $("#publisher_hide").show();
+      $("#duration_hide").show();
+      $("#mentor_hide").show();
+      }
+      else if($(this).val()=="5"){
+      $("#date_hide").hide();
+      $("#lang_hide").hide();
+      $("#expire_hide").hide();
+      $("#mentor_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#issuer_hide").hide();
+      $("#company_hide").hide();
+      $("#publisher_hide").hide();
+      $("#duration_hide").hide();
+      $("#title_hide").show();
+      $("#description_hide").show();
+      $("#issuer_hide").show();
+      $("#date1_hide").show();
+      }else if($(this).val()=="6"){
+      $("#date1_hide").hide();
+      $("#date_hide").hide();
+      $("#lang_hide").hide();
+      $("#expire_hide").show();
+      $("#mentor_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#issuer_hide").hide();
+      $("#company_hide").hide();
+      $("#publisher_hide").hide();
+      $("#duration_hide").hide();
+      $("#title_hide").show();
+      $("#description_hide").show();
+      $("#grade_hide").show();
+      }else if($(this).val()=="7"){
+      $("#expire_hide").hide();
+      $("#mentor_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#issuer_hide").hide();
+      $("#company_hide").hide();
+      $("#publisher_hide").hide();
+      $("#duration_hide").hide();
+      $("#date1_hide").hide();
+      $("#date_hide").hide();
+      $("#title_hide").show();
+      $("#grade_hide").show();
+      $("#lang_hide").show();
+      $("#description_hide").hide();
+      }
+      else if($(this).val()=="8"){
+      $("#grade_hide").hide();
+      $("#lang_hide").show();
+      $("#publisher_hide").hide();
+      $("#duration_hide").hide();
+      $("#date1_hide").hide();
+      $("#date_hide").hide();
+      $("#expire_hide").hide();
+      $("#mentor_hide").hide();
+      $("#ongoing_hide").hide();
+      $("#issuer_hide").hide();
+      $("#company_hide").show();
+      $("#description_hide").show();
+      $("#title_hide").hide();
+      }
+      })
+      $("#ongoing").click(function(){
+      $("#grade_hide").fadeToggle();
+      $("#date_hide").fadeToggle();
+      })
+      $("#interns").click(function(){
+      $("#intern_hide").fadeToggle();
+      })
+      $("#mentor").click(function(){
+      $("#mentor_details_hide").fadeToggle();
+      })
+      $('.datepicker').datepicker();
+      $('select').formSelect();
+      $('input.autocomplete').autocomplete({
+      data: {
+      "Ariyalur":null,
+      "Chennai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Coimbatore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cuddalore":null,"Dharmapuri":null,"Dindigal":null,"Erode":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kancheepuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Karur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Krishnagiri":null,"Madurai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Nagapattinam":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"kanyakumari":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Namakkal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Perambalur":null,"Pudukottai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ramanathapuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Salem":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Sivagangai":null,"Thanjavur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Theni":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruvallur":null,"Thiruvarur":null,"Tuticorin":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Tirunelveli":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruchirapalli":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Tiruppur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruvannamalai":null,"The Nilgiris":null,"vellore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Vilupuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Virudhunagar":'https://www.utalkphil.com/assets/website_resource/images/loading.gif'
+      },
+      });
+      });

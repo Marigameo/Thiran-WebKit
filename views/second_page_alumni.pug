@@ -1,0 +1,407 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title Thiran Survey - Share your opinions
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Import materialize.css
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://camo.githubusercontent.com/32c7c4a15e2ff3600f7e808f2f7997ece27cd572/687474703a2f2f692e696d6775722e636f6d2f484333613675332e676966') 50% 50% no-repeat white;
+      }
+  body
+    #loader
+    .content
+      nav.light-blue.lighten-1(role='navigation')
+        .nav-wrapper.container
+          a#logo-container.brand-logo(href='/projects/yetexplore')
+            i.material-icons dashboard
+            | SurveyIt
+          ul.right.hide-on-med-and-down
+            li
+              a(href='/projects/novicenet', target='_blank') DiscussHub
+          ul#nav-mobile.sidenav
+            li
+              a(href='/')
+                i.material-icons account_balance
+                | THIRAN
+            li
+              a(href='/projects/codesuite', target='_blank')
+                i.material-icons domain
+                | CodeSuite
+            li
+              a(href='#cloudrunz')
+                i.material-icons language
+                | CloudRunz
+            li
+              a(href='#devtoolz')
+                i.material-icons invert_colors
+                | DevToolz
+            li
+              a(href='/projects/novicenet', target='_blank')
+                i.material-icons network_check
+                | NoviceNet
+            li
+              a(href='/projects/offlinides', target='_blank')
+                i.material-icons library_books
+                | Offlinides
+            li
+              a(href='/projects/codemate', target='_blank')
+                i.material-icons graphic_eq
+                | CodeMate
+            li
+              a(href='/projects/codemate', target='_blank')
+                i.material-icons account_balance
+                | DiscussHub Home
+          a.sidenav-trigger(href='#', data-target='nav-mobile')
+            i.material-icons menu
+      .container
+        .col.s12.m7
+          h4.header Okay! Now let's roll the heat on..
+          br
+          h6.header
+            | Hey! I am zia.I am here to help you..Just answer my questions,they're very simple.Cool yar..
+          br
+          br
+        .row
+          .form-content
+            form.col.s12(method='POST', action='/projects/alumni_survey_page2')
+              ul.collapsible
+                li.active
+                  .collapsible-header
+                    i.material-icons place
+                    | From which year you've been involved in thiran?
+                  .collapsible-body
+                    span
+                      select#yearpicker(name='involvement_a')
+                li
+                  .collapsible-header
+                    i.material-icons filter_drama
+                    | Who is your major support in staying touch with college and thiran?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='major_support', type='radio', value='ACCETOSA')
+                        span ACCETOSA
+                      label
+                        input.with-gap(name='major_support', type='radio', value='Fellow friends')
+                        span Fellow friends
+                      label
+                        input.with-gap(name='major_support', type='radio', value='college administration')
+                        span College administration
+                      label
+                        input.with-gap(name='major_support', type='radio', value='students')
+                        span Students at present
+                      label
+                        input.with-gap(name='major_support', type='radio', value='Staffs')
+                        span Staffs
+                      label
+                        input.with-gap(name='major_support', type='radio', checked='', value='Hybrid')
+                        span Hybrid
+                li
+                  .collapsible-header
+                    i.material-icons whatshot
+                    | How often our OGC's meet you or interact with you?
+                  .collapsible-body
+                    span
+                      p.range-field
+                        input#test5(type='range', min='0', max='100', name='interact_a')
+                      | Rate us in percentage(per 100%)
+              ul.collapsible
+                li.active
+                  .collapsible-header
+                    i.material-icons filter_drama
+                    | How advanced do you get invites to thiran events?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='invites', type='radio', value='1month')
+                        span Well before a month/two
+                      label
+                        input.with-gap(name='invites', type='radio', value='2weeks')
+                        span Before two weeks
+                      label
+                        input.with-gap(name='invites', type='radio', value='1or2days')
+                        span A day/two before
+                      label
+                        input.with-gap(name='invites', type='radio', value='3days')
+                        span 3 days before
+                      label
+                        input.with-gap(name='invites', type='radio', value='Not often')
+                        span Not informed often
+                      label
+                        input.with-gap(name='invites', type='radio', checked='', value='Missing')
+                        span Missing further updates after invite
+                li
+                  .collapsible-header
+                    i.material-icons place
+                    | How well your students whom you have mentored/mentoring co-operating with you?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='mentor_relationship_a', type='radio', value='active')
+                        span Very active
+                      label
+                        input.with-gap(name='mentor_relationship_a', type='radio', value='Moderate')
+                        span Moderate
+                      label
+                        input.with-gap(name='mentor_relationship_a', type='radio', value='Not active')
+                        span Not so active
+                      label
+                        input.with-gap(name='mentor_relationship_a', type='radio', value='Not in touch')
+                        span Not in touch
+                      label
+                        input.with-gap(name='mentor_relationship_a', type='radio', value='Not flexible')
+                        span Not much flexible
+                      label
+                        input.with-gap(name='mentor_relationship_a', type='radio', checked='', value='active but faded')
+                        span Active at the beginning but faded
+                li
+                  .collapsible-header
+                    i.material-icons whatshot
+                    | How well our OGC's  respond to your queries and requests?
+                  .collapsible-body
+                    span
+                      p.range-field
+                        input#test5(type='range', min='0', max='100', name='ogc_relationship_a')
+                      | Rate us in percentage(per 100%)
+              ul.collapsible
+                li.active
+                  .collapsible-header
+                    i.material-icons filter_drama
+                    | How often are you getting mail updates and reports from our OGC's?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='updates_a', type='radio', value='Daily')
+                        span Daily
+                      label
+                        input.with-gap(name='updates_a', type='radio', value='week')
+                        span Once in a week
+                      label
+                        input.with-gap(name='updates_a', type='radio', value='3 weeks')
+                        span Once in 3 weeks
+                      label
+                        input.with-gap(name='updates_a', type='radio', checked='', value='2 days')
+                        span Once in 2 days
+                      label
+                        input.with-gap(name='updates_a', type='radio', value='not active')
+                        span Not active at all
+                      label
+                        input.with-gap(name='updates_a', type='radio', value='Missing')
+                        span Missing updates often
+                li
+                  .collapsible-header
+                    i.material-icons place
+                    | Which side do you want our students to focus more?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='focus', type='radio', value='placements')
+                        span  Placements
+                      label
+                        input.with-gap(name='focus', type='radio', value='Quality of projects')
+                        span Quality of projects
+                      label
+                        input.with-gap(name='focus', type='radio', value='Ideas')
+                        span Ideas/concepts of projects
+                      label
+                        input.with-gap(name='focus', type='radio', value='Competitive examinations')
+                        span Competitive examinations
+                      label
+                        input.with-gap(name='focus', type='radio', value='Competitons')
+                        span Competitons
+                      label
+                        input.with-gap(name='focus', type='radio', checked='', value='Hybrid')
+                        span Hybrid
+                li
+                  .collapsible-header
+                    i.material-icons whatshot
+                    | How well our college administration staying flexible for your steps?
+                  .collapsible-body
+                    span
+                      p.range-field
+                        input#test5(type='range', min='0', max='100', name='admin_flexible')
+                      | Rate us in percentage(per 100%)
+              ul.collapsible
+                li.active
+                  .collapsible-header
+                    i.material-icons filter_drama
+                    | Which domain do you thing student has to improve a lot?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='domain_a', type='radio', value='Software')
+                        span Software
+                      label
+                        input.with-gap(name='domain_a', type='radio', value='electronics')
+                        span Electrical/electronics core
+                      label
+                        input.with-gap(name='domain_a', type='radio', value='Mechanical')
+                        span Mechanical core
+                      label
+                        input.with-gap(name='domain_a', type='radio', checked='', value='Civil')
+                        span Civil
+                      label
+                        input.with-gap(name='domain_a', type='radio', value='Competitive exams')
+                        span Competitive exams
+                      label
+                        input.with-gap(name='domain_a', type='radio', value='Entrepreneurship')
+                        span Entrepreneurship flexibility
+                li
+                  .collapsible-header
+                    i.material-icons place
+                    | What kind of activities do you expect from us most?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='activities_a', type='radio', value='Workshops')
+                        span Workshops
+                      label
+                        input.with-gap(name='activities_a', type='radio', value='Placement trainings')
+                        span Placement trainings
+                      label
+                        input.with-gap(name='activities_a', type='radio', value='Competitons')
+                        span Competitions
+                      label
+                        input.with-gap(name='activities_a', type='radio', checked='', value='knowledge')
+                        span Knowledge sharing sessions
+                      label
+                        input.with-gap(name='activities_a', type='radio', value='Awareness programmes')
+                        span Awareness programmes
+                li
+                  .collapsible-header
+                    i.material-icons whatshot
+                    | Are you getting the same extended response from our students even after the demo day?
+                  .collapsible-body
+                    span
+                      p.range-field
+                        input#test5(type='range', min='0', max='100', name='support_a')
+                      | Rate us in percentage(per 100%)
+              ul.collapsible
+                li.active
+                  .collapsible-header
+                    i.material-icons filter_drama
+                    | Which is the major barrier according to you in making the students to do a successful project?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='barrier_a', type='radio', checked='', value='Lack of interaction')
+                        span Lack of interaction from students
+                      label
+                        input.with-gap(name='barrier_a', type='radio', value='Funds')
+                        span Funds
+                      label
+                        input.with-gap(name='barrier_a', type='radio', value='Components')
+                        span Components availability
+                      label
+                        input.with-gap(name='barrier_a', type='radio', value='Lack of Mentorship')
+                        span Lack of Mentorship
+                      label
+                        input.with-gap(name='barrier_a', type='radio', value='Accesories')
+                        span Accesories like laptop/internet facility
+                      label
+                        input.with-gap(name='barrier_a', type='radio', value='Environment')
+                        span Environment/workplace freedom
+                li
+                  .collapsible-header
+                    i.material-icons place
+                    | Which side do you expect our OGC's to focus more?
+                  .collapsible-body
+                    span
+                      label
+                        input.with-gap(name='ogc_focus', type='radio', value='students interactions')
+                        span Student interactions
+                      label
+                        input.with-gap(name='ogc_focus', type='radio', value='Knowledge sharing')
+                        span Frequent knowledge sharing sessions
+                      label
+                        input.with-gap(name='ogc_focus', type='radio', value='mail')
+                        span Mail interaction with alumni
+                      label
+                        input.with-gap(name='ogc_focus', type='radio', value='Posting')
+                        span Posting updates in social media regularly
+                      label
+                        input.with-gap(name='ogc_focus', type='radio', checked='', value='all')
+                        span All the above
+                li
+                  .collapsible-header
+                    i.material-icons whatshot
+                    | How good thiran is helping students move forward towards your placements?
+                  .collapsible-body
+                    span
+                      p.range-field
+                        input#test5(type='range', min='0', max='100', name='towards_placement')
+                      | Rate us in percentage(per 100%)
+              .card-action
+                .row.center
+                  button.btn-large.waves-effect.waves-light.blue(type='submit') Jump to next
+                  br
+                  br
+              br
+    footer.page-footer.black
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Our Moto
+            p.grey-text.text-lighten-4
+              | When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..
+          .col.l3.s12
+            h5.white-text Utilities
+            ul
+              li
+                a.white-text(href='/projects/codemate', target='_blank') CodeMate
+              li
+                a.white-text(href='/projects/offlinides', target='_blank') Offlinides
+              li
+                a.white-text(href='/projects/novicenet', target='_blank') NoviceNet
+              li
+                a.white-text(href='/explore', target='_blank') DiscussHub
+          .col.l3.s12
+            h5.white-text Connections
+            ul
+              li
+                a.white-text(href='#!') CodeSuite
+              li
+                a.white-text(href='#!') Blog
+              li
+                a.white-text(href='#!') ACCETOSA
+              li
+                a.white-text(href='#!') ACGCET startUp Wallet
+      .footer-copyright
+        .container
+          | Made with love by 
+          a.orange-text.text-lighten-3(href='http://materializecss.com') THIRAN webTeam
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+    script(src='js/init.js')
+    script(type='text/javascript').
+      for (i = new Date().getFullYear(); i > 1900; i--)
+      {
+      $('#yearpicker').append($('<option />').val(i).html(i));
+      }
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }
+      $(document).ready(function(){
+      $('.modal').modal();
+      $('.carousel').carousel();
+      $('.collapsible').collapsible();
+      $('select').formSelect();
+      });

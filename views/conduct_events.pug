@@ -1,0 +1,560 @@
+doctype html
+html
+  head
+    title THIRAN - Conduct events
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Import materialize.css
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  style(type='text/css').
+    .container {
+    margin: 20px auto;
+    max-width: 1280px;
+    width: 90%;
+    }
+    @media only screen and (min-width: 601px) {
+    .container {
+    width: 85%;
+    }
+    }
+    @media only screen and (min-width: 993px) {
+    .container {
+    width: 60%;
+    }
+    }
+    @media all and (max-width: 480px) {
+    .c1 { display: none; }
+    }
+    .c1{
+    padding-top: 20px;
+    }
+    .shape-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    // height: 1200px;
+    // background: grey;
+    }
+    .shape-7 {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    }
+    .shape-1 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    }
+    .shape-2 {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    }
+    .shape-3 {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    }
+    .shape-4 {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    }
+    .shape-5{
+    position: absolute;
+    top: 20px;
+    left: 900px;
+    }
+    .shape-6{
+    position: absolute;
+    top: 10px;
+    left: 1100px;
+    }
+    .shape-8{
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    }
+    .shape-bg {
+    position: absolute;
+    width: 61px;
+    height: 11px;
+    }
+    .shape-bg-blue-light {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#1CDFFE' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-blue-mid {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#059ADC' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-manatee-dark {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#181F22' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-blue-light {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#1CDFFE' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-blue-mid {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#059ADC' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .shape-bg-manatee-dark {
+    background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#181F22' fill-rule='evenodd'/></svg>");
+    background-size: cover;
+    }
+    .anim-float {
+    animation-name: anim-float;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes anim-float {
+    from { transform: translateY(0px); }
+    65% { transform: translateY(16px); }
+    to { transform: translateY(0px); }
+    }
+    .color1{
+    background-color: #ECF0F1;
+    }
+    .color2{
+    background-color: #f7f1e3;
+    }
+    .base-rotate--45 {
+    transform: rotate(-45deg);
+    }
+    .base-rotate-45 {
+    transform: rotate(45deg);
+    }
+    .base-rotate-20 {
+    transform: rotate(20deg);
+    }
+    .base-rotate-80 {
+    transform: rotate(80deg);
+    }
+    .offset-1 {
+    animation-delay: 1s;
+    }
+    .offset-2 {
+    animation-delay: 2s;
+    }
+    .offset-3 {
+    animation-delay: 3s;
+    }
+    #q1{
+    color: #2980b9;
+    }
+    #q2{
+    color: #009688;
+    }
+    // rotations
+    .anim-rotate {
+    animation-name: anim-rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    @keyframes anim-rotate {
+    from { transform: rotate(0deg); }
+    65% { transform: rotate(8deg); }
+    to { transform: rotate(0deg); }
+    }
+    body {
+    background: url('/img/starwars.gif');
+    }
+  body
+    .c1
+      .shape-wrapper.container
+        .anim-float.offset-1
+          .shape-7.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float
+          .shape-1.base-rotate-45
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-3
+          .shape-2.base-rotate-20
+            .shape-bg.shape-bg-blue-mid.anim-rotate
+        .anim-float.offset-1
+          .shape-3.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-4.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-2
+          .shape-4.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-5.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-6.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-8.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-1
+          .shape-5.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-6.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-8.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-1
+          .shape-5.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+        .anim-float.offset-2
+          .shape-6.base-rotate-80
+            .shape-bg.shape-bg-blue-light.anim-rotate
+        .anim-float.offset-1
+          .shape-8.base-rotate--45
+            .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .card-panel.hoverable.container
+      .row
+        form#reg_project.col.s12(method='POST',action='/events/conduct_event')
+          .row
+            .col.s12
+              br
+              br
+              h6#q2.center-align Awesome,Let's recycle ignorance from its root #{user.username}
+              br
+              hr(style='width: 250px')
+              br
+              .row
+                h5.center-align Here is to the future because I am done with the past
+              h6#q1.center-align Cool,Let's trigger up
+              br
+              br
+            .row
+              .col.s6
+                .input-field.col.s12
+                  input#name.validate(type='text', value=username, name='name')
+                  label(for='name') Name
+                  span.helper-text(data-error='Oops,fill me', data-success='cool,nice name champ!')
+              #dep_hide.col.s6
+                .input-field.col.s12
+                  select#dep(name='domain')
+                    option(value='', disabled='', selected='') Domain/work
+                    option(value='1') Software
+                    option(value='2') Government sector
+                    option(value='3') Non IT -private sectors
+                    option(value='4') MBA
+                    option(value='5') Civil services aspirant
+                    option(value='6') ME/MS
+                    option(value='7') OTHERS
+                  label Home of your passion
+              #dep_show.col.s6
+                #otherType(style='display:none;')
+                  .input-field.col.s12
+                    input.validate(type='text', name='domain', placeholder='Specify your domain')
+                    label(for='dep') Field
+                    span.helper-text(data-error='Oops!you missed me', data-success='Please mention your core of interest')
+            .row
+              .col.s6
+                .input-field.col.s12
+                  input#email.validate(type='email', name='email', value=email)
+                  label(for='email') Email
+                  span.helper-text(data-error='Oops!you missed me', data-success='Cheers!email ok')
+              .col.s6
+                .input-field.col.s12
+                  select#yearpicker(name='yearpicker')
+                  label Year of Passout
+            .row
+              .col.s6
+                p
+                  label.col.s6
+                    input.with-gap(name='position', type='radio', value='team', checked='')
+                    span Team
+                  label.col.s6
+                    input.with-gap(name='position', type='radio', value='individual')
+                    span Lone Wolf
+              .col.s6
+                #count.inpane
+                  label(for='units') Number of members planning to team up 
+                  input#units(type='text', name='units')
+                br
+            .row
+              #futureacc.col.s12
+                p
+                  label.col.s3 Add their details?
+                  label.col.s3
+                    input#getUnits.with-gap(name='select', type='radio', value='yes')
+                    span Yes
+                  label.col.s3
+                    input.with-gap(name='select', type='radio')
+                    span No
+            .row
+              #events_hide.col.s6
+                .input-field.col.s12
+                  select#events_list1(name='event_name')
+                    optgroup(label='General')
+                      option(value='8') Programming bootcamp
+                      option(value='9') Mathematics bootcamp
+                      option(value='10') Workshops
+                      option(value='11') Seminars/Conference
+                    optgroup(label='Awareness programmes')
+                      option(value='12') Higher studies guidance
+                      option(value='13') Competitive exams guidance
+                    optgroup(label='Online events')
+                      option(value='14') Photography contest
+                      option#s1(value='15') CodeHunt
+                      option(value='16') Webinar
+                    optgroup(label='Offline events')
+                      option(value='17') Placement Training
+                      option(value='18') ACGCET alumni talks
+                      option(value='19') Hackathon
+                      option(value='20') BPlan contest
+                      option(value='21') App building contest
+                      option(value='22') MathIt
+                      option(value='23') Softskill training
+                    optgroup(label='Engineering events')
+                      option(value='24') Science projects Expo
+                      option(value='25') Survey contest
+                      option(value='26') Paper presentation
+                      option(value='27') Robotics contest
+                      option(value='28') CAD design contest
+                      option(value='29') Entrepreuneurship summit
+                      option(value='30') Aurdino challenge
+                      option(value='31') Reverse enginnering contest
+                  label Events
+              .col.s6.new_event(style='display: none;')
+                .input-field.col.s12
+                  input#event_name.validate(type='text', name='event_name')
+                  label(for='event_name') EventName
+                  span.helper-text(data-error='Oops,Either fill or choose one from list shown before', data-success='cool,nice name champ!')
+              .col.s6
+                br
+                // Switch
+                label.col.s6 Have a new event suggestion?
+                .switch
+                  label
+                    | No 
+                    input#button_new(type='checkbox', name='event_suggestion')
+                    span.lever
+                    |             Yes
+            .row
+              .col.s12.new_event(style='display: none;')
+                br
+                .input-field.col.s12
+                  textarea#new_event_description.materialize-textarea.validate(name='new_event_description')
+                  label(for='new_event_description') Event Description
+                  span.helper-text(data-error='Ahem,please share few details regarding the event', data-success='Super cool,we are waiting!')
+            .row
+              #strength.col.s6
+                br
+                p.range-field
+                  input#test5(type='range', name='strength', min='0', max='500')
+                  label(for='strength') Strength expected
+              #days.col.s6
+                p.col.s6
+                  label
+                    input#days_count(type='checkbox')
+                    span Event may take more than a day
+            #conveniency.row
+              .col.s6
+                label(for='date1') Date of conveniency1
+                input.datepicker.date(type='text', name='date1')
+              .col.s6
+                label(for='date2') Date of conveniency2
+                input.datepicker.date(type='text', name='date2')
+            #from_to.row(style='display: none;')
+              .col.s6
+                .input-field.col.s12
+                  label(for='start_date') Start Date
+                  input.datepicker.date(type='text', name='start_date')
+              .col.s6
+                .input-field.col.s12
+                  label(for='end_date') End Date
+                  input.datepicker.date(type='text', name='end_date')
+            .row
+              .col.s6
+                .input-field.col.s12
+                  p
+                    label.col.s3 Food comfort
+                    label.col.s5
+                      input.with-gap(name='food', type='radio', value='v')
+                      span V
+                    label.col.s3
+                      input.with-gap(name='food', type='radio',value="nv")
+                      span NV
+              .col.s6
+                .input-field.col.s12
+                  select#utilities_needed(multiple='', name='utilities_needed')
+                    optgroup(label='General utilities')
+                      option(value='32') Paper/pens/highlighters
+                      option(value='33') Whiteboard kit
+                    optgroup(label='Accessories')
+                      option(value='34') Projectors
+                      option(value='35') Audio system
+                      option(value='36') Wifi connectivity
+                      option(value='37') PC's/laptops
+                      option(value='38') Printer
+                  label Utilities required
+            .row
+              .col.s6
+                .input-field.col.s12
+                  select#travel(name='travel')
+                    option(value='', disabled='', selected='') Transport
+                    option(value='39') Bus
+                    option(value='40') Train
+                    option(value='41') Personal transport
+                    option(value='42') Others
+                  label Travelling by
+              .col.s6
+                .input-field.col.s12
+                  label(for='arr_time') Arrival time(apprx)
+                  input#arr_time.timepicker(type='text', name='arr_time')
+            .row
+              .col.s6
+                #software_count.inpane
+                  input#software_units(type='text', name='software_units')
+                  label(for='software_units', col='', s6='') No of sofwares need to pre-installed
+                br
+              .col.s6
+                .row
+                  .input-field.col.s12
+                    i.material-icons.prefix textsms
+                    input#autocomplete-input.autocomplete(type='text', name='country', autocomplete='off')
+                    label(for='autocomplete-input') Country
+            .row
+              #futureacc_software.col.s12
+                p
+                  label.col.s3 Add software details
+                  label.col.s3
+                    input#getsoftwareUnits.with-gap(name='select_software', type='radio', value='yes')
+                    span Yes
+                  label.col.s3
+                    input.with-gap(name='select_software', type='radio')
+                    span No
+            .row
+              .col.s12.div2
+                .input-field.col.s12
+                  textarea#feedback.materialize-textarea(name='feedback')
+                  label(for='feedback') Expectation from us
+                  span.helper-text(data-error='Ahem,your feedbacks help us serve better', data-success='Thanks champ!')
+                  small Share a few words from your experience with thiran
+            .row
+              .center-align
+                input.waves-effect.waves-light.btn.btn-large(type='submit', name='submit', value='submit')
+  script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  // Compiled and minified JavaScript
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+  script(type='text/javascript').
+    // Or with jQuery
+    $(document).ready(function(){
+    $('#travel').on('change',function(){
+    //console.log($(this).val());
+    var travel=$(this).val();
+    console.log(travel);
+    if(travel!=null){
+    M.Toast.dismissAll();
+    var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#">Cool,Please let us know if you are facing any difficulties on the way<br>Glad to help you,safe journey!</a>';
+    M.toast({html: toastHTML,displayLength: 3000,classes:'color1'});
+    }
+    });
+    $('#utilities_needed').on('change',function(){
+    //console.log($(this).val());
+    var utilities=$(this).val();
+    console.log(utilities);
+    if(utilities!=null){
+    M.Toast.dismissAll();
+    var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#">Done,we promise to personalise these settings without fail<br>Thank you!</a>';
+    M.toast({html: toastHTML,displayLength: 3000,classes:'ghost white'});
+    }
+    });
+    $(".date").click(function(){
+    M.Toast.dismissAll();
+    var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#">Cool,Please let us know if there is any postponement/advance<br>Thank you!</a>';
+    M.toast({html: toastHTML,displayLength: 3000,classes:'color1'});
+    })
+    $("#arr_time").click(function(){
+    M.Toast.dismissAll();
+    var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#">Cool,Please let us know if there is any delay<br>Thank you!</a>';
+    M.toast({html: toastHTML,displayLength: 3000,classes:'color2'});
+    })
+    $("#button_new").click(function(){
+    $(".new_event").fadeToggle();
+    $("#events_hide").fadeToggle();
+    })
+    $("#days_count").click(function(){
+    $("#conveniency").fadeToggle();
+    $("#from_to").fadeToggle();
+    })
+    var s_index=0;
+    $("#getsoftwareUnits").click(function(){
+    var software_units = $("#software_units").val();
+    for (var s_count = 0; s_count < software_units; s_count++) {
+    var id=++s_index;
+    $('<div class="col s12"><input type="text" id="s_name' + id + '" s_name="name' + id + '" class="textbox" placeholder="' +id + '. Name of the software tool"/> <input type="url" class="textbox" id="s_link' + id + '" name="s_link' + id + '" placeholder="' +id + '. Download link"/></div>').appendTo("#futureacc_software");
+    console.log(id);
+    }
+    })
+    var index=0;
+    $("#getUnits").click(function(){
+    var units = $("#units").val();
+    for (var count = 0; count < units; count++) {
+    var id=++index;
+    $('<div class="col s12"><input type="text" id="v_name' + id + '" name="v_name' + id + '"class="textbox" placeholder="' +id + '. Volunteer name"/> <input type="text" class="textbox" name="v_email' + id + '" id="v_email' + id + '" placeholder="' +id + '. Volunteer phoneno/email"/></div>').appendTo("#futureacc");
+    console.log(id);
+    }
+    })
+    for (i = new Date().getFullYear(); i > 1900; i--)
+    {
+    $('#yearpicker').append($('<option />').val(i).html(i));
+    }
+    $('#platform').on('change',function(){
+    if( $(this).val()==="53"){
+    $("#platform_hide").hide();
+    $("#otherplatform").show();
+    }
+    else{
+    $("#otherplatform").hide();
+    }
+    });
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
+    $('select').formSelect();
+    $("#button1").click(function(){
+    $('#hide').fadeToggle();
+    $("#div1").fadeToggle();
+    });
+    $("#button2").click(function(){
+    $(".div2").fadeToggle(800);
+    });
+    $("#button3").click(function(){
+    $("#div3").fadeToggle(800);
+    });
+    });
+    $('#yr').on('change',function(){
+    if( $(this).val()==="8"){
+    $("#events_hide").hide();
+    $("#events_1").show();
+    }
+    else{
+    $("#events_1").hide();
+    $("#events_hide").show();
+    }
+    });
+    $('#dep').on('change',function(){
+    if( $(this).val()==="7"){
+    $("#dep_hide").hide();
+    $("#otherType").show();
+    }
+    else{
+    $("#otherType").hide();
+    }
+    });
+    $(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+    data: {
+    "Afghanistan":null,
+    "Albania":null,"Algeria":null,"Andorra":null,"Angola":null,"Anguilla":null,"Antigua &amp; Barbuda":null,"Argentina":null,"Armenia":null,"Aruba":null,"Australia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Austria":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Azerbaijan":null,"Bahamas":null,"Bahrain":null,"Bangladesh":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Barbados":null,"Belarus":null,"Belgium":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Belize":null,"Benin":null,"Bermuda":null,"Bhutan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Bolivia":null,"Bosnia &amp; Herzegovina":null,"Botswana":null,"Brazil":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"British Virgin Islands":null,"Brunei":null,"Bulgaria":null,"Burkina Faso":null,"Burundi":null,"Cambodia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cameroon":null,"Cape Verde":null,"Cayman Islands":null,"Chad":null,"Chile":null,"China":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Colombia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Congo":null,"Cook Islands":null,"Costa Rica":null,"Cote D Ivoire":null,"Croatia":null,"Cruise Ship":null,"Cuba":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cyprus":null,"Czech Republic":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Denmark":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Djibouti":null,"Dominica":null,"Dominican Republic":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ecuador":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Egypt":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"El Salvador":null,"Equatorial Guinea":null,"Estonia":null,"Ethiopia":null,"Falkland Islands":null,"Faroe Islands":null,"Fiji":null,"Finland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"France":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"French Polynesia":null,"French West Indies":null,"Gabon":null,"Gambia":null,"Georgia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Germany":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ghana":null,"Gibraltar":null,"Greece":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Greenland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Grenada":null,"Guam":null,"Guatemala":null,"Guernsey":null,"Guinea":null,"Guinea Bissau":null,"Guyana":null,"Haiti":null,"Honduras":null,"Hong Kong":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Hungary":null,"Iceland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"India":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Indonesia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Iran":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Iraq":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ireland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Isle of Man":null,"Israel":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Italy":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Jamaica":null,"Japan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Jersey":null,"Jordan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kazakhstan":null,"Kenya":null,"Kuwait":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kyrgyz Republic":null,"Laos":null,"Latvia":null,"Lebanon":null,"Lesotho":null,"Liberia":null,"Libya":null,"Liechtenstein":null,"Lithuania":null,"Luxembourg":null,"Macau":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Macedonia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Madagascar":null,"Malawi":null,"Malaysia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Maldives":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Mali":null,"Malta":null,"Mauritania":null,"Mauritius":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Mexico":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Moldova":null,"Monaco":null,"Mongolia":null,"Montenegro":null,"Montserrat":null,"Morocco":null,"Mozambique":null,"Namibia":null,"Nepal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Netherlands":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Netherlands Antilles":null,"New Caledonia":null,"New Zealand":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Nicaragua":null,"Niger":null,"Nigeria":null,"Norway":null,"Oman":null,"Pakistan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Palestine":null,"Panama":null,"Papua New Guinea":null,"Paraguay":null,"Peru":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Philippines":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Poland":null,"Portugal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Puerto Rico":null,"Qatar":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Reunion":null,"Romania":null,"Russia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Rwanda":null,"Saint Pierre &amp; Miquelon":null,"Samoa":null,"San Marino":null,"Satellite":null,"Saudi Arabia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Senegal":null,"Serbia":null,"Seychelles":null,"Sierra Leone":null,"Singapore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Slovakia":null,"Slovenia":null,"South Africa":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"South Korea":null,"Spain":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Sri Lanka":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"St Kitts &amp; Nevis":null,"St Lucia":null,"St Vincent":null,"St. Lucia":null,"Sudan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Suriname":null,"Swaziland":null,"Sweden":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Switzerland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Syria":null,"Taiwan":null,"Tajikistan":null,"Tanzania":null,"Thailand":null,"Timor L'Este":null,"Togo":null,"Tonga":null,"Trinidad &amp; Tobago":null,"Tunisia":null,"Turkey":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Turkmenistan":null,"Turks &amp; Caicos":null,"Uganda":null,"Ukraine":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"United Arab Emirates":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"United Kingdom":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Uruguay":null,"Uzbekistan":null,"Venezuela":null,"Vietnam":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Virgin Islands (US)":null,"Yemen":null,"Zambia":null,"Zimbabwe":null
+    },
+    });
+    });

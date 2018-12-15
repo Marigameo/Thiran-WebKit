@@ -1,0 +1,574 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title YetXplore - Mystery of unexplored opportunities
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Import materialize.css
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://i.redd.it/ounq1mw5kdxy.gif') 50% 50% no-repeat white;
+      }
+      .icon-block {
+      padding: 0 15px;
+      }
+      .icon-block .material-icons {
+      font-size: inherit;
+      }
+      /**
+      * Position icons into circle (SO)
+      * http://stackoverflow.com/q/12813573/1397351
+      */
+      .circle-container {
+      position: relative;
+      width: 24.75em;
+      height: 25.75em;
+      padding: 2.3em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+      border: dashed 1px;
+      border-radius: 70%;
+      margin: 1.95em auto 0;
+      }
+      .circle-container a {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 4em; height: 4em;
+      margin: -2em; /* 2em = 4em/2 */ /* half the width */
+      }
+      .circle-container img { display: block; width: 100%; }
+      .deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+      .deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+      .deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+      .deg180 { transform: translate(-12em); }
+      .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+      .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+      /* this is just for showing the angle on hover */
+      .circle-container a:not(.center):before {
+      position: absolute;
+      width: 4em;
+      color: white;
+      opacity: 0;
+      background: rgba(0,0,0,.5);
+      font: 1.25em/3.45 Courier, monospace;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-indent: -2em;
+      text-shadow: 0 0 .1em deeppink;
+      transition: .7s; /* only works in Firefox */
+      content: attr(class)'°';
+      }
+      .circle-container a:hover:before { opacity: 1; }
+      /* this is for showing the circle on which the images are placed */
+      .circle-container:after {
+      position: absolute;
+      top: 1.8em; left: 2.2em;
+      width: 20.75em; height: 22.75em;
+      border: dashed 1px deeppink;
+      border-radius: 50%;
+      opacity: .3;
+      pointer-events: none;
+      content: '';
+      }
+      .circle-container:hover:after { opacity: 1; }
+      .circle-container a:not(.center):after {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 24em; height: 24em;
+      border-radius: 50%;
+      box-shadow: 0 0 .5em .5em white;
+      margin: -2px;
+      background: deeppink;
+      opacity: .3;
+      content: '';
+      }
+      .circle-container:hover a:after { opacity: 1; }
+      .circle-container a:hover:after { opacity: .3; }
+  body
+    #loader
+    nav.light-blue.lighten-1(role='navigation')
+      .nav-wrapper.container
+        a#logo-container.brand-logo(href='#button')
+          i.material-icons pin_drop
+          | YetXplore
+        ul.right.hide-on-med-and-down
+          li
+            a(href='#cloudrunz') CloudRunz
+          li
+            a(href='#devtoolz') DevToolz
+          li
+            a(href='/projects/novicenet', target='_blank') NoviceNet
+          li
+            a(href='/projects/offlinides', target='_blank') Offlinides
+        ul#nav-mobile.sidenav
+          li
+            a(href='/')
+              i.material-icons account_balance
+              | THIRAN
+          li
+            a(href='/projects/codesuite', target='_blank')
+              i.material-icons domain
+              | CodeSuite
+          li
+            a(href='#cloudrunz')
+              i.material-icons language
+              | CloudRunz
+          li
+            a(href='#devtoolz')
+              i.material-icons invert_colors
+              | DevToolz
+          li
+            a(href='/projects/novicenet', target='_blank')
+              i.material-icons network_check
+              | NoviceNet
+          li
+            a(href='/projects/offlinides', target='_blank')
+              i.material-icons library_books
+              | Offlinides
+          li
+            a(href='/projects/codemate', target='_blank')
+              i.material-icons graphic_eq
+              | CodeMate
+        a.sidenav-trigger(href='#', data-target='nav-mobile')
+          i.material-icons menu
+    #index-banner.section.no-pad-bot
+      .container
+        br
+        br
+        h1.header.center.indigo-text Explore and Evolve
+        .row.center
+          h5.header.col.s12.light The hidden paradise of knowledge and tools yet to be explored by most of us
+        // content to be placed inside <body>…</body>
+        .circle-container
+          a.center(href='#')
+            img.circle.responsive-img(src='https://i.gifer.com/XlQO.gif')
+          a.deg0(href='#')
+            img.circle.responsive-img(src='http://www.panayiotisgeorgiou.net/wp-content/uploads/2017/03/android-preview.gif')
+          a.deg45(href='#')
+            img.circle.responsive-img(src='https://image.flaticon.com/icons/png/512/471/471012.png')
+          a.deg135(href='#')
+            img.circle.responsive-img(src='https://www.woodmac.com/content/img/icons/icon-map-explore.svg')
+          a.deg180(href='#')
+            img.circle.responsive-img(src='https://cdn.iconscout.com/public/images/icon/premium/png-512/camera-drone-explore-quadcopter-365f039a53a83923-512x512.png')
+          a.deg225(href='#')
+            img.circle.responsive-img(src='https://orioniconlibrary.com/icon-default.png')
+          a.deg315(href='#')
+            img.circle.responsive-img(src='https://camo.githubusercontent.com/0cd910e76658429374539a8d72a0608783918aae/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667')
+        br
+        br
+        .row.center
+          button#button.btn-large.waves-effect.waves-light.blue(onclick='myFunction()') Explore Now
+          br
+          br
+          small First reveal your lucky no window and then hit explore
+        br
+        br
+        .row
+          .col.s6.m5
+            .card
+              .card-content
+                span.card-title.activator.grey-text.text-darken-4
+                  | Your lucky number
+                  i.material-icons.right more_vert
+                p
+                  a(href='#') Random treat my friend,enjoy!
+                br
+              .card-reveal
+                span.card-title.grey-text.text-darken-4
+                  | KEY
+                  i.material-icons.right close
+                input#demo(type='text')
+                p Here is your lucky no,go grab your stuff.Yep! It's open already
+          .col.s6.m5
+            .card-panel.teal
+              span.white-text
+                | Hai ,I am the explorer guide for you.I have gifted you a random stuff to play with today,hope you enjoy.If it doesn't entertain you feel free to try again geeting a new lucky no.Peee!
+    #show1.container(style='display: none;')
+      ul.collapsible
+        li
+          .collapsible-header
+            i.material-icons filter_drama
+            | Google Summer of Code
+          .collapsible-body
+            span
+              | 13,000+ STUDENTS, 108 COUNTRIES 
+              | 13 YEARS, 608 OPEN SOURCE ORGANIZATIONS
+              | 33,000,000+ LINES OF CODE.Why don't we know this before?Why someone from rural geographical background make up to these kind of contributions?
+              br
+              br
+              img(src='https://robertlefebvre42.files.wordpress.com/2017/07/google-summer-of-code-march-3-2017-800x450.png?w=2340', style='width: 240px;')
+              img(src='http://2.bp.blogspot.com/-X8sknp6uBGw/UoGJV9SMriI/AAAAAAAAAgA/oeTtV9MoYd4/s1600/image02.jpg', style='width: 240px; height: 132px;')
+              img(src='https://i.ytimg.com/vi/E1bQ3h7Rrpg/maxresdefault.jpg', style='width: 240px; height: 132px;')
+        li
+          .collapsible-header
+            i.material-icons place
+            | What it is?
+          .collapsible-body
+            span
+              | Google Summer of Code is a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.
+              br
+              a(href='https://www.quora.com/What-are-the-advantages-of-getting-into-gsoc', target='_blank') Advantages of getting into GSOC
+        li
+          .collapsible-header
+            i.material-icons whatshot
+            | Links and resources
+          .collapsible-body
+            span
+              a(href='https://summerofcode.withgoogle.com/', target='_blank') Know more
+              br
+              a(href='https://www.quora.com/How-do-I-prepare-for-the-Google-Summer-of-Code-GSoC', target='_blank') How to prepare?
+              a(href='https://www.quora.com/What-is-GSoC-and-how-does-one-apply-for-GSoC', target='_blank') How to apply?
+              br
+              | I wish this state would change soon.Try contributing friends!
+    #show2.container(style='display: none;')
+      ul.collapsible
+        li
+          .collapsible-header
+            i.material-icons filter_drama
+            | Facebook HackerCup
+          .collapsible-body
+            span
+              | The winner takes home $10,000 and lots of glory.Why can't we grab that amount?Are they aliens?Then what's missing with us?
+        li
+          .collapsible-header
+            i.material-icons place
+            | What it is?
+          .collapsible-body
+            span
+              | The Facebook Hacker Cup is an annual worldwide programming competition in which coders compete against each other for fame, fortune, glory, and a shot at the title of world champion!
+              br
+              br
+              img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/ITMO_team_2015_ACM_ICPC.jpg/280px-ITMO_team_2015_ACM_ICPC.jpg', style='width: 240px;')
+              img(src='https://1.bp.blogspot.com/-RHPwkGz_XqY/UO2CXZnvhTI/AAAAAAAARmw/aHxIQ8NF4NQ/s728-e100/Facebook+Hacker+Cup+2013.jpg', style='width: 240px; height: 158px;')
+              img(src='https://i2.cdn.turner.com/money/2012/01/04/technology/facebook_hacker_cup/facebook-hacker-cup.top.jpg', style='width: 240px; height: 158px;')
+              br
+              a(href='https://www.quora.com/Does-the-Facebook-Hacker-Cup-result-improve-ones-chance-to-get-a-job-at-Facebook', target='_blank') Job at facebook!Wow,cool isn't?
+        li
+          .collapsible-header
+            i.material-icons whatshot
+            | Register
+          .collapsible-body
+            span
+              a(href='https://www.facebook.com/hackercup/register', target='_blank') Register here!
+              | .
+    #show3.container(style='display: none;')
+      ul.collapsible
+        li
+          .collapsible-header
+            i.material-icons filter_drama
+            | Internshala
+          .collapsible-body
+            span
+              | Have you ever thought of an internship opportunity?Why someone should think in advance and act in advance to grab a job?What's wrong in it?Do you know people at IIT grab intern opportunities right from 1st year?Why not we?
+            br
+            br
+            img(src='https://internshala.com/static/images/internshala_for_facebook.png', style='width: 240px;')
+            img(src='https://trainings.internshala.com/static/images/fb.png', style='width: 240px; height: 158px;')
+            img(src='http://blog.internshala.com/wp-content/uploads/2015/10/Internshala_Team.jpg', style='width: 240px; height: 158px;')
+            br
+        li
+          .collapsible-header
+            i.material-icons place
+            | How?Is there any way?
+          .collapsible-body
+            span
+              | Internshala is an internship platform, based out of Gurgaon, India. Founded by Sarvesh Agrawal, an IIT Madras alumnus, in 2010, the website helps students find internships with organisations in India.
+        li
+          .collapsible-header
+            i.material-icons whatshot
+            | Register
+          .collapsible-body
+            span
+              | Head over here 
+              a(href='https://internshala.com/', target='_blank')  Create an account
+              | .Grab golden opportunities.
+    #show4.container(style='display: none;')
+      ul.collapsible
+        li
+          .collapsible-header
+            i.material-icons filter_drama
+            | LinkedIn
+          .collapsible-body
+            span
+              | Connecting businesses.
+              br
+              br
+              img(src='https://blog.linkedin.com/content/dam/blog/en-us/corporate/blog/2017/november/LinkedIn_banner_careeradvice_744x360_2.png', style='width: 240px;')
+              img(src='https://image.slidesharecdn.com/copyoflistudentsguidetolinkedin11-3-16-170222222757/95/the-students-guide-to-linkedin-8-638.jpg?cb=1487827322', style='width: 240px; height: 158px;')
+              img(src='https://d3irk3g7luh32r.cloudfront.net/wp-content/uploads/sites/31/2017/01/linkedinforjobsearch-480x320.jpg?v=4221', style='width: 240px; height: 158px;')
+              br
+        li
+          .collapsible-header
+            i.material-icons place
+            | How it helps?
+          .collapsible-body
+            span
+              | Find the right company for you,Discover jobs that fit at companies you like,See who you know and who could open doors for you,Follow companies to get the latest news and updates.
+        li
+          .collapsible-header
+            i.material-icons whatshot
+            | SignUp here.
+          .collapsible-body
+            span
+              a(href='https://in.linkedin.com/', target='_blank') Connect with business people and ensure your carreer.
+    #modal2.modal
+      .modal-content
+        h4 DevCycle simplified
+        p Be brave enough to try new stuffs
+        .container
+          ul.collapsible.popout
+            li
+              .collapsible-header
+                i.material-icons explore
+                | Cloud Development Environments
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='https://codeanywhere.com/', target='_blank') CodeAnyWhere
+                    a.collection-item(href='https://codenvy.com/', target='_blank') CodeEnvy
+                    a.collection-item(href='https://www.slant.co/topics/713/viewpoints/15/~cloud-ides~jsfiddle', target='_blank') JsFiddle
+                    a.collection-item(href='https://eclipse.org/che/', target='_blank') Eclipse Che
+                    a.collection-item(href='https://jupyter.org/', target='_blank') Jupyter
+                    a.collection-item(href='https://koding.com/', target='_blank') Koding
+                    a.collection-item(href='https://www.slant.co/topics/713/~best-cloud-ides', target='_blank') More..
+            li
+              .collapsible-header
+                i.material-icons filter2
+                | Cloud Storage Solutions
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='https://drive.google.com/start', target='_blank') Google Cloud - 15GB free
+                    a.collection-item(href='https://www.box.com/', target='_blank') Box - 10GB free
+                    a.collection-item(href='https://onedrive.live.com/about/en-gb/', target='_blank') OneDrive - 5GB free
+                    a.collection-item(href='http://www.apple.com/uk/icloud/', target='_blank') Apple iCloud - 5GB free
+                    a.collection-item(href='https://www.dropbox.com/register', target='_blank') DropBox - 2GB free
+            li
+              .collapsible-header
+                i.material-icons laptop_mac
+                | IASS services
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='http://aws.amazon.com/free/', target='_blank') Amazon free tier
+                    a.collection-item(href='http://gogrid.com/go/discover-cloud-infrastructure.php', target='_blank') GoGrid cloud Hosting
+                    a.collection-item(href='http://www.windowsazure.com/en-us/pricing/free-trial/', target='_blank') Microsft Azure
+      .modal-footer
+        a.modal-close.waves-effect.waves-green.btn.btn-primary(href='#!') Close
+    #modal1.modal
+      .modal-content
+        h4 Go through these Use Cases
+        p Be brave enough to try new stuffs
+        .container
+          ul.collapsible.popout
+            li
+              .collapsible-header
+                i.material-icons explore
+                | Developement - Web
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='https://flatuicolors.com/', target='_blank') Flat UI colours
+                    a.collection-item(href='https://materializecss.com/', target='_blank') Materialize CSS - elagant design
+                    a.collection-item(href='https://mdbootstrap.com/', target='_blank') MDBootstrap - boiler plate frontend
+                    a.collection-item(href='http://animista.net/', target='_blank') Animista - animations easy
+                    a.collection-item(href='https://topol.io/', target='_blank') Topol - easy email builder
+                    a.collection-item(href='http://thednp.github.io/kute.js/', target='_blank') JS animation engine
+                    a.collection-item(href='https://material.io/design/', target='_blank') Material Design - Google
+            li
+              .collapsible-header
+                i.material-icons filter2
+                | API Gallery
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='https://market.mashape.com/explore', target='_blank') Mashape Marketplace
+                    a.collection-item(href='https://console.developers.google.com/projectselector/apis/dashboard', target='_blank') Google API console
+                    a.collection-item(href='https://developers.facebook.com/tools/explorer/', target='_blank') Facebook - Graph API console
+                    a.collection-item(href='https://github.com/toddmotto/public-apis', target='_blank') GitHub API list
+            li
+              .collapsible-header
+                i.material-icons laptop_mac
+                | Featured
+              .collapsible-body
+                span
+                  .collection
+                    a.collection-item(href='https://graphql.org/', target='_blank') GraphQL
+                    a.collection-item(href='https://dialogflow.com/', target='_blank') DialogFlow
+                    a.collection-item(href='https://firebase.google.com/', target='_blank') Firebase
+                    a.collection-item(href='https://www.tensorflow.org/', target='_blank') TensorFlow
+      .modal-footer
+        a.modal-close.waves-effect.waves-green.btn.btn-primary(href='#!') Close
+    br
+    br
+    hr.container
+    .carousel
+      a.carousel-item(href='https://code.google.com/codejam/', target='_blank')
+        img(src='http://i1.wp.com/uu.acm.org/wp/wp-content/uploads/2018/03/Code-Jam-Hub-Advertisement-Image.png', style='height: 200px;')
+      a.carousel-item(href='https://www.facebook.com/hackercup/', target='_blank')
+        img(src='https://images.firstpost.com/wp-content/uploads/2013/01/FacebookHackerCup.jpg', style='height: 200px;')
+      a.carousel-item(href='https://icpc.baylor.edu/', target='_blank')
+        img(src='https://news.cs.washington.edu/wp-content/uploads/2017/12/icpc.png', style='height: 200px;')
+      a.carousel-item(href='https://www.hackerearth.com/challenge/competitive/algorithms-india-hacks-2016/', target='_blank')
+        img(src='https://codeforces.com/predownloaded/69/2f/692fbc6cad6841bc826f93487a3e621d51cdd60d.jpg', style='height: 200px;')
+      a.carousel-item(href='https://summerofcode.withgoogle.com/', target='_blank')
+        img(src='https://robertlefebvre42.files.wordpress.com/2017/07/google-summer-of-code-march-3-2017-800x450.png?w=2340', style='height: 200px;')
+    hr.container
+    .container
+      .section
+        // Icon Section
+        #cloudrunz.row
+          .col.s12.m6
+            .icon-block
+              h2.center.light-black-text
+                i.material-icons flash_on
+              h5#cloud.center CloudRunz
+              br
+              .row
+                .card
+                  .card-image
+                    img.responsive-img(src='http://www.w3coding.com/blog/wp-content/uploads/2018/07/web-development.jpg', style='width: 440px;')
+                    a.btn-floating.halfway-fab.waves-effect.waves-light.red.btn.modal-trigger(data-target='modal2')
+                      i.material-icons add
+                  br
+                  .card-content
+                    p
+                      | The world is slowly moving towards cloud.Discover the most popular cloud services and have fun.
+          #devtoolz.col.s12.m6
+            .icon-block
+              h2.center.light-black-text
+                i.material-icons sentiment_very_satisfied
+              h5#dev.center DevToolz
+              br
+              .row
+                .card
+                  .card-image
+                    img.responsive-img(src='https://synivate.com/wp-content/uploads/cloud-computing.jpg', style='width: 443px;height: 240px;')
+                    a.btn-floating.halfway-fab.waves-effect.waves-light.red.btn.modal-trigger(data-target='modal1')
+                      i.material-icons add
+                  br
+                  .card-content
+                    p
+                      | Get your dev life cycle simplified with us.Really awesome tools to experiment.Try now.
+                    br
+      br
+      br
+    .container
+      .section
+        // Icon Section
+        .row
+          .col.s12.m4
+            .icon-block
+              h2.center.light-black-text
+                i.material-icons flash_on
+              h5.center Speeds up development
+              p.light
+                | Most of us tend to waste our valuable time with meaningless stuffs and enjoy playing doodles with them.But there are many useful,handy and flexible areas yet to be explored.When I explored them,the only thing in my mind was "How could someone miss these funz anymore?".No never,It's time to visualize them transparently.That's what YetXplore is all about
+          .col.s12.m4
+            .icon-block
+              h2.center.light-black-text
+                i.material-icons sentiment_very_satisfied
+              h5.center User Experience Focused
+              p.light
+                | A designer will be never intersted to focus on API's or openSorce tools.On the other hand a backend geek will not love fancy css animation but at the end of the day,they need it somewhere but expect someone to make the work easier.Is it possible?Yes,we are going to explore such tools randomly.Our focus is such kind of techies.
+          .col.s12.m4
+            .icon-block
+              h2.center.light-black-text
+                i.material-icons settings_ethernet
+              h5.center Centralised
+              br
+              p.light
+                | What's wrong with a person with good design skills code his own portfolio.Similary why a backend developer should not wish to have some good UI on his own in his dream project.That's why we offer centralised experience.No particular order,all random stuffs to experiment.Just play with them.
+      br
+      br
+    footer.page-footer.black
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Our Moto
+            p.grey-text.text-lighten-4
+              | When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..
+          .col.l3.s12
+            h5.white-text Utilities
+            ul
+              li
+                a.white-text(href='/projects/codemate', target='_blank') CodeMate
+              li
+                a.white-text(href='/projects/offlinides', target='_blank') Offlinides
+              li
+                a.white-text(href='/projects/novicenet', target='_blank') NoviceNet
+              li
+                a.white-text(href='/forum/discusshub', target='_blank') DiscussHub
+          .col.l3.s12
+            h5.white-text Connections
+            ul
+              li
+                a.white-text(href='/projects/codesuite', target='_blank') CodeSuite
+              li
+                a.white-text(href='read.thiran.in', target='_blank') Blog
+              li
+                a.white-text(href='https://accetosaweb.wordpress.com/', target='_blank') ACCETOSA
+              li
+                a.white-text(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration', target='_blank') ACGCET startUp Wallet
+      .footer-copyright
+        .container
+          | Made with love by 
+          a.orange-text.text-lighten-3(href='/', target='_blank') THIRAN webTeam
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+    script(src='js/init.js')
+    script(type='text/javascript').
+      function myFunction() {
+      var x = Math.floor((Math.random() * 10) + 1);
+      $("#demo").val(x);
+      }
+      $(document).ready(function(){
+      $('.modal').modal();
+      $('.carousel').carousel();
+      $('.collapsible').collapsible();
+      $("#button").click(function(){
+      if($("#demo").val()==7||$("#demo").val()==4||$("#demo").val()==9){
+      $("#show1").show();
+      $("#show2").hide();
+      $("#show3").hide();
+      $("#show4").hide();
+      }
+      else if($("#demo").val()==2||$("#demo").val()==6){
+      $("#show2").show();
+      $("#show1").hide();
+      $("#show3").hide();
+      $("#show4").hide();
+      }
+      else if($("#demo").val()==5||$("#demo").val()==1){
+      $("#show3").show();
+      $("#show1").hide();
+      $("#show2").hide();
+      $("#show4").hide();
+      }
+      else{
+      $("#show4").show();
+      $("#show1").hide();
+      $("#show2").hide();
+      $("#show3").hide();
+      }
+      })
+      })
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }

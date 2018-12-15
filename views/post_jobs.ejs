@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>THIRAN GEMS PORTAL - Jobs made easy</title>
+
+  <!-- Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import materialize.css-->
+  <!-- Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style type="text/css">
+
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://camo.githubusercontent.com/32c7c4a15e2ff3600f7e808f2f7997ece27cd572/687474703a2f2f692e696d6775722e636f6d2f484333613675332e676966') 50% 50% no-repeat white;
+}
+</style>
+<body>
+  <div id="loader"></div>
+<div class="content">
+
+  <nav class="pink darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/projects/yetexplore" class="brand-logo"><i class="material-icons">dashboard</i>Post a new job</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/projects/novicenet" target="_blank">Home</a></li>
+        <li><a href="/projects/novicenet" target="_blank">Tour</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/"><i class="material-icons">account_balance</i>THIRAN</a></li>
+        <li><a href="/projects/codesuite" target="_blank"><i class="material-icons">domain</i>CodeSuite</a></li>
+
+        <li><a href="#cloudrunz"><i class="material-icons">language</i>CloudRunz</a></li>
+        <li><a href="#devtoolz"><i class="material-icons">invert_colors</i>DevToolz</a></li>
+        <li><a href="/projects/novicenet" target="_blank"><i class="material-icons">network_check</i>NoviceNet</a></li>
+        <li><a href="/projects/offlinides" target="_blank"><i class="material-icons">library_books</i>Offlinides</a></li>
+        <li><a href="/projects/codemate" target="_blank"><i class="material-icons">graphic_eq</i>CodeMate</a></li>
+         <li><a href="/projects/codemate" target="_blank"><i class="material-icons">account_balance</i>DiscussHub Home</a></li>
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="col s12 m7">
+    <h4 class="header">Job Closure</h4><br>
+    <div class="card horizontal">
+
+      <div class="card-stacked">
+        <div class="card-content">
+
+  <div class="row">
+    <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>  Job Overview</p>
+    <form class="col s12" method="POST" action="/projects/post_jobs">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">data_usage</i>
+          <textarea id="icon_prefix1" class="materialize-textarea" name="job_title"></textarea>
+          <label for="icon_prefix1">Job title </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">device_hub</i>
+          <textarea id="icon_prefix1" class="materialize-textarea" name="company_name"></textarea>
+          <label for="icon_prefix1">Company Name </label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">business</i>
+          <input type="text" id="autocomplete-input1" class="autocomplete" name="location" autocomplete="off">
+          <label for="autocomplete-input1">Location </label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">art_track</i>
+              <select name="domain" id="domain">
+                <option value="" disabled="" selected="">Type of industry</option>
+                <option value="Software -service based">Software - service based</option>
+                <option value="Software - product based">Software - product based</option>
+                <option value="Non - IT private sector">Non- IT private sector</option>
+                <option value="Public sector">Public sector</option>
+                <option value="IIT's/NIT's/IIM's based">IIT's/NIT's/IIM's</option>
+                <option value="Government">Government openings</option>
+
+              </select>
+              <label>Category</label>
+            </div>
+      </div>
+      <div class="row" >
+        <div class="input-field col s12">
+          <i class="material-icons prefix">equalizer</i>
+          <textarea id="job_description" class="materialize-textarea" name="job_description"></textarea>
+          <label for="job_description">Job Description </label>
+        </div>
+      </div>
+      <div class="row">
+
+            <div class="input-field col s12">
+          <i class="material-icons prefix">details</i>
+          <textarea id="job_function" class="materialize-textarea" name="job_function"></textarea>
+          <label for="job_function">Job Function </label>
+        </div>
+      </div>
+
+
+
+      </div>
+      <br>
+      <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>   Employment</p><br>
+      <div class="input-field col s12">
+      <p>
+      <label>
+        <input class="with-gap" name="edu1" type="radio" value="day" />
+        <span>Only day shifts</span>
+      </label>
+       <label>
+        <input class="with-gap" name="edu1" type="radio" value="night" />
+        <span>Only night shifts</span>
+      </label>
+       <label>
+        <input class="with-gap" name="edu1" type="radio" value="either" />
+        <span>Either of two</span>
+      </label>
+    </p>
+  </div><br>
+      <div class="row">
+         <div class="input-field col s6">
+          <i class="material-icons prefix">dialpad</i>
+              <select name="emp_type" id="emp_type">
+                <option value="" disabled="" selected="">Employment Type </option>
+                <option value="1">Full time</option>
+                <option value="2">Part time</option>
+                <option value="3">Contract</option>
+                <option value="4">Temporary</option>
+                <option value="5">Volunteer</option>
+                <option value="6">Internship</option>
+              </select>
+              <label>Mode</label>
+            </div>
+             <div class="input-field col s6">
+          <i class="material-icons prefix">add</i>
+              <select name="application" id="application">
+                <option value="" disabled="" selected="">How to apply? </option>
+                <option value="1">E-Mail</option>
+                <option value="2">Website</option>
+                <option value="3">Linkedin</option>
+                <option value="4">Post</option>
+              </select>
+              <label>Procedure</label>
+            </div>
+
+      </div>
+
+      <div class="row" id="salary_hide" style="display: none;">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">chevron_right</i>
+          <input id="job_duration" type="number" class="validate" name="job_duration">
+          <label for="job_duration">Duration</label>
+        </div>
+
+         <div class="input-field col s6"><br>
+         <p>
+      <label>
+        <input type="checkbox" id="salary_choice" name="salary_choice" />
+        <span>Mention salary/embursements</span>
+      </label>
+    </p>
+      </div>
+    </div>
+     <div class="input-field col s6" id="pay_hide" style="display: none;">
+          <i class="material-icons prefix">chevron_right</i>
+          <input id="salary" type="number" class="validate" name="salary">
+          <label for="salary">Salary</label>
+        </div>
+      <div class="row">
+        <div class="input-field col s6" id="email_hide" style="display: none;">
+          <i class="material-icons prefix">contact_mail</i>
+          <input id="email" type="email" class="validate" name="email">
+          <label for="email">Email</label>
+        </div>
+         <div class="input-field col s6" id="url_hide" style="display: none;">
+          <i class="material-icons prefix">link</i>
+          <input id="url" type="url" class="validate" name="url">
+          <label for="url">URL</label>
+        </div>
+      </div>
+      <div class="row">
+       <div class="input-field col s6" style="display: none;" id="phoneno_hide">
+          <i class="material-icons prefix">textsms</i>
+          <input id="phoneno" type="number" class="validate" name="phoneno">
+          <label for="phoneno">Contact no</label>
+        </div>
+       <div class="input-field col s6" id="postal_address_hide" style="display: none;">
+          <i class="material-icons prefix">drafts</i>
+          <textarea id="postal_address" class="materialize-textarea" name="postal_address"></textarea>
+          <label for="postal_address">Postal address </label>
+        </div>
+      </div>
+
+       <br>
+      <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i> Eligibility & skills required</p><br>
+      <div class="row">
+       <div class="input-field col s6"><br>
+         <p>
+      <label>
+
+        <input type="checkbox" id="arrears" name="arrears" />
+        <span>No history of arrears</span>
+      </label>
+    </p>
+  </div>
+
+  <div class="input-field col s6">
+
+    <p>
+      <label>
+        <input type="checkbox" id="cgpa" name="cgpa" />
+        <span>CGPA considered</span>
+      </label>
+    </p>
+  </div>
+   <div style="display: none;" id="cgpa_hide">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">grade</i>
+        <label for="score">Minimum CGPA</label><br><br>
+      </div><br><br>
+        <div class="input-field col s6">
+
+        <p class="range-field">
+      <input type="range" id="test5" min="0" max="10" name="min_cgpa" />
+
+    </p>
+    </div>
+     </div>
+       </div>
+
+        <div class="input-field col s6" >
+          <i class="material-icons prefix">devices_other</i>
+          <label>Software tools & technologies</label><br>
+        <div class="chips chips-autocomplete" id="software_skills" name="software_skills"></div>
+      </div>
+
+      <div class="input-field col s6" >
+        <i class="material-icons prefix">extension</i>
+        <label>Other skillSet</label><br>
+        <div class="chips chips-autocomplete" id="other_skills" name="other_skills"></div>
+      </div>
+      </div>
+
+          <br>
+      <p style="margin-left: 20px"><i class="material-icons prefix">directions_bike</i>   Experience</p><br>
+
+        <div class="row">
+          <div class="input-field col s6" style="margin-left: 20px">
+                <p>
+      <label>
+        <input type="checkbox" id="freshers" name="freshers" />
+        <span>Freshers welcomed</span>
+      </label>
+    </p>
+          </div>
+          <div class="input-field col s4"  id="seniority_hide">
+               <i class="material-icons prefix">filter_tilt_shift</i>
+            <select name="seniority" id="seniority">
+                <option value="" disabled="" selected="">Seniority</option>
+                <option value="Internee">Internee</option>
+                <option value="Entry-Level">Entry-level</option>
+                <option value="Associate">Associate</option>
+                <option value="Mid-senior-Level">Mid-senior level</option>
+                <option value="Director">Director</option>
+                <option value="Executive">Executive</option>
+
+              </select>
+              <label>Level</label>
+          </div>
+        </div>
+
+      <div class="card-action">
+         <div class="row center">
+        <button class="btn-large waves-effect waves pink darken-3" type="submit">Post Now</button> <br><br>
+
+      </div>
+    </form>
+  </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<br>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Our Moto</h5>
+          <p class="grey-text text-lighten-4">When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Utilities</h5>
+          <ul>
+            <li><a class="white-text" href="/projects/codemate" target="_blank">CodeMate</a></li>
+            <li><a class="white-text" href="/projects/offlinides" target="_blank">Offlinides</a></li>
+            <li><a class="white-text" href="/projects/novicenet" target="_blank">NoviceNet</a></li>
+            <li><a class="white-text" href="/explore" target="_blank">DiscussHub</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connections</h5>
+          <ul>
+            <li><a class="white-text" href="#!">CodeSuite</a></li>
+            <li><a class="white-text" href="#!">Blog</a></li>
+            <li><a class="white-text" href="#!">ACCETOSA</a></li>
+            <li><a class="white-text" href="#!">ACGCET startUp Wallet</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with love by <a class="orange-text text-lighten-3" href="http://materializecss.com">THIRAN webTeam</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <script src="js/init.js"></script>
+<script type="text/javascript">
+ $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+      data: {
+        'Hadoop': null,
+        'MySQL': null,
+        'Oracle': null,
+        'PHP':null,
+        'Node.js':null,
+        'JavaScript':null,
+        'matlab':null,
+        'python':null,
+        'java':null,
+        '.NET':null,
+        'C#':null,
+        'Excel':null,
+        'amazon aws':null,
+        'jQuery':null,
+        'c':null,
+        'c++':null,
+        'deluge':null,
+        'blogging':null,
+        'UI/UX designing':null,
+        'Photoshop':null,
+        'Animations':null,
+        'android':null,
+        'flutter':null,
+        'redux':null,
+        'react native':null,
+        'react':null,
+        'cassandra':null,
+        'angularjs':null,
+        'linux':null,
+        'algorithms':null,
+        'mongodb':null,
+        'SQL':null,
+        'ruby':null
+
+
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+
+
+
+
+  for (i = 2030; i >= new Date().getFullYear(); i--)
+{
+    $('#yearpicker').append($('<option />').val(i).html(i));
+}
+ setTimeout(function() {
+    fullyLoaded();
+    }, 1000);
+
+function fullyLoaded() {
+    $("#loader").fadeOut("slow");
+}
+
+
+
+
+
+
+$(document).ready(function(){
+
+$('#cgpa').click(function(){
+  $('#cgpa_hide').fadeToggle();
+})
+
+$('#application').on('change',function(){
+  if($(this).val()=="1"){
+    $("#email_hide").show();
+    $("#postal_address_hide").hide();
+    $("#url_hide").hide();
+    $("#phoneno_hide").hide();
+  }
+  else if($(this).val()=="2")
+  {
+    $("#url_hide").show();
+    $("#postal_address_hide").hide();
+    $("#phoneno_hide").hide();
+    $("#email_hide").hide();
+  }
+  else if($(this).val()=="3")
+  {
+    $("#url_hide").show();
+    $("#postal_address_hide").hide();
+    $("#phoneno_hide").hide();
+    $("#email_hide").hide();
+  }else if($(this).val()=="4")
+  {
+    $("#url_hide").hide();
+    $("#postal_address_hide").show();
+    $("#phoneno_hide").show();
+    $("#email_hide").hide();
+  }
+});
+
+$('#freshers').on('click',function(){
+  $("#seniority_hide").fadeToggle();
+})
+
+$('#emp_type').on('change',function(){
+  if($(this).val()=="1"||$(this)=="2")
+  {
+    $("#pay_hide").show();
+    $("#salary_hide").hide();
+  }
+  else{
+    $("#pay_hide").hide();
+    $("#salary_hide").show();
+  }
+})
+
+$("#salary_choice").on('click',function(){
+  $("#pay_hide").fadeToggle();
+})
+   $('.datepicker').datepicker();
+ $('select').formSelect();
+    $('input.autocomplete').autocomplete({
+      data: {
+       "Ariyalur":null,
+       "Chennai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Coimbatore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cuddalore":null,"Dharmapuri":null,"Dindigal":null,"Erode":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kancheepuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Karur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Krishnagiri":null,"Madurai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Nagapattinam":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"kanyakumari":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Namakkal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Perambalur":null,"Pudukottai":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ramanathapuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Salem":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Sivagangai":null,"Thanjavur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Theni":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruvallur":null,"Thiruvarur":null,"Tuticorin":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Tirunelveli":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruchirapalli":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Tiruppur":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Thiruvannamalai":null,"The Nilgiris":null,"vellore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Vilupuram":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Virudhunagar":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Afghanistan":null,
+      "Albania":null,"Algeria":null,"Andorra":null,"Angola":null,"Anguilla":null,"Antigua &amp; Barbuda":null,"Argentina":null,"Armenia":null,"Aruba":null,"Australia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Austria":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Azerbaijan":null,"Bahamas":null,"Bahrain":null,"Bangladesh":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Barbados":null,"Belarus":null,"Belgium":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Belize":null,"Benin":null,"Bermuda":null,"Bhutan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Bolivia":null,"Bosnia &amp; Herzegovina":null,"Botswana":null,"Brazil":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"British Virgin Islands":null,"Brunei":null,"Bulgaria":null,"Burkina Faso":null,"Burundi":null,"Cambodia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cameroon":null,"Cape Verde":null,"Cayman Islands":null,"Chad":null,"Chile":null,"China":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Colombia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Congo":null,"Cook Islands":null,"Costa Rica":null,"Cote D Ivoire":null,"Croatia":null,"Cruise Ship":null,"Cuba":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Cyprus":null,"Czech Republic":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Denmark":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Djibouti":null,"Dominica":null,"Dominican Republic":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ecuador":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Egypt":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"El Salvador":null,"Equatorial Guinea":null,"Estonia":null,"Ethiopia":null,"Falkland Islands":null,"Faroe Islands":null,"Fiji":null,"Finland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"France":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"French Polynesia":null,"French West Indies":null,"Gabon":null,"Gambia":null,"Georgia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Germany":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ghana":null,"Gibraltar":null,"Greece":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Greenland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Grenada":null,"Guam":null,"Guatemala":null,"Guernsey":null,"Guinea":null,"Guinea Bissau":null,"Guyana":null,"Haiti":null,"Honduras":null,"Hong Kong":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Hungary":null,"Iceland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"India":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Indonesia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Iran":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Iraq":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Ireland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Isle of Man":null,"Israel":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Italy":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Jamaica":null,"Japan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Jersey":null,"Jordan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kazakhstan":null,"Kenya":null,"Kuwait":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Kyrgyz Republic":null,"Laos":null,"Latvia":null,"Lebanon":null,"Lesotho":null,"Liberia":null,"Libya":null,"Liechtenstein":null,"Lithuania":null,"Luxembourg":null,"Macau":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Macedonia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Madagascar":null,"Malawi":null,"Malaysia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Maldives":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Mali":null,"Malta":null,"Mauritania":null,"Mauritius":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Mexico":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Moldova":null,"Monaco":null,"Mongolia":null,"Montenegro":null,"Montserrat":null,"Morocco":null,"Mozambique":null,"Namibia":null,"Nepal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Netherlands":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Netherlands Antilles":null,"New Caledonia":null,"New Zealand":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Nicaragua":null,"Niger":null,"Nigeria":null,"Norway":null,"Oman":null,"Pakistan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Palestine":null,"Panama":null,"Papua New Guinea":null,"Paraguay":null,"Peru":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Philippines":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Poland":null,"Portugal":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Puerto Rico":null,"Qatar":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Reunion":null,"Romania":null,"Russia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Rwanda":null,"Saint Pierre &amp; Miquelon":null,"Samoa":null,"San Marino":null,"Satellite":null,"Saudi Arabia":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Senegal":null,"Serbia":null,"Seychelles":null,"Sierra Leone":null,"Singapore":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Slovakia":null,"Slovenia":null,"South Africa":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"South Korea":null,"Spain":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Sri Lanka":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"St Kitts &amp; Nevis":null,"St Lucia":null,"St Vincent":null,"St. Lucia":null,"Sudan":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Suriname":null,"Swaziland":null,"Sweden":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Switzerland":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Syria":null,"Taiwan":null,"Tajikistan":null,"Tanzania":null,"Thailand":null,"Timor L'Este":null,"Togo":null,"Tonga":null,"Trinidad &amp; Tobago":null,"Tunisia":null,"Turkey":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Turkmenistan":null,"Turks &amp; Caicos":null,"Uganda":null,"Ukraine":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"United Arab Emirates":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"United Kingdom":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Uruguay":null,"Uzbekistan":null,"Venezuela":null,"Vietnam":'https://www.utalkphil.com/assets/website_resource/images/loading.gif',"Virgin Islands (US)":null,"Yemen":null,"Zambia":null,"Zimbabwe":null
+      },
+    });
+  });
+
+</script>
+  </body>
+</html>

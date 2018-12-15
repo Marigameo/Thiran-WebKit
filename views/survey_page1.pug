@@ -1,0 +1,171 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title Thiran Survey - Share your opinions
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Import materialize.css
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://camo.githubusercontent.com/32c7c4a15e2ff3600f7e808f2f7997ece27cd572/687474703a2f2f692e696d6775722e636f6d2f484333613675332e676966') 50% 50% no-repeat white;
+      }
+  body
+    #loader
+    .content
+      nav.light-blue.lighten-1(role='navigation')
+        .nav-wrapper.container
+          a#logo-container.brand-logo(href='/projects/yetexplore')
+            i.material-icons dashboard
+            | SurveyIt
+          ul.right.hide-on-med-and-down
+            li
+              a(href='/projects/novicenet', target='_blank') DiscussHub
+          ul#nav-mobile.sidenav
+            li
+              a(href='/')
+                i.material-icons account_balance
+                | THIRAN
+            li
+              a(href='/projects/codesuite', target='_blank')
+                i.material-icons domain
+                | CodeSuite
+            li
+              a(href='#cloudrunz')
+                i.material-icons language
+                | CloudRunz
+            li
+              a(href='#devtoolz')
+                i.material-icons invert_colors
+                | DevToolz
+            li
+              a(href='/projects/novicenet', target='_blank')
+                i.material-icons network_check
+                | NoviceNet
+            li
+              a(href='/projects/offlinides', target='_blank')
+                i.material-icons library_books
+                | Offlinides
+            li
+              a(href='/projects/codemate', target='_blank')
+                i.material-icons graphic_eq
+                | CodeMate
+            li
+              a(href='/projects/codemate', target='_blank')
+                i.material-icons account_balance
+                | DiscussHub Home
+          a.sidenav-trigger(href='#', data-target='nav-mobile')
+            i.material-icons menu
+      .container
+        .col.s12.m7
+          h4.header Please share some basic details for better understanding..
+          br
+          .card.horizontal
+            .card-stacked
+              .card-content
+                .row
+                  form.col.s12(method='POST', action='/projects/student_survey_page1')
+                    .row
+                      .input-field.col.s12
+                        i.material-icons.prefix face
+                        textarea#icon_prefix1.materialize-textarea(name='name')
+                        label(for='icon_prefix1') Your Name 
+                    .row
+                      .input-field.col.s6
+                        .input-field.col.s12
+                          i.material-icons.prefix add_location
+                          select(name='dep')
+                            option(value='', disabled='', selected='') Department
+                            option(value='1') MECH
+                            option(value='2') CIVIL
+                            option(value='3') ECE
+                            option(value='4') EEE
+                            option(value='5') CSE
+                            option(value='6') MCA
+                          label Home of passion
+                      .input-field.col.s6
+                        .input-field.col.s12
+                          i.material-icons.prefix add_circle_outline
+                          select(name='year')
+                            option(value='', disabled='', selected='') Year
+                            option(value='1') First Year
+                            option(value='2') Second year
+                            option(value='3') Third year
+                            option(value='4') Fourth year
+                          label Year of study
+                    .row
+                      .input-field.col.s6
+                        i.material-icons.prefix chat
+                        textarea#icon_prefix3.materialize-textarea(name='phoneno')
+                        label(for='icon_prefix3') PhoneNo
+                      .input-field.col.s6
+                        i.material-icons.prefix contact_mail
+                        textarea#icon_prefix4.materialize-textarea(name='email')
+                        label(for='icon_prefix4') Email
+                    .card-action
+                      .row.center
+                        button.btn-large.waves-effect.waves-light.blue(type='submit') Jump to next
+                        br
+                        br
+      br
+      footer.page-footer.black
+        .container
+          .row
+            .col.l6.s12
+              h5.white-text Our Moto
+              p.grey-text.text-lighten-4
+                | When are really passionate about something, hoping miracle to happen will push ourself to explore more,widen our skills and just move on.If we are introvert to discover and experiment only then we fail.We hope this should never happen when paired with us..
+            .col.l3.s12
+              h5.white-text Utilities
+              ul
+                li
+                  a.white-text(href='/projects/codemate', target='_blank') CodeMate
+                li
+                  a.white-text(href='/projects/offlinides', target='_blank') Offlinides
+                li
+                  a.white-text(href='/projects/novicenet', target='_blank') NoviceNet
+                li
+                  a.white-text(href='/explore', target='_blank') DiscussHub
+            .col.l3.s12
+              h5.white-text Connections
+              ul
+                li
+                  a.white-text(href='#!') CodeSuite
+                li
+                  a.white-text(href='#!') Blog
+                li
+                  a.white-text(href='#!') ACCETOSA
+                li
+                  a.white-text(href='#!') ACGCET startUp Wallet
+        .footer-copyright
+          .container
+            | Made with love by 
+            a.orange-text.text-lighten-3(href='http://materializecss.com') THIRAN webTeam
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+    script(src='js/init.js')
+    script(type='text/javascript').
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }
+      $(document).ready(function(){
+      $('.modal').modal();
+      $('.carousel').carousel();
+      $('.collapsible').collapsible();
+      $('select').formSelect();
+      });

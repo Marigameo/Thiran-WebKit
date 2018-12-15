@@ -1,0 +1,209 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+    title  DiscussHub - Platform to express
+  style(type='text/css').
+    .text{
+    font-family: Proxima Nova;
+    color: white;
+    }
+    .a:hover{
+    color: hotpink;
+    }
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href='/projects/home' target="_blank") Thiran 
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='/forumhome')
+              i.fa.fa-bank
+              |   Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/projects/about') About THIRAN
+          li.nav-item
+            a.nav-link(href='https://accetosaweb.wordpress.com/' target="_blank") ACCETOSA
+          li.nav-item
+            a.nav-link(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration' target="_blank") StartUp Wallet
+    .container
+      br
+      .card
+        .card-header
+          
+          | Welcome to DiscussHub 
+          i.material-icons golf_course
+        .card-body
+          h5.card-title 
+            | A place to share everything
+          
+          
+          p.card-text THIRAN is all about sharing and teamwork
+          
+          
+
+      br
+      h6.text-dark  #thiran
+      br
+      .alert.alert-success(role='alert')
+        h4.alert-heading #{post.title}
+        small.text-info  written by #{post.username}       
+        small.float-right.text-success on #{post.date}        
+        p
+          div.text-secondary #{post.body}
+        hr
+        if user
+          if user.id == post.author
+            p.mb-0
+              a.btn.btn-outline-primary(href='/forum/edit/'+post._id) Edit 
+              a.btn.btn-outline-danger.delete-post(href='#',data-id=post._id style='margin:10px;') Delete
+              br
+              br          
+              span
+                i.fa.fa-thumbs-o-up
+                |  Upvote
+                
+              button(class='btn btn-default upvote_cnt-'+post._id)
+              span
+                |   Downvote 
+                i.fa.fa-thumbs-o-down
+              button(class='btn btn-default downvote_cnt-'+post._id) 
+              
+            
+    br
+    nav.navbar.navbar-bottom.navbar-expand-sm.navbar-dark.bg-dark
+      // Footer Links
+      .container-fluid.text-center.text-md-left
+        // Grid row
+        .row
+          // Grid column
+          .col-md-6.mt-md-0.mt-3
+            // Content
+            br
+            h5.text-uppercase.text THIRAN
+            p.text Express,encourage and grow together.
+            p.text THIRAN is all about sharing and connecting interests.
+          // Grid column
+          hr.clearfix.w-100.d-md-none.pb-3
+          // Grid column
+          .col-md-3.mb-md-0.mb-3
+            // Links
+            br
+            h5.text-uppercase.text Utilities
+            ul.list-unstyled
+              li
+                a.text.a(href='/projects/codemate' target="_blank") 
+                  i.fa.fa-angle-right 
+                  |   CodeMate
+              li
+                a.text.a(href='/projects/offlinides' target="_blank")
+                  i.fa.fa-angle-right 
+                  |  Offlinides
+              li
+                a.text.a(href='/projects/novicenet' target="_blank") 
+                  i.fa.fa-angle-right 
+                  |  NoviceNet
+              li
+                a.text.a(href='/projects/yetxplore' target="_blank") 
+                  i.fa.fa-angle-right 
+                  |   YetExplore
+          // Grid column
+          // Grid column
+          .col-md-3.mb-md-0.mb-3
+            // Links
+            br
+            h5.text-uppercase.text.a Family
+            ul.list-unstyled
+              li
+                a.text.a(href='https://accetosaweb.wordpress.com/' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |   ACCETOSA
+              li
+                a.text.a(href='https://read.thiran.in' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |  THIRAN Blog
+              li
+                a.text.a(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |  StartUp Wallet
+              li
+                a.text.a(href='/projects/codesuite' target="_blank") 
+                  i.fa.fa-circle-o-notch
+                  |  CodeSuite
+          // Grid column
+        // Grid row
+      // Footer Links
+      br
+      // Copyright
+      .footer-copyright.text-center.py-3.text
+        | © 2018 Copyright:
+        a.text.a(href='/') thiran.in
+      // Copyright
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+    script(type='text/javascript').
+      
+      
+      $(document).ready(function(){
+      $('.delete-post').on('click', function(e){
+      $target = $(e.target);
+      const id = $target.attr('data-id');
+      $.ajax({
+      type:'DELETE',
+      url: '/forum/'+id,
+      success: function(response){
+      alert('Deleting Post');
+      window.location.href='/forumhome';
+      },
+      error: function(err){
+      console.log(err);
+      }
+      });
+      });
+      $('.upvote').on('click',function(){
+      var id = $(this).data('id');
+      // console.log(id);
+      $.ajax({
+      url:'/forum/addupvote/'+id,
+      method:"POST"
+      });
+      });
+      $('.downvote').on('click',function(){
+      var id = $(this).data('id');
+      // console.log(id);
+      $.ajax({
+      url:'/forum/adddownvote/'+id,
+      method:"POST"
+      });
+      });
+      refresh();
+      });
+      function refresh(){
+      $.ajax({
+      url: "/forum/getvotes/",
+      contentType: "application/json",
+      method: "GET",
+      success: function(response) {
+      // console.log(response);
+      $.each(response, function(index) {
+      // console.log(response[index].likes);
+      $(".upvote_cnt-" + response[index]._id).first().html( response[index].upvotes );
+      $(".downvote_cnt-" + response[index]._id).first().html( response[index].downvotes );
+      });
+      setTimeout(refresh, 500);
+      }
+      });
+      }

@@ -1,0 +1,170 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(http-equiv='x-ua-compatible' content='ie=edge')
+  title THIRAN DiscussHub
+  // Font Awesome
+  // Font Awesome
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  // Bootstrap core CSS
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
+  // Material Design Bootstrap
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css' rel='stylesheet')
+  // Your custom styles (optional)
+  link(href='/css/style1.min.css' rel='stylesheet')
+  style(type='text/css').
+// Navbar
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.white.scrolling-navbar
+  .container
+    // Brand
+    a.navbar-brand.waves-effect(href='/projects/home' target='_blank')
+      strong.blue-text THIRAN
+    // Collapse
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    // Links
+    #navbarSupportedContent.collapse.navbar-collapse
+      // Left
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link.waves-effect(href='#')
+            | DiscussHub
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link.waves-effect(href='/projects/about' target='_blank') About THIRAN
+        li.nav-item
+          a.nav-link.waves-effect(href='https://accetosaweb.wordpress.com/' target='_blank') ACCETOSA
+        li.nav-item
+          a.nav-link.waves-effect(href='https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration' target='_blank') StartUp Wallet
+      // Right
+      ul.navbar-nav.nav-flex-icons
+        li.nav-item
+          a.nav-link.waves-effect(href="/projects/codesuite" target="_blank")
+            span.badge.red.z-depth-1.mr-1  Codesuite
+        li.nav-item 
+          a.nav-link.waves-effect(aria-hidden='true' href="/projects/contact" target="_blank")
+            i.fa.fa-paper-plane-o
+            span.clearfix.d-none.d-sm-inline-block Contact 
+        li.nav-item
+          a.nav-link.waves-effect(href='https://www.facebook.com/accetthiran' target='_blank')
+            i.fa.fa-facebook
+        li.nav-item
+          a.nav-link.waves-effect(href='https://twitter.com/accetthiran?lang=en' target='_blank')
+            i.fa.fa-twitter
+        li.nav-item
+          a.nav-link.border.border-light.rounded.waves-effect(href='https://github.com/mdbootstrap/bootstrap-material-design' target='_blank')
+            i.fa.fa-github.mr-2
+            | THIRAN GitHub
+// Navbar
+// Main layout
+main.mt-5.pt-4
+  .container.dark-grey-text.mt-5
+    // Grid row
+    .row.wow.fadeIn
+      // Grid column
+      .col-md-6.mb-4
+        img.img-fluid(src='https://fortunedotcom.files.wordpress.com/2015/10/gettyimages-187921369-1.jpg' alt='' style='height: 330px')
+      // Grid column
+      // Grid column
+      .col-md-6.mb-4
+        // Content
+        .p-4
+          .mb-3
+            a(href='#')
+              span.badge.purple.mr-1 New
+            a(href='#')
+              span.badge.blue.mr-1 Posts
+            a(href='#')
+              span.badge.red.mr-1 Updates
+          p.lead
+            span.mr-1
+              del Name
+            span You are free to go ananymous
+          p.lead.font-weight-bold Discuss What?
+          p
+            | Anything you want,the thing you care most,the stuff you expect from us,your feedbacks,your guidance,experience,love with thiran and much more!
+            | Our main aim is to make thiran active all through the year.It&apos;s not build in a day thus it&apos;s not fair to operate in a particular month or year.
+          form.d-flex.justify-content-left
+            // Default input
+            a.btn.btn-primary.btn-md.my-0.p(href="/forumhome")
+              | All Posts
+              i.fa.fa-paper-plane-o(aria-hidden='true')
+            a.btn.btn-primary.btn-md.my-0.p(href='/forum/add' target='_blank')
+              | Write a story
+              i.fa.fa-share-alt(aria-hidden='true')
+        // Content
+      // Grid column
+    // Grid row
+    hr
+    // Grid row
+    .row.d-flex.justify-content-center.wow.fadeIn
+      // Grid column
+      .col-md-6.text-center
+        h4.my-4.h4 How discussion or sharing thoughts could help you?
+        p
+          | What if I wish to share negative feedback on a particular event or management,is there any ananymous way,such that it doesn&apos;t hurt anyone.:)Ofcourse,that&apos;s the reason we never get any true feedbacks on our activity which may help us a lot.Thus came DiscussHub - the forum to share everything.Rise Up Now !
+      // Grid column
+    // Grid row
+    // Grid row
+    .row.wow.fadeIn
+      // Grid column
+      .col-lg-4.col-md-12.mb-4
+        img.img-fluid(src='https://blog.swapcard.com/wp-content/uploads/2016/10/online-community-1.jpg' alt='' style='height: 200px')
+      // Grid column
+      // Grid column
+      .col-lg-4.col-md-6.mb-4
+        img.img-fluid(src='http://toosmall.org/body/community-banner.png' alt='')
+      // Grid column
+      // Grid column
+      .col-lg-4.col-md-6.mb-4
+        img(src='https://storage.googleapis.com/creator-academy-assets/build-a-sustainable-community/build-a-sustainable-community-450-800.jpg' alt='' style='height: 200px;width: 300px')
+      // Grid column
+    // Grid row
+// Main layout
+// Footer
+footer.page-footer.text-center.font-small.mt-4.wow.fadeIn
+  // Call to action
+  .pt-4
+    a.btn.btn-outline-white(href='/projects/kbase' target='_blank' role='button')
+      | Have doubts ? 
+      i.fa.fa-puzzle-piece(aria-hidden='true' style='padding-left: 5px;')
+    a.btn.btn-outline-white(href='/projects/contact' target='_blank' role='button')
+      | Reach us 
+      i.fa.fa-heart(aria-hidden='true' style='padding-left: 5px;')
+  // /.Call to action
+  hr.my-4
+  // Social icons
+  .pb-4
+    a(href='https://www.facebook.com/accetthiran' target='_blank')
+      i.fa.fa-facebook.mr-3
+    a(href='https://twitter.com/accetthiran?lang=en' target='_blank')
+      i.fa.fa-twitter.mr-3
+    a(href='https://www.youtube.com/user/ACCETthiran' target='_blank')
+      i.fa.fa-youtube.mr-3
+    a(href='https://plus.google.com/116707854087495862030' target='_blank')
+      i.fa.fa-google-plus.mr-3
+    a(href='https://github.com/Thiran2K18/Thiran2K18' target='_blank')
+      i.fa.fa-github.mr-3
+    a(href='https://www.linkedin.com/in/mariappan-s-82905613a/' target='_blank')
+      i.fa.fa-linkedin.mr-3
+    a(href='https://www.instagram.com/thiran2k18/?hl=en' target='_blank')
+      i.fa.fa-instagram.mr-3
+  // Social icons
+  // Copyright
+  .footer-copyright.py-3
+    | &copy; 2018 Copyright:
+    a(href='/' target='_blank')  thiran.in 
+  // /.Copyright
+// /.Footer
+// SCRIPTS
+// JQuery
+script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+// Bootstrap tooltips
+script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+// Bootstrap core JavaScript
+script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+// MDB core JavaScript
+script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+// Initializations
+script(type='text/javascript').

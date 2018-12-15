@@ -1,0 +1,113 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Create New Account - thiran.in
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet')
+  style(type='text/css').
+    .Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    }
+    .Absolute-Center.is-Responsive {
+    width: 50%;
+    height: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+    }
+    .container{
+    padding:35px;
+    }
+    .c1{
+    font-weight:400;
+    color: #212121;
+    }
+    .c2{
+    color: #880e4f;
+    }
+    body{
+      font-family:Roboto;
+    }
+  body
+    // Start your project here
+    html.full-height(lang='en')
+      body
+        .container
+          .card
+            // Material form login
+            .card-body
+              img(src="/img/logo.png" class="img-fluid mx-auto d-block" alt="Responsive image" width='300px' height='250px')
+              form(method='POST', action='/users/register')
+                p.h3.text-center.mb-4.c1 What is not started can never be finished
+                hr(align='center', width='30%')
+                p.h4.text-center.mb-4.font-weight-light.c2 Join hands with us today
+                .input-container.w-50.mx-auto
+                  #errors
+                    if errors
+                      ul(class='alert-error')
+                        each error, i in errors
+                          div(class="alert alert-danger") #{error} 
+                    if success
+                      div(class="alert alert-success") #{success} 
+                        a(href='/users/login') Login 
+                  // Material input email
+                  .md-form
+                    i.fa.fa-user.prefix.grey-text(aria-hidden='true')
+                    input#materialFormUsernameEx.form-control(type='text',name='username')
+                    label(for='materialFormLoginUsernameEx') Username
+                  .md-form
+                    i.fa.fa-envelope.prefix.grey-text
+                    input#materialFormLoginEmailEx.form-control(type='email',name='email')
+                    label(for='materialFormLoginEmailEx') Email
+
+                  // Material input password
+                  .md-form
+                    i.fa.fa-lock.prefix.grey-text
+                    input#materialFormLoginPasswordEx1.form-control(type='password',name='password',aria-describedby='passwordHelpInlineMD')
+                    label(for='materialFormLoginPasswordEx1') Password
+                      small#passwordHelpInlineMD.text-muted(style='position: relative;left: 0; padding-left: 258px; padding-bottom: 25px;')
+                        | Manimum 8 characters
+                  .md-form
+                    i.fa.fa-unlock-alt.prefix.grey-text(aria-hidden='true')
+                    input#materialFormLoginPasswordEx2.form-control(type='password',name='password2')
+                    label(for='materialFormLoginPasswordEx2') Confirm Password
+                  .form-check.mb-4
+                    input#radioWithGap4.form-check-input.with-gap(name='role', type='radio' value='student')
+                    label.form-check-label(for='radioWithGap4') Student
+                  .form-check.mb-4
+                    input#radioWithGap5.form-check-input.with-gap(name='role', type='radio' value='alumni')
+                    label.form-check-label(for='radioWithGap5') Alumni
+                
+                .text-center.mt-4
+                  button.btn.btn-unique(type='submit' value='Submit') Sign Up Now
+                p(style='text-align: center;') Or
+                hr(align='rigth', width='30%')
+                div(align='center')
+                  a(class="gplus-ic mr-3" href='/users/google')
+                    i(class="fa fa-lg fa-google-plus" style='color:#0d47a1')
+                  a(href='/users/google') Sign In with Google
+                  br
+                  br
+                  p(style='text-align: center;color:#1C2331') Already have a Thiran account?
+                  a(href='/users/login') Login Now
+              // Material form register
+          
+
+    // JQuery
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // Bootstrap tooltips
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+    // Bootstrap core JavaScript
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+    // MDB core JavaScript
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')

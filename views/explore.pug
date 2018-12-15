@@ -1,0 +1,580 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Thiran Explore
+    // Font Awesome
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css', rel='stylesheet')
+    // Your custom styles (optional)
+    link(href='css/style1.min.css', rel='stylesheet')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://camo.githubusercontent.com/32c7c4a15e2ff3600f7e808f2f7997ece27cd572/687474703a2f2f692e696d6775722e636f6d2f484333613675332e676966') 50% 50% no-repeat white;
+      }
+      html,
+      body,
+      header,
+      .carousel {
+      height: 60vh;
+      }
+      @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .carousel {
+      height: 100vh;
+      }
+      }
+      @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .carousel {
+      height: 100vh;
+      }
+      }
+      @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+      }
+      }
+      body{
+      font-style: Proxima Nova;
+      }
+  body
+    #loader
+    nav.navbar.navbar-expand-lg.navbar-dark.indigo.fixed-top.scrolling-navbar
+      // Navbar brand
+      a.navbar-brand(href='#') THIRAN
+      // Collapse button
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#basicExampleNav', aria-controls='basicExampleNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      // Collapsible content
+      #basicExampleNav.collapse.navbar-collapse
+        // Links
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/')
+              | Home
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/projects/about') Tour
+          // Dropdown
+          li.nav-item.dropdown
+            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Resources
+            .dropdown-menu.dropdown-primary(aria-labelledby='navbarDropdownMenuLink')
+              a.dropdown-item(href='/projects/kbase', target='_blank') Knowledgebase
+              a.dropdown-item(href='http://read.thiran.in/', target='_blank') Blog
+              a.dropdown-item(href='/projects/survey',target='blank') Attend survey
+              a.dropdown-item(href='/projects/jobs',target='blank') Jobs Portal
+        .md-form.my-0
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/users/login') Login
+            li.nav-item
+              a.nav-link(href='/users/register') SIGN UP NOW
+      // Collapsible content
+    // Carousel Wrapper
+    #carousel-example-1z.carousel.slide.carousel-fade(data-ride='carousel')
+      // Card
+      .card.card-image.mb-3(style='padding-top: 100px;')
+        img.img-fluid.mx-auto.d-block.mb-2(src='/img/logo.png', alt='Responsive image', width='300px', height='250px')
+        // Heading & Description
+        .wow.fadeIn.container
+          // Section heading
+          h2.h3.text-center.mb-3.pb-3 CREATIVITY REDEFINED
+          // Section description
+          h5#demo.text-center  
+          h5.text-center.mb-3.pb-3 Dare to dream !
+          p.text-center
+            | Inspiring and illumining intellect by providing a project based collaborative platform to experiment and experience enlightened education
+          p.text-center.mb-5.pb-3 Thiran knows the way, goes the way and shows the way
+      // Card
+      // Main layout
+      main
+        .container(style='padding-top: 20px;')
+          // Section: Main info
+          section.mt-5.wow.fadeIn
+            // Grid row
+            .row
+              // Grid column
+              .col-md-6.mb-4
+                img.img-fluid.z-depth-1-half(src='/img/thiran.png', alt='', width='470px', height='600px')
+              // Grid column
+              // Grid column
+              .col-md-6.mb-3
+                // Main heading
+                h3.h3.mb-3 Whatever the mind can conceive and believe, the mind can achieve
+                p Never hesitate to follow your passion.
+                p
+                  strong THIRAN
+                  |  helps you unleash your potential
+                p
+                  | Register your projects as teams,learn by doing ,get inspired and be an inspiration for others
+                // Main heading
+                hr
+              // Grid column
+              .container
+                p
+                  | Distanced by geographical areas and working domains but united by addiction of giving back - Alumni from various batches of ACGCET.
+                  strong Feel free to give a try
+            // Grid row
+          // Section: Main info
+          hr.my-5
+          h4 Message us
+          .container
+            input#number(type='tel', name='number', placeholder='enter no', value='918072343371')
+            input#msg(type='text', name='msg', placeholder='enter msg', style='margin-left:20px;')
+            input#button(type='button', value='send')
+            br
+            br
+            p#response.response
+            br
+          // Section: Main features & Quick Start
+          section
+            h3.h3.text-center.mb-5 Milestones
+            // Grid row
+            .row.wow.fadeIn
+              // Grid column
+              .col-lg-6.col-md-12.px-4
+                // First row
+                .row
+                  .col-1.mr-3
+                    i.fa.fa-code.fa-2x.indigo-text
+                  .col-10
+                    h5.feature-title ACCET LABS
+                    p.grey-text
+                      | we have launched 3 extensions for Zoho CRM in the Zoho Marketplace, completely built by students, under the banner of ACCET Labs.
+                  // Card
+                  .card
+                    // Card image
+                    .view.overlay
+                      img.card-img-top.img-fluid.z-depth-1-half(src='/img/crm.jpg', alt='Card image cap', style='height: 300px;width: 420px;')
+                      a(href='https://marketplace.zoho.com/crm/zoho-subscriptions', target='_blank')
+                        .mask.rgba-white-slight
+                    // Card content
+                    .card-body
+                      // Title
+                      h4.card-title Links
+                      // Text
+                      p.card-text
+                        a(href='https://marketplace.zoho.com/crm/zoho-subscriptions', target='_blank') Zoho Subscriptions
+                      a(href='https://marketplace.zoho.com/crm/chargebee', target='_blank') Chargebee
+                      p
+                      a(href='https://marketplace.zoho.com/crm/salesforce-desk', target='_blank') Salesforce Desk
+                      p
+                      // Button
+                  // Card
+                // /First row
+                div(style='height:30px;')
+                // Second row
+                .row
+                  .col-1.mr-3
+                    i.fa.fa-book.fa-2x.blue-text
+                  .col-10
+                    h5.feature-title Projects
+                    p.grey-text More than 70 innovative projects from students every year
+                // /Second row
+                div(style='height:30px;')
+                // Third row
+                .row
+                  .col-1.mr-3
+                    i.fa.fa-graduation-cap.fa-2x.cyan-text
+                  .col-10
+                    h5.feature-title Trainings
+                    p.grey-text
+                      | Lot's of internship opportunities, intense placement trainings,softskill trainings are deliberately offered without a miss over years
+                // /Third row
+              // /Grid column
+              // Grid column
+              .col-lg-6.col-md-12
+                p.h5.text-center.mb-4 Joy of giving back!
+                .embed-responsive.embed-responsive-16by9
+                  iframe(width='854', height='480', src='https://www.youtube.com/embed/WkBpqHIPPB0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+                // Carousel Wrapper
+                #carousel-example-1z.carousel.slide.carousel-fade(data-ride='carousel', style='padding-top: 75px;')
+                  // Indicators
+                  ol.carousel-indicators
+                    li.active(data-target='#carousel-example-1z', data-slide-to='0')
+                    li(data-target='#carousel-example-1z', data-slide-to='1')
+                    li(data-target='#carousel-example-1z', data-slide-to='2')
+                    li(data-target='#carousel-example-1z', data-slide-to='3')
+                  // /.Indicators
+                  // Slides
+                  .carousel-inner(role='listbox')
+                    // First slide
+                    .carousel-item.active
+                      img.d-block.w-100(src='/img/new.jpg', alt='First slide')
+                    // /First slide
+                    // Second slide
+                    .carousel-item
+                      img.d-block.w-100(src='/img/a.jpg', alt='Second slide')
+                    // /Second slide
+                    // Third slide
+                    .carousel-item
+                      img.d-block.w-100(src='/img/b.jpg', alt='Third slide')
+                    // /Third slide
+                    .carousel-item
+                      img.d-block.w-100(src='/img/s.jpg', alt='Fourth slide')
+                  // /.Slides
+                  // Controls
+                  a.carousel-control-prev(href='#carousel-example-1z', role='button', data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                  a.carousel-control-next(href='#carousel-example-1z', role='button', data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+                  // /.Controls
+                br
+                br
+                .col-md-6.mb-3
+                  h4 Crafting young minds ... ... .... .... .. .......  ....  ...  .
+                // /.Carousel Wrapper
+              // /Grid column
+            // /Grid row
+          // Section: Main features & Quick Start
+          hr.my-5
+          .row
+            // Card deck
+            .card-deck
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='http://hi-news.pp.ua/uploads/posts/2018-01/priklad-jquery-prost-prikladi-skriptv-na-jquery_633.jpeg', alt='Card image cap')
+                  a(href='#!')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  h4.card-title CodeSuite
+                  h6 Interface To Innovate
+                  // Text
+                  p.card-text
+                    | All in one platform to practice and personalise your coding skills.Learn,practice,built,innovate and entertain at your own comfort
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/aboutcodesuite', target='_blank') Read more
+              // Card
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='https://locandmore.com/wp-content/uploads/2017/10/Your-project-has-started-4.png', alt='Card image cap')
+                  a(href='#!')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  br
+                  h4.card-title ACGCET STARTUP WALLET
+                  h6 Unveil the entrepreneur in you :. $ .:
+                  // Text
+                  p.card-text
+                    | Get your ideas featured in a click.If you can dream it then you can acheive it too.Access resources,get instant helps and kickstart your dream role.
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/about_startup', target='_blank') Read more
+              // Card
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='https://opterre.com/wp-content/uploads/2017/08/Unique-Value-proposition-with-Opterre-Vector-Converted.jpg')
+                  a(href='#!')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  h4.card-title Thiran DiscussHub
+                  // Text
+                  p.card-text
+                    | Share your opinions,reviews,requirements,expectations,seek guidance anonymously here
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/about_discusshub', target='_blank') Read more
+              // Card
+            // Card deck
+          // Section: Not enough
+          section
+            h2.my-5.h3.text-center Not enough?
+            // First row
+            .row.features-small.mb-5.mt-3.wow.fadeIn
+              // First column
+              .col-md-4
+                // First row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Feild specific guidance
+                    p.grey-text
+                      | We have alumnae working in various domains of interests successfully all over the world.It's up to you to reach them.Beleive us,it's very easy..
+                    div(style='height:15px;')
+                // /First row
+                // Second row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Recent trends
+                    p.grey-text
+                      | Our alumnae are in the reign of experimenting the most advanced and recent trends in technical and non-technical feilds.They can help you to compete with rapid changes around us.
+                    div(style='height:15px;')
+                // /Second row
+                // Third row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Abundant strength
+                    p.grey-text
+                      | Thiran has enough student to alumni ratio,so that we can reach you at times and contribute the best.United by urge to unveil the best in you..
+                    div(style='height:15px;')
+                // /Third row
+                // Fourth row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Money is not a concern
+                    p.grey-text
+                      | Goal of thiran is no talent should be hidden just because of financial concern.It's our duty to help you,please reach us.
+                    div(style='height:15px;')
+                // /Fourth row
+              // /First column
+              // Second column
+              .col-md-4.flex-center(style='padding-top: 80px;')
+                img.z-depth-0-1-half.img-fluid(src='/img/space.png', alt='MDB Magazine Template displayed on iPhone')
+              // /Second column
+              // Third column
+              .col-md-4.mt-2
+                // First row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Extensive knowledge sharing sessions
+                    p.grey-text
+                      | Every master was once a beginner. Our ultimate goal is to reach the very beginner in the troop and share equal knowledge,help him visualise..
+                    div(style='height:15px;')
+                // /First row
+                // Second row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Versatile support from volunteers
+                    p.grey-text
+                      | We select a troop of dynamic Organising Committee Members who act as a interface for the alumni-student network
+                    div(style='height:15px;')
+                // /Second row
+                // Third row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Gifted staff support
+                    p.grey-text
+                      | Honoured by alumnae as staffs working in most of the departments.They are being pillars in structuring thiran activities.
+                    div(style='height:15px;')
+                // /Third row
+                // Fourth row
+                .row
+                  .col-2
+                    i.fa.fa-check-circle.fa-2x.indigo-text
+                  .col-10
+                    h6.feature-title Active events
+                    p.grey-text
+                      | We continously plan and conduct various technical and non-technical events with tremendous support from the management.It's our honour we get excellent responses too
+                    div(style='height:15px;')
+                // /Fourth row
+              // /Third column
+            // /First row
+          // Section: Not enough
+          hr.mb-5
+          // Section: More
+          section
+            h2.my-5.h3.text-center ...and even more
+            // First row
+            .row.features-small.mt-5.wow.fadeIn
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-firefox.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2.pl-3
+                    h5.feature-title.font-bold.mb-1 Cross-browser compatibility
+                    p.grey-text.mt-2
+                      | Thiran softwares are exclusively build by our own innovators with upgraded features and compatibility.You can use them in your comfortable accessories.
+                // /Grid row
+              // /Grid column
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-level-up.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 Frequent updates
+                    p.grey-text.mt-2
+                      | We conduct regular meetings to share up-to date happenings.You can catch us everywhere from fb,instagram,linkedin and much more.
+                // /Grid row
+              // /Grid column
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-comments-o.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 Active community
+                    p.grey-text.mt-2
+                      | Evergreen community called ACCETOSA is our backbone.Dynamic community with dazzling dreams to uplift you.
+                // /Grid row
+              // /Grid column
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-code.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 Transparency
+                    p.grey-text.mt-2
+                      | THIRAN is to share what you get from us.All our students projects abstracts,codes and references are available with us.You can reach us in need as a reference.
+                // /Grid row
+              // /Grid column
+            // /First row
+            // Second row
+            .row.features-small.mt-4.wow.fadeIn
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-cubes.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 Modularity
+                    p.grey-text.mt-2
+                      | We never value projects based on quantity.Quality matters a lot.We have produced tremendous,varsatile,modular projects in all domains
+                // /Grid row
+              // /Grid column
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-question.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 Technical support
+                    p.grey-text.mt-2 We conduct regular workshops and trainings fullfilling all you technical needs.
+                // /Grid row
+              // /Grid column
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-th.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 Wifi
+                    p.grey-text.mt-2
+                      | Things are changing rapidly as the world is progressing.Thus we know it's quite hard to grasp them without internet.We offer extensive wifi facilities as a hub inside the campus with management support.
+                // /Grid row
+              // /Grid column
+              // Grid column
+              .col-xl-3.col-lg-6
+                // Grid row
+                .row
+                  .col-2
+                    i.fa.fa-file-code-o.fa-2x.mb-1.indigo-text(aria-hidden='true')
+                  .col-10.mb-2
+                    h5.feature-title.font-bold.mb-1 SAAS support
+                    p.grey-text.mt-2
+                      | All the support materials are made available to students via cloud based platforms to minimise the constraints in accessibility
+                // /Grid row
+              // /Grid column
+            // /Second row
+          // Section: More
+      // Main layout
+      // Footer
+      footer.page-footer.text-center.font-small.mt-4.wow.fadeIn
+        // Call to action
+        .pt-4
+          a.btn.btn-outline-white(href='/projects/kbase', target='_blank', role='button')
+            | Have doubts ? 
+            i.fa.fa-puzzle-piece(aria-hidden='true', style='padding-left: 5px;')
+          a.btn.btn-outline-white(href='/projects/contact', target='_blank', role='button')
+            | Reach us 
+            i.fa.fa-heart(aria-hidden='true', style='padding-left: 5px;')
+        // /.Call to action
+        hr.my-4
+        // Social icons
+        .pb-4
+          a(href='https://www.facebook.com/accetthiran', target='_blank')
+            i.fa.fa-facebook.mr-3
+          a(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+            i.fa.fa-twitter.mr-3
+          a(href='https://www.youtube.com/user/ACCETthiran', target='_blank')
+            i.fa.fa-youtube.mr-3
+          a(href='https://plus.google.com/116707854087495862030', target='_blank')
+            i.fa.fa-google-plus.mr-3
+          a(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+            i.fa.fa-github.mr-3
+          a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+            i.fa.fa-linkedin.mr-3
+          a(href='https://www.instagram.com/thiran2k18/?hl=en', target='_blank')
+            i.fa.fa-instagram.mr-3
+        // Social icons
+        // Copyright
+        .footer-copyright.py-3
+          | © 2018 Copyright:
+          a(href='/', target='_blank')  thiran.in 
+        // /.Copyright
+      // /.Footer
+      // SCRIPTS
+      // JQuery
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+      // Bootstrap tooltips
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+      // Bootstrap core JavaScript
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+      // MDB core JavaScript
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+      script(type='text/javascript', src='/socket.io/socket.io.js')
+      script(type='text/javascript', src='/js/main2.js')
+      // Initializations
+      script(type='text/javascript').
+        setTimeout(function() {
+        fullyLoaded();
+        }, 1000);
+        function fullyLoaded() {
+        $("#loader").fadeOut("slow");
+        }
+        // Animations initialization
+        new WOW().init();
+        var i = 0;
+        var txt = 'A Dream will not become an innovation if there is no realisation';
+        var speed = 60;
+        function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+        }
+        }
+        $(document).ready(function(){
+        typeWriter();
+        })

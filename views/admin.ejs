@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>THIRAN Admin Panel</title>
+    <!-- Font Awesome -->
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="/css/style1.min.css" rel="stylesheet">
+    <style type="text/css">
+
+    #loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('https://cdn.dribbble.com/users/494229/screenshots/1601132/loadingicon14.gif') 50% 50% no-repeat white;
+    }
+    </style>
+</head>
+
+<body>
+<div id="loader"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand waves-effect" href="/projects/home" target="_blank">
+        <strong class="blue-text">Thiran</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link waves-effect" href="#">Admin Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="/projects/about" target="_blank">Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="https://accetosaweb.wordpress.com/" target="_blank">ACCETOSA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="https://app.zohocreator.com/mariappangameo/accetwallet#Student_Member_Registration" target="_blank">StartUp Wallet</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="https://read.thiran.in" target="_blank">
+              <span class="badge red z-depth-1 mr-1"> Blog </span>
+                </a>
+              </li>
+          <li class="nav-item">
+              <a href="/projects/contact" class="nav-link waves-effect" target="_blank">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+
+              <span class="clearfix d-none d-sm-inline-block"> Contact </span>
+              </a>
+              </li>
+
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/accetthiran" class="nav-link waves-effect" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/accetthiran?lang=en" class="nav-link waves-effect" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/Thiran2K18/Thiran2K18" class="nav-link border border-light rounded waves-effect"
+              target="_blank">
+              <i class="fa fa-github mr-2"></i>THIRAN GitHub
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Main layout-->
+  <main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <img src="https://fortunedotcom.files.wordpress.com/2015/10/gettyimages-187921369-1.jpg" class="img-fluid" alt="" style="height: 330px">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Content-->
+          <div class="p-4">
+
+            <div class="mb-3">
+              <a href="#projects">
+                <span class="badge purple mr-1">Projects</span>
+              </a>
+              <a href="#">
+                <span class="badge blue mr-1">Events</span>
+              </a>
+              <a href="#stats">
+                <span class="badge red mr-1">Stats</span>
+              </a>
+            </div>
+
+            <p class="lead">
+              <span class="mr-1">
+                <del>Misleading</del>
+              </span>
+              <span>Scale performance at go</span>
+            </p>
+
+            <p class="lead font-weight-bold">Why to monitor?</p>
+
+            <p>Our Ultimate aim is not only giving a first class userfriendly experience but also to provide enough flexibility to the admins to locate their performance stats,keep track of issues and work flexibly.</p>
+            <p>The admin panel provides you the exact dynamic stats straight from your database.Work simplified!</p>
+
+            <form class="d-flex justify-content-left" id="members">
+              <!-- Default input -->
+              <a class="btn btn-primary btn-md my-0 p" href="#projects">Projects stats
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn-primary btn-md my-0 p" href="#members">Members stats
+               <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+
+            </form>
+
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <hr>
+
+<br>
+<div class="alert alert-primary" role="alert">
+  <p id="student" class="fr">Total Number of students registered : </p>
+</div>
+
+<div class="alert alert-success" role="alert">
+  <p id="alumni">Total number of alumni registered : </p>
+</div>
+<div class="alert alert-warning" role="alert">
+  <p id="common">Number of users didn't reveal their role yet : </p>
+</div><br>
+<hr>
+<br><br>
+
+      <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn" id="projects">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+<p class="lead font-weight-bold">Projects - YearWise stats</p>
+
+          <canvas id="barChart"></canvas>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+          <!--Content-->
+          <div class="p-4">
+
+
+
+
+
+            <p class="lead font-weight-bold">Projects - DeptWise count</p>
+
+<canvas id="pieChart"></canvas>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+<hr>
+
+<!-- Material input -->
+<br>
+<br>
+<p>Enter either the year (1,2,3,4) or the barnch (cse,ece,eee,mech,civil) to get registered details</p>
+<small id="stats">Try now!</small>
+<input type="text" name="name" value="" id="test">
+<button type="button" class="btn btn-primary" id="button">Get Details</button>
+  <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" style="display: none;" id="first"><br>
+<p class="lead font-weight-bold">Projects - First year</p>
+            <p class="lead font-weight-bold" id="1st_yr">Total count : </p><br>
+         <div id="div1"></div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4"  id="second" style="display: none;">
+
+          <!--Content-->
+          <div class="p-4">
+
+
+
+
+
+            <p class="lead font-weight-bold">Projects - Second year</p>
+            <p class="lead font-weight-bold" id="2nd_yr">Total count : </p><br>
+<div id="div2"></div>
+<hr>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+      <!--Grid row-->
+
+
+
+
+
+
+     <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="third" style="display: none;><br>
+<p class="lead font-weight-bold">Projects - Third year</p>
+            <p class="lead font-weight-bold" id="3rd_yr">Total count : </p><br>
+         <div id="div3"></div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="fourth" style="display: none;>
+
+          <!--Content-->
+          <div class="p-4">
+
+
+
+
+
+           <p class="lead font-weight-bold">Projects - Fourth year</p>
+            <p class="lead font-weight-bold" id="4th_yr">Total count : </p><br>
+<div id="div4"></div>
+<hr>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+
+     <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="mech" style="display: none;><br>
+<p class="lead font-weight-bold">Projects - MECH</p>
+            <p class="lead font-weight-bold" id="mech">Total count : </p><br>
+         <div id="div5"></div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="civ" style="display: none;>
+
+          <!--Content-->
+          <div class="p-4">
+
+
+
+
+
+            <p class="lead font-weight-bold">Projects - CIVIL</p>
+            <p class="lead font-weight-bold" id="civ">Total count : </p><br>
+<div id="div6"></div>
+ <hr>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+
+     <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="cse" style="display: none;><br>
+<p class="lead font-weight-bold">Projects - CSE</p>
+            <p class="lead font-weight-bold" id="cse">Total count : </p><br>
+         <div id="div7"></div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4"  id="ece" style="display: none;>
+
+          <!--Content-->
+          <div class="p-4">
+
+
+
+
+
+            <p class="lead font-weight-bold">Projects - ECE</p>
+            <p class="lead font-weight-bold" id="ece">Total count : </p><br>
+<div id="div8"></div>
+ <hr>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+     <div class="container dark-grey-text mt-5">
+
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="eee" style="display: none;><br>
+<p class="lead font-weight-bold">Projects - EEE</p>
+            <p class="lead font-weight-bold" id="eee">Total count : </p><br>
+         <div id="div9"></div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4" id="mca" style="display: none;>
+
+          <!--Content-->
+          <div class="p-4">
+
+
+
+
+
+            <p class="lead font-weight-bold">Projects - MCA</p>
+            <p class="lead font-weight-bold" id="mca">Total count : </p><br>
+<div id="div10"></div>
+ <hr>
+          </div>
+          <!--Content-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+  <!--Footer-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Have doubts ?
+        <i class="fa fa-puzzle-piece" aria-hidden="true" style="padding-left: 5px;"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Reach us
+        <i class="fa fa-heart" aria-hidden="true" style="padding-left: 5px;"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fa fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fa fa-google-plus mr-3"></i>
+      </a>
+
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+<a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fa fa-linkedin mr-3"></i>
+      </a>
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fa fa-instagram mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> thiran.in </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+
+  setTimeout(function() {
+     fullyLoaded();
+     }, 1000);
+
+ function fullyLoaded() {
+     $("#loader").fadeOut("slow");
+ }
+
+$("#button").click(function(){
+  var val =$("#test").val();
+  //console.log($("#test").val());
+if(val == 1||val=="first year"||val=='1st yr'||val=='first_year'||val=='1st_yr')
+{
+  $("#first").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == 2||val=="second year"||val=='2nd yr'||val=='second_year'||val=='2nd_yr')
+{
+  $("#second").show();
+  $("#first").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == 3||val=="third year"||val=='3rd yr'||val=='third_year'||val=='3rd_yr')
+{
+  $("#third").show();
+  $("#second").hide();
+  $("#first").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == 4||val=="fourth year"||val=='4th yr'||val=='fourth_year'||val=='4th_yr')
+{
+  $("#fourth").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#first").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == "mech"||val=="mechanical")
+{
+  $("#mech").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#first").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == "cse"||val=='computer science')
+{
+  $("#cse").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#first").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == "ece")
+{
+  $("#ece").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#first").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == "eee")
+{
+  $("#eee").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#first").hide();
+  $("#mca").hide();
+}else if(val == "civ"||val=="civil")
+{
+  $("#civ").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#first").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#mca").hide();
+}else if(val == "mca")
+{
+  $("#mca").show();
+  $("#second").hide();
+  $("#third").hide();
+  $("#fourth").hide();
+  $("#cse").hide();
+  $("#mech").hide();
+  $("#civ").hide();
+  $("#ece").hide();
+  $("#eee").hide();
+  $("#first").hide();
+}
+
+})
+
+var first_count;
+    $.ajax({
+   url: "/projects/get_1st_yr_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response1) {
+    //console.log(response1);
+    //console.log(response1.length);
+   $("#1st_yr").append(response1.length);
+    first_count = response1.length;
+  // console.log(typeof first_count);
+   var tbl1=$("<table class='table'/>").attr("id","table1");
+$("#div1").append(tbl1);
+for(var i=0;i<response1.length;i++)
+{
+    var tr1="<tr>";
+    var td1_1="<td>"+response1[i]["email"]+"</td>";
+    var td2_1="<td>"+response1[i]["name"]+"</td>";
+    var td3_1="<td>"+response1[i]["project_title"]+"</td></tr>";
+
+   $("#table1").append(tr1+td1_1+td2_1+td3_1);
+
+}
+
+}
+});
+
+$.ajax({
+   url: "/projects/get_2nd_yr_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response2) {
+    //console.log(response2);
+    //console.log(response2.length);
+    $("#2nd_yr").append(response2.length);
+   var tbl2=$("<table class='table'/>").attr("id","table2");
+$("#div2").append(tbl2);
+for(var i=0;i<response2.length;i++)
+{
+    var tr2="<tr>";
+    var td1_2="<td>"+response2[i]["email"]+"</td>";
+    var td2_2="<td>"+response2[i]["name"]+"</td>";
+    var td3_2="<td>"+response2[i]["project_title"]+"</td></tr>";
+
+   $("#table2").append(tr2+td1_2+td2_2+td3_2);
+
+}
+
+}
+});
+
+
+$.ajax({
+   url: "/projects/get_3rd_yr_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response3) {
+    //console.log(response3);
+  //console.log(response3.length);
+    $("#3rd_yr").append(response3.length);
+   var tbl3=$("<table class='table'/>").attr("id","table3");
+$("#div3").append(tbl3);
+for(var i=0;i<response3.length;i++)
+{
+    var tr3="<tr>";
+    var td1_3="<td>"+response3[i]["email"]+"</td>";
+    var td2_3="<td>"+response3[i]["name"]+"</td>";
+    var td3_3="<td>"+response3[i]["project_title"]+"</td></tr>";
+
+   $("#table3").append(tr3+td1_3+td2_3+td3_3);
+
+}
+
+}
+});
+
+
+
+$.ajax({
+   url: "/projects/get_4th_yr_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response4) {
+    //console.log(response4);
+    //console.log(response4.length);
+    $("#4th_yr").append(response4.length);
+   var tbl4=$("<table class='table'/>").attr("id","table4");
+$("#div4").append(tbl4);
+for(var i=0;i<response4.length;i++)
+{
+    var tr4="<tr>";
+    var td1_4="<td>"+response4[i]["email"]+"</td>";
+    var td2_4="<td>"+response4[i]["name"]+"</td>";
+    var td3_4="<td>"+response4[i]["project_title"]+"</td></tr>";
+
+   $("#table4").append(tr4+td1_4+td2_4+td3_4);
+
+}
+
+}
+});
+
+
+$.ajax({
+   url: "/projects/get_mech_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response5) {
+    //console.log(response5);
+    //console.log(response5.length);
+    $("#mech").append(response5.length);
+   var tbl5=$("<table class='table'/>").attr("id","table5");
+$("#div5").append(tbl5);
+for(var i=0;i<response5.length;i++)
+{
+    var tr5="<tr>";
+    var td1_5="<td>"+response5[i]["email"]+"</td>";
+    var td2_5="<td>"+response5[i]["name"]+"</td>";
+    var td3_5="<td>"+response5[i]["project_title"]+"</td></tr>";
+
+   $("#table5").append(tr5+td1_5+td2_5+td3_5);
+
+}
+
+}
+});
+
+
+$.ajax({
+   url: "/projects/get_civ_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response6) {
+  //console.log(response6);
+    //console.log(response6.length);
+    $("#civ").append(response6.length);
+   var tbl6=$("<table class='table'/>").attr("id","table6");
+$("#div6").append(tbl6);
+for(var i=0;i<response6.length;i++)
+{
+    var tr6="<tr>";
+    var td1_6="<td>"+response6[i]["email"]+"</td>";
+    var td2_6="<td>"+response6[i]["name"]+"</td>";
+    var td3_6="<td>"+response6[i]["project_title"]+"</td></tr>";
+
+   $("#table6").append(tr6+td1_6+td2_6+td3_6);
+
+}
+
+}
+});
+
+
+$.ajax({
+   url: "/projects/get_cse_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response7) {
+    //console.log(response7);
+    //console.log(response7.length);
+    $("#cse").append(response7.length);
+   var tbl7=$("<table class='table'/>").attr("id","table7");
+$("#div7").append(tbl7);
+for(var i=0;i<response7.length;i++)
+{
+    var tr7="<tr>";
+    var td1_7="<td>"+response7[i]["email"]+"</td>";
+    var td2_7="<td>"+response7[i]["name"]+"</td>";
+    var td3_7="<td>"+response7[i]["project_title"]+"</td></tr>";
+
+   $("#table7").append(tr7+td1_7+td2_7+td3_7);
+
+}
+
+}
+});
+
+
+$.ajax({
+   url: "/projects/get_ece_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response8) {
+    //console.log(response8);
+    //console.log(response8.length);
+    $("#ece").append(response8.length);
+   var tbl8=$("<table class='table'/>").attr("id","table8");
+$("#div8").append(tbl8);
+for(var i=0;i<response8.length;i++)
+{
+    var tr8="<tr>";
+    var td1_8="<td>"+response8[i]["email"]+"</td>";
+    var td2_8="<td>"+response8[i]["name"]+"</td>";
+    var td3_8="<td>"+response8[i]["project_title"]+"</td></tr>";
+
+   $("#table8").append(tr8+td1_8+td2_8+td3_8);
+
+}
+
+}
+});
+
+
+$.ajax({
+   url: "/projects/get_eee_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response9) {
+    //console.log(response9);
+    //console.log(response9.length);
+    $("#eee").append(response9.length);
+   var tbl9=$("<table class='table'/>").attr("id","table9");
+$("#div9").append(tbl9);
+for(var i=0;i<response9.length;i++)
+{
+    var tr9="<tr>";
+    var td1_9="<td>"+response9[i]["email"]+"</td>";
+    var td2_9="<td>"+response9[i]["name"]+"</td>";
+    var td3_9="<td>"+response9[i]["project_title"]+"</td></tr>";
+
+   $("#table9").append(tr9+td1_9+td2_9+td3_9);
+
+}
+
+}
+});
+
+
+
+
+
+$.ajax({
+   url: "/projects/get_mca_projects",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response10) {
+    //console.log(response10);
+    //console.log(response10.length);
+    $("#mca").append(response10.length);
+   var tbl10=$("<table class='table'/>").attr("id","table10");
+$("#div10").append(tbl10);
+for(var i=0;i<response10.length;i++)
+{
+    var tr10="<tr>";
+    var td1_10="<td>"+response10[i]["email"]+"</td>";
+    var td2_10="<td>"+response10[i]["name"]+"</td>";
+    var td3_10="<td>"+response10[i]["project_title"]+"</td></tr>";
+
+   $("#table10").append(tr10+td1_10+td2_10+td3_10);
+
+}
+
+}
+});
+
+
+var alumni,student,common;
+$.ajax({
+  url: "/users/getcounts_byrole",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response_counts_byrole) {
+    // console.log(response_counts_byrole[0].cnt);
+    // console.log($("#student").text());
+    $("#student").append(response_counts_byrole[2].cnt);
+    $("#alumni").append(response_counts_byrole[0].cnt);
+    $("#common").append(response_counts_byrole[1].cnt);
+    }
+  });
+
+
+var first,second,third,fourth;
+
+$.ajax({
+  url: "/projects/getcounts_byyear",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response_counts_byyear) {
+     console.log(response_counts_byyear);
+
+    first = response_counts_byyear[2].cnt;
+    second = response_counts_byyear[1].cnt;
+    third = response_counts_byyear[3].cnt;
+    fourth = response_counts_byyear[0].cnt;
+
+    var ctxB = document.getElementById("barChart").getContext('2d');
+var myBarChart = new Chart(ctxB, {
+    type: 'bar',
+    data: {
+        labels: ["1st Year", "2nd year", "3rd Year", "4th year"],
+        datasets: [{
+            label: '# of projects',
+            data: [first,second,third,fourth],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
+  }
+
+})
+
+
+
+
+var mech,civ,cse,ece,eee,mca;
+
+$.ajax({
+  url: "/projects/getcounts_bydept",
+   contentType: "application/json",
+   method: "GET",
+   success: function(response_counts_bydepts) {
+
+    mech = response_counts_bydepts[2].cnt;
+    civil = response_counts_bydepts[3].cnt;
+    cse = response_counts_bydepts[4].cnt;
+    eee = response_counts_bydepts[5].cnt;
+   ece =response_counts_bydepts[1].cnt;
+   mca = response_counts_bydepts[0].cnt
+
+
+  //pie
+var ctxP = document.getElementById("pieChart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+        labels: ["CSE", "MECH", "ECE", "EEE", "CIVIL","MCA"],
+        datasets: [
+            {
+                data: [mech,civil,cse,eee,ece,mca],
+                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+            }
+        ]
+    },
+    options: {
+        responsive: true
+    }
+});
+
+}
+
+})
+
+
+
+
+      </script>
+</body>
+
+</html>

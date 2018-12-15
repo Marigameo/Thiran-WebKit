@@ -1,0 +1,984 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title NoviceNet - Love to learn the way you love
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='css/mdb.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css')
+    // Your custom styles (optional)
+    link(href='/css/_n.min.css', rel='stylesheet')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://cdn.dribbble.com/users/594619/screenshots/2339770/full_speed.gif') 50% 50% no-repeat white;
+      }
+      .navbar .mega-dropdown {
+      position: static !important; }
+      .navbar .dropdown-menu.mega-menu {
+      width: 100%;
+      border: none;
+      border-radius: 0; }
+      .navbar .dropdown-menu.mega-menu.v-2 a {
+      padding: 15px 10px 10px 35px; }
+      .navbar .dropdown-menu.mega-menu.v-2 a.news-title-2 {
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      -webkit-transition: .2s;
+      transition: .2s;
+      color: #fff !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 a.news-title-2:hover {
+      color: #d0d6e2 !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul {
+      list-style: none; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li {
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu ul.caret-style li a:after {
+      font-family: "fontAwesome";
+      content: '\f0da';
+      position: absolute;
+      left: 0.5rem;
+      font-size: 12px;
+      top: 1rem; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item {
+      color: #fff !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-menu a.menu-item:hover {
+      color: #fff !important; }
+      .navbar .dropdown-menu.mega-menu.v-2 .sub-title {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid; }
+      .navbar .dropdown-menu.mega-menu.v-2 .font-small {
+      font-size: 0.85rem; }
+      .nav a.white-text:hover {
+      color: #e0e0e0!important;
+      }
+      .nav a.dark-grey-text:hover {
+      color: #78909c!important;
+      }
+      .nav a.indigo-text:hover {
+      color: #7986cb!important;
+      }
+      #intro{background:#159957;background:-webkit-linear-gradient(to right,#155799,#159957);background:-webkit-gradient(linear,left top,right top,from(#155799),to(#159957));background:-webkit-linear-gradient(left,#155799,#159957);background:-o-linear-gradient(left,#155799,#159957);background:linear-gradient(to right,#155799,#159957)}
+  // Navbar
+  body
+    #loader
+    nav.navbar.navbar-expand-lg.navbar-dark.special-color-dark
+      // Navbar brand
+      a.navbar-brand.text-uppercase(href='#') NoviceNet
+      // Collapse button
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent1', aria-controls='navbarSupportedContent1', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      // Collapsible content
+      #navbarSupportedContent1.collapse.navbar-collapse
+        // Links
+        ul.navbar-nav.mr-auto
+          li.nav-item.dropdown.mega-dropdown.active
+            a#navbarDropdownMenuLink1.nav-link.dropdown-toggle.text-uppercase.no-caret(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Quest It ?
+            .dropdown-menu.mega-menu.v-2.row.z-depth-1.special-color(aria-labelledby='navbarDropdownMenuLink1')
+              .row.mx-md-4.mx-1
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-5.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Howz'It?
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item.mb-0(href='https://www.quora.com/Which-programming-language-would-you-recommend-a-beginner-to-learn-first', target='_blank') Which programming language would you recommend a beginner to learn first?
+                    li
+                      a.menu-item(href='https://www.quora.com/Which-programming-language-should-a-beginner-start-with-and-what-are-the-steps-necessary-to-learn-it', target='_blank') Pros & Cons of getting started with python
+                    li
+                      a.menu-item(href='https://www.quora.com/Between-Java-and-Python-which-one-is-better-to-learn-first-and-why#', target='_blank') Between Java and Python, which one is better to learn first and why?
+                    li
+                      a.menu-item(href='https://www.quora.com/What-are-good-resources-for-learning-C', target='_blank') What are good resources for learning C?
+                    li
+                      a.menu-item(href='https://www.quora.com/Is-learning-C-still-worthwhile', target='_blank') Is learning C still worthwhile?
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-md-5.mt-4.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Have you ever?
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.quora.com/Should-1st-year-computer-science-undergraduates-sign-up-on-github', target='_blank') Why a CS grad is adviced to sign up on github? 
+                    li
+                      a.menu-item(href='https://www.quora.com/Why-am-I-so-bad-at-programming-and-how-can-I-improve-it', target='_blank') Why am I so bad at programming and how can I improve it?
+                    li
+                      a.menu-item(href='https://www.quora.com/Is-it-ever-too-late-for-someone-to-learn-how-to-program', target='_blank') Is it ever too late for someone to learn how to program?
+                    li
+                      a.menu-item(href='https://www.quora.com/Why-should-we-contribute-to-open-source', target='_blank') Why should we contribute to open source?
+                    li
+                      a.menu-item(href='https://www.quora.com/What-are-the-important-subjects-for-placements-for-a-CS', target='_blank') What are the important subjects for placements for a CS?
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Amazing open Sorce tools
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.linux.org/', target='_blank') Linux - Linus Torvalds
+                    li
+                      a.menu-item(href='http://www.ubuntu.com/', target='_blank') Ubuntu - Linux Distribution
+                    li
+                      a.menu-item(href='https://www.mysql.com/', target='_blank') MYSQL -RDBMS
+                    li
+                      a.menu-item(href='https://www.mozilla.org/en-US/', target='_blank') FIREFOX 
+                    li
+                      a.menu-item(href='https://www.r-project.org/about.html', target='_blank') The R programming language
+                    li
+                      a.menu-item(href='http://hadoop.apache.org/', target='_blank') Apache Hadoop
+                    li
+                      a.menu-item(href='https://nodejs.org/', target='_blank') Node.Js
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-5
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Recently Emerging
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.tensorflow.org/', target='_blank') TensorFlow
+                    li
+                      a.menu-item(href='https://github.com/rapidminer/', target='_blank') RapidMiner
+                    li
+                      a.menu-item(href='https://facebook.github.io/react-native/', target='_blank') React Native & React.Js - Facebook>
+                    li
+                      a.menu-item(href='https://flutter.io/', target='_blank') Flutter - Google
+                    li
+                      a.menu-item(href='https://www.openshift.com/', target='_blank')  OpenShift
+                    li
+                      a.menu-item(href='https://github.com/artoolkit', target='_blank')  ARToolkit
+                    li
+                      a.menu-item(href='https://opensource.google.com/projects/kubernetes', target='_blank')  Kubernetes
+          li.nav-item.dropdown.mega-dropdown
+            a#navbarDropdownMenuLink1.nav-link.dropdown-toggle.text-uppercase.no-caret(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Support
+            .dropdown-menu.mega-menu.v-2.row.z-depth-1.special-color(aria-labelledby='navbarDropdownMenuLink1')
+              .row.mx-md-4.mx-1
+                .col-md-12.col-lg-4.sub-menu.my-lg-5.mt-5.mb-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text LifeSaver
+                  // Featured image
+                  .view.overlay.mb-3.z-depth-1
+                    img(src='https://scdn.androidcommunity.com/wp-content/uploads/2017/05/stackoverflow-logo.jpg', style='height: 240px;')
+                    .mask.rgba-white-slight.flex-center
+                      p
+                  h4.mb-2
+                    a.news-title-2.pl-0(href='https://stackoverflow.com/', target='_blank') StackOverflow
+                  p.font-small.text-uppercase.white-text
+                    i.fa.fa-comments-o.pr-2(aria-hidden='true')
+                    | Community for developers ... 
+                    i.fa.fa-code.px-1(aria-hidden='true')
+                    | Recommended
+                .col-md-6.col-lg-4.sub-menu.my-lg-5.my-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Star Rated
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://github.com/', target='_blank') GitHub
+                    li
+                      a.menu-item(href='https://bitbucket.org/', target='_blank') BitBucket
+                    li
+                      a.menu-item(href='https://about.gitlab.com/', target='_blank') GitLab
+                    li
+                      a.menu-item(href='https://www.quora.com/') Quora
+                    li
+                      a.menu-item(href='https://medium.com/', target='_blank') Medium
+                .col-md-6.col-lg-4.sub-menu.my-lg-5.my-4
+                  h6.sub-title.text-uppercase.font-weight-bold.white-text Mobile Apps
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://play.google.com/store/apps/details?id=com.freeit.java', target='_blank') Programming Hub, Learn to code
+                    li
+                      a.menu-item(href='https://play.google.com/store/apps/details?id=com.udacity.android', target='_blank')  Udacity – Learn Programming
+                    li
+                      a.menu-item(href='https://play.google.com/store/apps/details?id=c.programming', target='_blank') C Programming
+                    li
+                      a.menu-item(href='https://play.google.com/store/apps/details?id=com.sololearn', target='_blank') SoloLearn: Learn to Code
+                    li
+                      a.menu-item(href='https://bnc.lt/Xfid/5jsnqaJCQI', target='_blank') Udemy
+          li.nav-item.dropdown.mega-dropdown
+            a#navbarDropdownMenuLink1.nav-link.dropdown-toggle.text-uppercase.no-caret(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Related
+            .dropdown-menu.mega-menu.v-2.row.z-depth-1.special-color(aria-labelledby='navbarDropdownMenuLink1')
+              .row.mx-md-4.mx-1
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-5.mb-4
+                  a(href='/projects/novicenet', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text CodeMate
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item.mb-0(href='/projects/codemate#test', target='_blank') Competitive programming
+                    li
+                      a.menu-item(href='/projects/codemate#profile', target='_blank') Why pick up CP?
+                    li
+                      a.menu-item(href='/projects/codemate#profile', target='_blank') Great Competitive programmers
+                    li
+                      a.menu-item(href='/projects/codemate#start', target='_blank') Is it really worthy?
+                    li
+                      a.menu-item(href='/projects/codemate#start', target='_blank') Where to get started?
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-md-5.mt-4.mb-4
+                  a(href='/projects/yetxplore#cloud', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text CloudRunz
+                  // Featured image
+                  .view.overlay.mb-3.z-depth-1
+                    img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg', alt='First sample image')
+                    .mask.rgba-white-slight.flex-center
+                      p
+                  h4.mb-2
+                    a.news-title-2.pl-0(href='/projects/yetxplore#cloud') Platforms On cloud
+                  p.font-small.text-uppercase.white-text
+                    i.fa.fa-code.pr-2(aria-hidden='true')
+                    | Connect online / 
+                    i.fa.fa-comments-o.px-1(aria-hidden='true')
+                    |  More..
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-4
+                  a(href='/projects/yetxplore#dev', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text DevToolz
+                  // Featured image
+                  .view.overlay.mb-3.z-depth-1
+                    img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg', alt='First sample image')
+                    .mask.rgba-white-slight.flex-center
+                      p
+                  h4.mb-2
+                    a.news-title-2.pl-0(href='/projects/yetxplore#dev', target='_blank') Explore handy dev tools
+                  p.font-small.text-uppercase.white-text
+                    i.fa.fa-code.pr-2(aria-hidden='true')
+                    | Makes easier 
+                    i.fa.fa-cloud.px-1(aria-hidden='true')
+                    |  More..
+                .col-md-6.col-xl-3.sub-menu.my-xl-5.mt-4.mb-5
+                  a(href='/projects/yetxplore', target='_blank')
+                    h6.sub-title.text-uppercase.font-weight-bold.white-text YetXplore
+                  ul.caret-style.pl-0
+                    li
+                      a.menu-item(href='https://www.thesimpledollar.com/30-essential-pieces-of-free-and-open-software-for-windows/', target='_blank') Open Source Softwares
+                    li
+                      a.menu-item(href='/projects/yetxplore#contest', target='_blank') Interesting Contests
+                    li
+                      a.menu-item(href='https://www.npmjs.com/', target='_blank') NPM
+                    li
+                      a.menu-item(href='http://www.phontron.com/nlptools.php', target='_blank') NLP(Python NTLK,stanford..)
+                    li
+                      a.menu-item(href='https://market.mashape.com/explore', target='_blank') Power of API's
+        // Links
+        a(href='/projects/offlinides', target='_blank')
+          h6.sub-title.text-uppercase.font-weight-bold.white-text
+            | Offlinides
+            i.fa.fa-download.px-1(aria-hidden='true')
+      // Collapsible content
+    // /.Navbar
+    hr.mb-4
+    .container
+      // Logo carousel
+      #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel', data-interval='1800')
+        .carousel-inner
+          // First slide
+          .carousel-item
+            // Grid row
+            .row
+              // First column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/11.png', alt='Nike - logo', style='max-height: 100px;')
+              // /First column
+              // Second column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/12.png', alt='Amazon - logo', style='max-height: 100px;')
+              // /Second column
+              // Third column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img(src='/img/13.jpg', alt='Sony - logo', style='max-height: 100px;')
+              // /Third column
+              // Fourth column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/14.jpg', alt='Samsung - logo', style='max-height: 100px;')
+              // /Fourth column
+            // /Grid row
+          // First slide
+          // Second slide
+          .carousel-item.active.carousel-item-left
+            // Grid row
+            .row
+              // First column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/15.jpg', alt='Airbus - logo', style='max-height: 100px;')
+              // /First column
+              // Second column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/16.png', alt='Yahoo - logo', style='max-height: 100px;')
+              // /Second column
+              // Third column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/17.jpg', alt='Deloitte - logo', style='max-height: 100px;')
+              // /Third column
+              // Fourth column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/18.jpg', alt='GE - logo', style='max-height: 100px;')
+              // /Fourth column
+            // /Grid row
+          // Second slide
+          // Third slide
+          .carousel-item.carousel-item-next.carousel-item-left
+            // Grid row
+            .row
+              // First column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/19.jpg', alt='KPMG - logo', style='max-height: 100px;')
+              // /First column
+              // Second column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/20.png', alt='Unity - logo', style='max-height: 100px;')
+              // /Second column
+              // Third column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/21.png', alt='Ikea - logo', style='max-height: 100px;')
+              // /Third column
+              // Fourth column
+              .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                img.img-fluid.px-4(src='/img/22.jpg', alt='Aegon - logo', style='max-height: 100px;')
+              // /Fourth column
+            // /Grid row
+          // Third slide
+      // Logo carousel
+    hr.mb-4
+    .container
+      // Section: Jumbotron
+      section#intro.card.wow.fadeIn
+        // Content
+        .card-body.text-white.text-center.py-5.px-5.my-5
+          h4.mb-4
+            | A man who asks is a fool for five minutes. A man who never asks is a fool for life.
+          p
+            strong Best & free collection of resources organised to facilitate ease of access..
+          p.mb-4
+            strong NoviceNet - novice (beginner) + network (connection)
+          p
+            | A small bridge to connect the aspirants with apt resources organised in a friendly manner.
+          p
+          a(href='#resources')
+            button.btn.btn-outline-white Try it now
+        // Content
+      // Section: Jumbotron
+      hr.my-5
+      .container
+        // Collapse buttons
+        div(style='height: 100%;    display: flex;    justify-content: center;    align-items: center;')
+          h3
+            strong # include 
+          a#resources.btn.btn-outline-default.waves-effect Resources
+        // / Collapse buttons
+        // Collapsible element
+        #resources_div
+          .mt-3
+            #programming_div(style='height: 100%;        display: flex;        justify-content: center;        align-items: center;')
+              h3
+                strong int 
+              p
+                a#programming.btn.btn-outline-info.waves-effect programming( )
+            #apptitute_div(style='height: 100%;        display: flex;        justify-content: center;        align-items: center;')
+              h3
+                strong float 
+              p
+                a#apptitute.btn.btn-outline-warning.waves-effect apptitute ( )
+            #reference_div(style='height: 100%;        display: flex;        justify-content: center;        align-items: center;')
+              h3
+                strong void 
+              p
+                a#reference.btn.btn-outline-primary.waves-effect reference ( )
+            // / Collapsible element
+            #programming_list.container.mt-3.w-50(style='display: none;')
+              h2 Programming
+              p Here are some good community upvoted resources :
+              input#myInput1.form-control(type='text', placeholder='Search..')
+              br
+              ul#myList1.list-group
+                li.list-group-item
+                  a(href='https://www.w3schools.com/', target='_blank', style='text-decoration: none;') W3Schools
+                li.list-group-item
+                  a(href='http://www.geeksforgeeks.org/', target='_blank', style='text-decoration: none;') geeksforgeeks
+                li.list-group-item
+                  a(href='https://www.tutorialspoint.com/', target='_blank', style='text-decoration: none;') Tutorials Point
+                li.list-group-item
+                  a(href='https://www.codecademy.com/', target='_blank', style='text-decoration: none;') CodeAcademy
+                li.list-group-item
+                  a(href='https://www.udemy.com/', target='_blank', style='text-decoration: none;') Udemy
+                li.list-group-item
+                  a(href='https://www.edx.org/', target='_blank', style='text-decoration: none;') EdX
+                li.list-group-item
+                  a(href='https://www.coursera.org/', target='_blank', style='text-decoration: none;') Coursera
+                li.list-group-item
+                  a(href='https://www.sitepoint.com/', target='_blank', style='text-decoration: none;') Sitepoint
+                li.list-group-item
+                  a(href='https://www.javatpoint.com/', target='_blank', style='text-decoration: none;') Javapoint
+                li.list-group-item
+                  a(href='https://www.codeavengers.com/', target='_blank', style='text-decoration: none;') CodeAvengers
+            #apptitute_list.container.mt-3.w-50(style='display: none;')
+              h2 Aptitute and GATE
+              p Practice with our filtered lists at your comfort :
+              input#myInput2.form-control(type='text', placeholder='Search..')
+              br
+              ul#myList2.list-group
+                li.list-group-item
+                  a(href='https://www.indiabix.com/', target='_blank', style='text-decoration: none;') IndiaBix
+                li.list-group-item
+                  a(href='http://www.crackaptitude.com/', target='_blank', style='text-decoration: none;') CrackAptitute
+                li.list-group-item
+                  a(href='https://www.placementseason.com/', target='_blank', style='text-decoration: none;') PlacementSeason
+                li.list-group-item
+                  a(href='https://www.careerride.com/', target='_blank', style='text-decoration: none;') CarrierRide
+                li.list-group-item
+                  a(href='http://www.tutecircle.com/', target='_blank', style='text-decoration: none;') TuteCircle
+                li.list-group-item
+                  a(href='https://unacademy.com/', target='_blank', style='text-decoration: none;') Unacademy
+            #refernce_list.container.mt-3.w-50(style='display: none;')
+              h2 ReferMents
+              p Instant answer to all your queries :
+              input#myInput3.form-control(type='text', placeholder='Search..')
+              br
+              ul#myList3.list-group
+                li.list-group-item
+                  a(href='https://www.quora.com/', target='_blank', style='text-decoration: none;') Quora
+                li.list-group-item
+                  a(href='https://stackoverflow.com/', target='_blank', style='text-decoration: none;') StackOverflow
+                li.list-group-item
+                  a(href='http://reddit.com/r/AskReddit', target='_blank', style='text-decoration: none;') Reddit
+                li.list-group-item
+                  a(href='https://in.linkedin.com/', target='_blank', style='text-decoration: none;') LinkedIn
+        hr.mb-4
+        .alert.alert-warning.mb-4(role='alert')
+          h5(style='height: 100%;      display: flex;      justify-content: center;      align-items: center;')
+            | void 
+            | main ( ) 
+            | {
+            br
+            br
+            |              while ( ! succeed = try() );
+            br
+            |              return " Happy learning ! "
+            br
+            br
+            |        }
+        hr.mb-4
+        br
+        h4.mb-4
+          i.fa.fa-heartbeat(aria-hidden='true')
+          |   Confused ! Let me help you,just unblock any box randomly,read it and grab the way if it suits you..
+        hr.mb-5
+        .container
+          // Default unchecked
+          .row
+            .col-md-6.mb-4
+              .card.pink.lighten-2.text-center.z-depth-2
+                .card-body
+                  p.white-text.mb-0
+                    | Vishal,a passionate youngster..hoping to equip himself with boosting stuffs.He always in search of the best available>he neither opt an avarage one nor the nearest.His doubt is which programming language has the superior scope and what falls behind.He went deep and finally came up with some convincing solution.Hehe!
+                  // Unique
+                  br
+                  button#button-vishal.btn.btn-pink(type='button')
+                    | Look at vishal's survey? 
+                    i.fa.fa-gift(aria-hidden='true')
+            // /.Card Primary
+            br
+            #vishal.alert.alert-warning.col-md-12(role='alert', style='display: none;')
+              p.black-text
+                | Cool,I am 
+                strong vishal
+                | .
+              p.dark-grey-text
+                | Ahem,I am big fan of stackoverflow.And stackoverflow releases annual survey results based the community members support.
+              p.black-text
+                | That's really cool,Atlast I got some trusty results(at least to get confidence initially).Have a look below
+              button.btn.btn-outline-warning.waves-effect(type='button')
+                a(href='#btn')
+                  h6
+                    i.fa.fa-heart-o(aria-hidden='true')
+                    |  View
+            // Card Danger
+            .col-md-5.mb-4
+              // Card Primary
+              .card.indigo.text-center.z-depth-2
+                .card-body
+                  p.white-text.mb-0
+                    | Raju is an intermediate programmer.He loves to code,but often frusturated by his choice of platforms and tools.He fails to find the comfortable one to work with and make things work smoother ever.All his peers totally jammed his mind with lot's of scrappy suggestions.Who should he consider.He followed a different track..
+                  // Cyan
+                  button#button-raju.btn.btn-light-blue(type='button')
+                    | Follow Raju 
+                    i.fa.fa-history(aria-hidden='true')
+            // /.Card Danger
+            br
+            #raju.alert.alert-info.col-md-12(role='alert', style='display: none;')
+              p.dark-grey-text
+                | Hi,I am Raju - codeWiz,(:- my friends started rolling me with quench of suggestions.Pee..
+              p.black-text
+                | I am the one who should decide where I want to be and what suits me.So I made my mind to go for a deep analysis,believe people on the stream,stackoverflow survey..
+              p.dark-grey-text
+                | Ofcourse,It's quite safer compared to my peers ideas.Hope you love too.Start experimenting
+              button.btn.btn-outline-primary.waves-effect(type='button')
+                a(href='#btn')
+                  h6
+                    i.fa.fa-star-o(aria-hidden='true')
+                    |  Look
+            // Card Success
+            .col-md-11.mb-4
+              .card.info-color.text-center.z-depth-2
+                .card-body
+                  p.white-text.mb-0
+                    | KaneWiz loves going deep with fuzzy logics,enjoys coding from scratch.Extremely sportive programmer,but unfortunately migrating himself among position,ofcourse he is versatile,capable of playing any challenging role.Anyhow,at the end of the day money should  definitely be primary goal.To be honest I need ..pee!So found a worthy role to make up
+                  // Indigo
+                  button#button-kane.btn.btn-cyan(type='button')
+                    | Hifi, 
+                    i.fa.fa-hand-paper-o(aria-hidden='true')
+                    |  Really,can you share?
+              // /.Card Success
+          #kane.alert.alert-primary(role='alert', style='display: none;')
+            p.dark-grey-text Well,Let me open the box (:- Sssh! Silence
+            p.black-text
+              | Just for joke,you have it more transparent.Just a click away.But note it's just result of survey,no assurance you will get the same.Please don't blame me..LOL! .
+            p.dark-grey-text
+              | But sure it will be intersting to have a look (:-wow,My role of choice is pretty decent.
+            button.btn.btn-outline-primary.waves-effect(type='button')
+              a(href='#btn')
+                h6
+                  i.fa.fa-heart-o(aria-hidden='true')
+                  |  Reveal
+        // Default unchecked
+      hr.mb-5
+      #vishal_survey.row(style='display: none;')
+        .col-lg-6.col-md-12
+          .card.mb-5
+            .card-body Programming, Scripting, and Markup Languages - Popular
+          canvas#barChart1
+          hr.mb-4
+        .col-lg-6.col-md-12
+          .card.mb-5
+            .card-body Most Dreaded Languages
+          canvas#pieChart
+          hr.mb-4
+      br
+      br
+      br
+      #raju_survey.row(style='display: none;')
+        .col-lg-6.col-md-12
+          .card.mb-5
+            .card-body Most popular Frameworks, Libraries, and Tools
+          canvas#barChart2
+          hr.mb-4
+        .col-lg-6.col-md-12
+          .card.mb-5
+            .card-body Most loved development environments
+          canvas#doughnutChart1
+          hr.mb-4
+      br
+      br
+      br
+      #kane_survey2.row(style='display: none;')
+        .col-lg-6.col-md-12
+          .card.mb-5
+            .card-body Top Paying Technologies
+          canvas#barChart3
+        .col-lg-6.col-md-12
+          .card.mb-5
+            .card-body Most Loved and Wanted Platforms
+          canvas#doughnutChart2
+          hr.mb-4
+      br
+      br
+      br
+      #kane_survey1.row(style='display: none;')
+        .col-lg-12.col-md-12
+          .card.mb-5
+            .card-body Salary by Developer Type
+          canvas#barChart4
+          hr.mb-4
+    br
+    #btn.mx-auto(style='width: 200px;')
+      a.btn.btn-primary(href='https://insights.stackoverflow.com/survey/2018/#overview', target='_blank') StackOverflow developer survey
+    br
+    br
+    br
+    // Footer
+    footer.page-footer.text-center.font-small.mdb-color.darken-2.mt-4.wow.fadeIn
+      // Call to action
+      .pt-4
+        a.btn.btn-outline-white(href='/projects/kbase', target='_blank', role='button')
+          | Have doubts ?
+          i.fa.fa-puzzle-piece(aria-hidden='true', style='padding-left: 5px;')
+        a.btn.btn-outline-white(href='/projects/contact', target='_blank', role='button')
+          | Reach us
+          i.fa.fa-heart(aria-hidden='true', style='padding-left: 5px;')
+      // /.Call to action
+      hr.my-4
+      .pb-4
+        a(href='https://www.facebook.com/accetthiran', target='_blank')
+          i.fa.fa-facebook.mr-3
+        a(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+          i.fa.fa-twitter.mr-3
+        a(href='https://www.youtube.com/user/ACCETthiran', target='_blank')
+          i.fa.fa-youtube.mr-3
+        a(href='https://plus.google.com/116707854087495862030', target='_blank')
+          i.fa.fa-google-plus.mr-3
+        a(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+          i.fa.fa-github.mr-3
+        a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+          i.fa.fa-linkedin.mr-3
+        a(href='https://www.instagram.com/thiran2k18/?hl=en', target='_blank')
+          i.fa.fa-instagram.mr-3
+      // Social icons
+      // Copyright
+      .footer-copyright.py-3
+        | © 2018 Copyright:
+        a(href='/', target='_blank')  thiran.in 
+      // /.Copyright
+    // /.Footer
+    // JQuery
+    script(type='text/javascript', src='js/jquery-3.3.1.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // Bootstrap tooltips
+    script(type='text/javascript', src='js/popper.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+    // Bootstrap core JavaScript
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+    // MDB core JavaScript
+    script(type='text/javascript', src='js/mdb.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+    // Initializations
+    script(type='text/javascript', src='/js/content.js')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      $("#myInput1").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myList1 li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+      });
+      $("#myInput2").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myList2 li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+      });
+      $("#myInput3").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myList3 li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+      });
+      $("#resources").click(function(){
+      $("#apptitute_div").show();
+      $("#programming_div").show();
+      $("#reference_div").show();
+      $("#programming_list").hide();
+      $("#refernce_list").hide();
+      $("#apptitute_list").hide();
+      })
+      $("#programming").click(function(){
+      $("#apptitute_div").fadeToggle(1000);
+      $("#reference_div").fadeToggle(1000);
+      $("#programming_list").fadeToggle(1000);
+      })
+      $("#apptitute").click(function(){
+      $("#programming_div").fadeToggle(1000);
+      $("#reference_div").fadeToggle(1000);
+      $("#apptitute_list").fadeToggle(1000);
+      })
+      $("#reference").click(function(){
+      $("#programming_div").fadeToggle(1000);
+      $("#apptitute_div").fadeToggle(1000);
+      $("#refernce_list").fadeToggle(1000);
+      })
+      });
+      //bar
+      var ctxB = document.getElementById("barChart1").getContext('2d');
+      var myBarChart = new Chart(ctxB, {
+      type: 'bar',
+      data: {
+      labels: ["Javascript", "HTML", "CSS", "SQL", "Java", "Bash/shell","Python", "C#", "PHP", "C++", "C", "Ruby","Swift","R","Kotlin"],
+      datasets: [{
+      label: '# of Votes',
+      data: [69.8, 68.5, 65.1, 57.0, 45.3, 39.8,38.8, 34.4, 30.7,25.4,23.0,10.1,8.1,6.1,4.5],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)'
+      ],
+      borderColor: [
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)'
+      ],
+      borderWidth: 1
+      }]
+      },
+      options: {
+      scales: {
+      yAxes: [{
+      ticks: {
+      beginAtZero:true
+      }
+      }]
+      }
+      }
+      });
+      var ctxB = document.getElementById("barChart2").getContext('2d');
+      var myBarChart = new Chart(ctxB, {
+      type: 'bar',
+      data: {
+      labels: ["Node.js", "Angular", "React", ".NET Core", "Spring", "Django","Cordova", "TensorFlow", "Xamarin", "Spark", "Hadoop", "Torch/PyTorch"],
+      datasets: [{
+      label: '# of Votes',
+      data: [49.6,36.9,27.8,27.2,17.6,13.0,8.5,7.8,7.4,4.8,4.7,1.7],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth: 1
+      }]
+      },
+      options: {
+      scales: {
+      yAxes: [{
+      ticks: {
+      beginAtZero:true
+      }
+      }]
+      }
+      }
+      });
+      //doughnut
+      var ctxD = document.getElementById("doughnutChart1").getContext('2d');
+      var myLineChart = new Chart(ctxD, {
+      type: 'doughnut',
+      data: {
+      labels: ["VS Code","Visual studio","Notepad++","Sublime Text","Vim","IntelliJ","Android studio","Eclipse","Atom","PyCharm","NetBeans","XCode"],
+      datasets: [
+      {
+      data: [34.9,34.3,34.2,28.9,25.87,24.9,19.3,18.9,18.0,12.0,8.2,10.6],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360","#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360","#F7464A", "#46BFBD"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774","#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774","#FF5A5E", "#5AD3D1"]
+      }
+      ]
+      },
+      options: {
+      responsive: true
+      }
+      });
+      //pie
+      var ctxP = document.getElementById("pieChart").getContext('2d');
+      var myPieChart = new Chart(ctxP, {
+      type: 'pie',
+      data: {
+      labels: ["Visual Basic6","Cobal","CoffeeScript","VB.NET","VBA","MatLab","Perl","PHP","Ruby","Java"],
+      datasets: [
+      {
+      data: [89.9,84.1,82,80.9,80.0,77.4,71.3,58.4,52.6,49.3],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360","#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774","#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }
+      ]
+      },
+      options: {
+      responsive: true
+      }
+      });
+      //doughnut
+      var ctxD = document.getElementById("doughnutChart2").getContext('2d');
+      var myLineChart = new Chart(ctxD, {
+      type: 'doughnut',
+      data: {
+      labels: ["Linux","Windows Desktop/server","Android","AWS","MacOS","RasperryPi","IOS","FireBase","Azure","Arduino","Heroku"],
+      datasets: [
+      {
+      data: [48.3,35.4,29.0,24.1,17.9,15.9,15.5,14.5,11.0,10.6,10.5],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360","#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360","#F7464A"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774","#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774","#FF5A5E"]
+      }
+      ]
+      },
+      options: {
+      responsive: true
+      }
+      });
+      var ctxB = document.getElementById("barChart3").getContext('2d');
+      var myBarChart = new Chart(ctxB, {
+      type: 'bar',
+      data: {
+      labels: ["F#","Ocaml","Clojure","Groovy","Perl","Rust","Erlang","Scala","Go","Ruby","Python","SQL","Javascript"],
+      datasets: [{
+      label: '# of Votes',
+      data: [74000,73000,72000,72000,69000,69000,67000,67000,66000,64000,56000,56000,55000],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.2)'
+      ],
+      borderColor: [
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(255,99,132,1)'
+      ],
+      borderWidth: 1
+      }]
+      },
+      options: {
+      scales: {
+      yAxes: [{
+      ticks: {
+      beginAtZero:true
+      }
+      }]
+      }
+      }
+      });
+      var ctxB = document.getElementById("barChart4").getContext('2d');
+      var myBarChart = new Chart(ctxB, {
+      type: 'bar',
+      data: {
+      labels: ["Engineering manager","DevOps specialist","Data scientist or machine learning specialist","Data or business analyst","Embedded applications or devices developer","Full-stack developer","Desktop or enterprise applications developer","Back-end developer","System administrator","QA or test developer","Database administrator","Front-end developer","Designer"],
+      datasets: [{
+      label: '$ Salary',
+      data: [89000,72000,60000,59000,59000,59000,57000,56000,56000,55000,51000,46000],
+      backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)',
+      'rgba(255,99,132,1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255,99,132,1)'
+      ],
+      borderWidth: 1
+      }]
+      },
+      options: {
+      scales: {
+      yAxes: [{
+      ticks: {
+      beginAtZero:true
+      }
+      }]
+      }
+      }
+      });
+      $(document).ready(function(){
+      $('#button-raju').click(function(){
+      $('#vishal').hide();
+      $('#kane').hide();
+      $('#raju').fadeToggle(2000);
+      $('#raju_survey').fadeToggle(2000);
+      $('#kane_survey1').hide();
+      $('#kane_survey2').hide();
+      $('#vishal_survey').hide();
+      })
+      $('#button-vishal').click(function(){
+      $('#raju').hide();
+      $('#kane').hide();
+      $('#vishal').fadeToggle(2000);
+      $('#vishal_survey').fadeToggle(2000);
+      $('#kane_survey1').hide();
+      $('#kane_survey2').hide();
+      $('#raju_survey').hide();
+      })
+      $('#button-kane').click(function(){
+      $('#raju').hide();
+      $('#vishal').hide();
+      $('#kane').fadeToggle(2000);
+      $('#kane_survey1').fadeToggle(2000);
+      $('#kane_survey2').fadeToggle(2000);
+      $('#vishal_survey').hide();
+      $('#raju_survey').hide();
+      })
+      });
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }

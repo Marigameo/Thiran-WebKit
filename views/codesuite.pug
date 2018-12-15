@@ -1,0 +1,501 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title CodeSuite - All in one coding platform
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css', rel='stylesheet')
+    // Your custom styles (optional)
+    link(href='/css/style_g.min.css', rel='stylesheet')
+    style.
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://loading.io/spinners/liquid/lg.liquid-fill-preloader.gif') 50% 50% no-repeat white;
+      }
+  body
+    #loader
+    // Main Navigation
+    header
+      // Navbar
+      nav.navbar.fixed-top.navbar-expand-lg.navbar-light.white.scrolling-navbar
+        .container
+          // Brand
+          a.navbar-brand.waves-effect(href='/')
+            strong.blue-text Thiran
+          // Collapse
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          // Links
+          #navbarSupportedContent.collapse.navbar-collapse
+            // Left
+            ul.navbar-nav.mr-auto
+              li.nav-item.active
+                a.nav-link.waves-effect(href='#')
+                  | Codesuite
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link.waves-effect(href='/projects/aboutcodesuite', target='_blank') Tour
+              // Dropdown
+              li.nav-item.dropdown
+                a#navbarDropdownMenuLink.nav-link.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Resources
+                .dropdown-menu.dropdown-primary(aria-labelledby='navbarDropdownMenuLink')
+                  a.dropdown-item(href='/projects/kbase', target='_blank') Knowledgebase
+                  a.dropdown-item(href='http://read.thiran.in/', target='_blank') Blog
+                  a.dropdown-item(href='/projects/about_startup', target='_blank') ACGCET StartUp Wallet
+                  a.dropdown-item(href='https://accetosaweb.wordpress.com/', target='_blank') ACCETOSA
+                  a.dropdown-item(href='/projects/about_discusshub', target='_blank') DiscussHub
+            // Right
+            ul.navbar-nav.nav-flex-icons
+              li.nav-item
+                a.nav-link.waves-effect(href='https://www.facebook.com/accetthiran', target='_blank')
+                  i.fa.fa-facebook
+              li.nav-item
+                a.nav-link.waves-effect(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+                  i.fa.fa-twitter
+              li.nav-item
+                a.nav-link.border.border-light.rounded.waves-effect(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+                  i.fa.fa-github.mr-2
+                  | THIRAN GitHub
+      // Navbar
+    // Main Navigation
+    // Main layout
+    main.mt-5.pt-5
+      .container
+        // Section: Post
+        section.mt-4
+          // Grid row
+          .row
+            // Grid column
+            .col-md-8.mb-4
+              .input-container.w-50.mx-auto
+                #errors
+                  if errors
+                    ul(class='alert-error')
+                      each error, i in errors
+                        div(class="alert alert-danger") #{error} 
+                  if success
+                    div(class="alert alert-success" style="padding: 20px;background-color: #f8bbd0;color: black;margin-bottom: 15px;") #{success} 
+              // Featured Image
+              .card.mb-4.wow.fadeIn
+                img.img-fluid(src='/img/codesuite.jpg', alt='')
+              // /.Featured Image
+              // Card
+              .card.mb-4.wow.fadeIn
+                // Card content
+                .card-body.text-center
+                  p.h5.my-4 What is CodeSuite?
+                  p
+                    | All in one platform to practice and personalise your coding and other placement related skills
+                  h5.my-4
+                    strong
+                      | CodeSuite - build with the dream of lifting 2000 + ACGCET'ians fluttering carreer tracks.
+                  // Logo carousel
+                  #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel', data-interval='1800')
+                    .carousel-inner
+                      // First slide
+                      .carousel-item
+                        // Grid row
+                        .row
+                          // First column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://venturebeat.com/wp-content/uploads/2018/02/google-flutter-logo.png?fit=578%2C289&strip=all', alt='Nike - logo', style='max-height: 40px;')
+                          // /First column
+                          // Second column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png', alt='Amazon - logo', style='max-height: 40px;')
+                          // /Second column
+                          // Third column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='http://pluspng.com/img-png/mongodb-png-mongo-db-logo-png-370.png', alt='Sony - logo', style='max-height: 40px;')
+                          // /Third column
+                          // Fourth column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://www.techombay.com/wp-content/uploads/2017/06/g1.png', alt='Samsung - logo', style='max-height: 40px;')
+                          // /Fourth column
+                        // /Grid row
+                      // First slide
+                      // Second slide
+                      .carousel-item.active.carousel-item-left
+                        // Grid row
+                        .row
+                          // First column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://www.google-melange.com/archive/gsoc/2015/orgs/python/logo-200.png', alt='Airbus - logo', style='max-height: 40px;')
+                          // /First column
+                          // Second column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://ih1.redbubble.net/image.489553250.2202/ap,550x550,16x12,1,transparent,t.png', alt='Yahoo - logo', style='max-height: 40px;')
+                          // /Second column
+                          // Third column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-card.png', alt='Deloitte - logo', style='max-height: 40px;')
+                          // /Third column
+                          // Fourth column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://wiki.pandorafms.com/images/1/1f/Selenium_logo.png', alt='GE - logo', style='max-height: 40px;')
+                          // /Fourth column
+                        // /Grid row
+                      // Second slide
+                      // Third slide
+                      .carousel-item.carousel-item-next.carousel-item-left
+                        // Grid row
+                        .row
+                          // First column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png', alt='KPMG - logo', style='max-height: 40px;')
+                          // /First column
+                          // Second column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://appacademy.dk/wp-content/uploads/2017/05/js-logo.png', alt='Unity - logo', style='max-height: 40px;')
+                          // /Second column
+                          // Third column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://warlord0blog.files.wordpress.com/2016/09/jquery_logo.png?w=640', alt='Ikea - logo', style='max-height: 40px;')
+                          // /Third column
+                          // Fourth column
+                          .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                            img.img-fluid.px-4(src='https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/javadebugger/0.1.5/1507272422920/Microsoft.VisualStudio.Services.Icons.Default', alt='Aegon - logo', style='max-height: 40px;')
+                          // /Fourth column
+                        // /Grid row
+                      // Third slide
+                  // Logo carousel
+                  hr
+                  a.btn.btn-outline-primary(href='/projects/aboutcodesuite', role='button', target='_blank')
+                    | Read More
+                    i.fa.fa-code.ml-2
+              // /.Card
+              // Card
+              .card.mb-4.wow.fadeIn
+                .card-header.font-weight-bold
+                  span Your partner in crime
+                  span.pull-right
+                    a(href='https://www.facebook.com/profile.php?id=100012818165229', target='_blank')
+                      i.fa.fa-facebook.mr-2
+                    a(href='https://twitter.com/mariapp62431572', target='_blank')
+                      i.fa.fa-twitter.mr-2
+                    a(href='https://stackoverflow.com/users/9648507/mariappan-gameo', target='_blank')
+                      i.fa.fa-stack-overflow.mr-2
+                    a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+                      i.fa.fa-linkedin.mr-2
+                // Card content
+                .card-body
+                  .media.d-block.d-md-flex.mt-3
+                    img.d-flex.mb-3.mx-auto.z-depth-1(src='https://img.freepik.com/free-vector/programming-languages-set-icons_24877-768.jpg?size=338&ext=jpg', alt='Generic placeholder image', style='width: 100px;')
+                    .media-body.text-center.text-md-left.ml-md-3.ml-0
+                      h5.mt-0.font-weight-bold MARIAPPAN .S
+                      p Wooo! Glad you stepped here.
+                      p Wondering why I am interested with these stuffs?
+                      p
+                        | I tried a lot to fix a substitute who can spare my time that I do spend with computers and technology.
+                      p
+                        | But to my surprise and realisation no such thing to offer the  satisfaction and flexibility that it offers.
+                      p
+                        | Still,I am wondering if there could be something to entertain me a bit more competing with my passion.
+                      p
+                        | And this is one such result of my foolishness and selfishness as my peers address.
+                      p
+                        | Hope it helps you at some point while you step forward in your career..And my friends, never comprimise your goals.Stay hungry,stay foolish..
+                        | You can reach me anytime through my social profiles.
+                        | Happy coding..
+                      p Mail me @ : mariappangameo@gmail.com
+              // /.Card
+              // Reply
+              .card.mb-3.wow.fadeIn
+                .card-header.font-weight-bold Mr.Honest
+                .card-body
+                  // Default form reply
+                  form(method='POST', action='/projects/feedback')
+                    // Comment
+                    .form-group
+                      label(for='replyFormComment') What made you step into the world of code and logics? 
+                      textarea#replyFormComment.form-control(rows='5', name='feedback_body')
+                      small We back up your feedbacks so it could help someone in future.
+                    // Name
+                    label(for='replyFormName') Your name
+                    input#replyFormName.form-control(type='text', name='name')
+                    br
+                    // Email
+                    label(for='replyFormEmail') Your e-mail
+                    input#replyFormEmail.form-control(type='email', name='email')
+                    .text-center.mt-4
+                      button.btn.btn-info.btn-md(type='submit') Submit
+                  // Default form reply
+              // /.Reply
+            // Grid column
+            // Grid column
+            .col-md-4.mb-4
+              // Card: Jumbotron
+              .card.gradient-custom.mb-4.wow.fadeIn
+                // Content
+                .card-body.text-white.text-center
+                  h5.mb-4
+                    strong Our aim is to organise the world of code and gift them transparently
+                  p
+                    strong Learn,practice,compete,win,teach and experiment at your own pace
+                  p.mb-4
+                    strong
+                      | Access to 100's of resources,guides,links to popular educational platforms and a lot to discover.
+                  a.btn.btn-outline-white.btn-md(target='_blank', href='/projects/aboutcodesuite')
+                    | Read More
+                    i.fa.fa-graduation-cap.ml-2
+                // Content
+              // Card: Jumbotron
+              // Card : Dynamic content wrapper
+              .card.mb-4.text-center.wow.fadeIn
+                .card-header
+                  | Confused where to start?
+                  br
+                  | Contact us
+                // Card content
+                .card-body
+                  // Default form login
+                  form(method='POST', action='/projects/trouble')
+                    // Default input email
+                    label.grey-text(for='defaultFormEmailEx') Your email
+                    input#defaultFormLoginEmailEx.form-control(type='email', name='email')
+                    br
+                    // Default input password
+                    label.grey-text(for='defaultFormNameEx') Your name
+                    input#defaultFormNameEx.form-control(type='text', name='name')
+                    .text-center.mt-4
+                      button.btn.btn-info.btn-md(type='submit') Send
+                  // Default form login
+              // /.Card : Dynamic content wrapper
+              br
+              // Card
+              .card.mb-4.wow.fadeIn
+                .card-header Recent Trends & technologies
+                // Card content
+                .card-body
+                  ul.list-unstyled
+                    li.media
+                      img.d-flex.mr-3(src='https://flutter.io/images/catalog-widget-placeholder.png', alt='Generic placeholder image', style='width: 100px;height: 100px;')
+                      .media-body
+                        a(href='https://flutter.io/', target='_blank')
+                          h5.mt-0.mb-1.font-weight-bold Flutter
+                        |                                             Flutter is Google’s mobile app SDK for crafting high-quality native interfaces on iOS and Android in record time...
+                    li.media.my-4
+                      img.d-flex.mr-3(src='https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png', alt='An image', style='width: 100px;height: 100px;')
+                      .media-body
+                        a(href='https://facebook.github.io/react-native/', target='_blank')
+                          h5.mt-0.mb-1.font-weight-bold React Native
+                        |                                             React Native lets you build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI from declarative components.
+                    br
+                    li.media
+                      img.d-flex.mr-3(src='http://www.marconeferreira.com/wp-content/uploads/2017/12/mdb-p.png', alt='Generic placeholder image', style='width: 100px;height: 100px;')
+                      .media-body
+                        a(href='https://material.io/design/', target='_blank')
+                          h5.mt-0.mb-1.font-weight-bold Material Design
+                        |                                             Create intuitive and beautiful products with Material Design. (...)
+                    br
+                    li.media
+                      img.d-flex.mr-3(src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/GitLab_Logo.svg/2000px-GitLab_Logo.svg.png', alt='Generic placeholder image', style='width: 100px;height: 100px;')
+                      .media-body
+                        a(href='https://about.gitlab.com/', target='_blank')
+                          h5.mt-0.mb-1.font-weight-bold Gitlab
+                        |                                             Simplify your DevOps toolchain (...)
+                    br
+                    li.media
+                      img.d-flex.mr-3(src='https://1xltkxylmzx3z8gd647akcdvov-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/rapidminer-logo-retina.png', alt='Generic placeholder image', style='width: 100px;height: 100px;')
+                      .media-body
+                        a(href='https://rapidminer.com/', target='_blank')
+                          h5.mt-0.mb-1.font-weight-bold RapidMiner
+                        |                                             RapidMiner is a software platform for data science teams that unites data prep, machine learning, and predictive model deployment.(...)
+                    li.media
+                      img.d-flex.mr-3(src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/1200px-TensorFlowLogo.svg.png', alt='Generic placeholder image', style='width: 100px;height: 100px;')
+                      .media-body
+                        a(href='https://www.tensorflow.org/', target='_blank')
+                          h5.mt-0.mb-1.font-weight-bold TensorFlow
+                        |                                             An open source machine learning framework for everyone(...)
+                  br
+                  .text-center.mt-4
+                    a.btn.btn-info.btn-md(href='https://techcrunch.com/tag/trends/', target='_blank') Discover More
+              // /.Card
+            // Grid column
+          // Grid row
+        // Section: Post
+        // Section: Main features & Quick Start
+        hr.my-5
+        .container
+          .row
+            // Card deck
+            .card-deck
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='http://www.eplatform.vn/blog/wp-content/uploads/2018/06/web_dev.jpg', alt='Card image cap', style='height: 240px;')
+                  a(href='/projects/codemate', target='_blank')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  h4.card-title CodeMate
+                  h6 Competing is fun, just don’t forget to break
+                  // Text
+                  p.card-text Learn the unwritten rules of the game as you play harder and get better.
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/codemate', target='_blank') Fight Now
+              // Card
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='https://www.valuecoders.com/blog/wp-content/uploads/2017/09/11-Top-Programming-Trends-To-Look-For-In-20172.jpg', alt='Card image cap', style='height: 240px;')
+                  a(href='/projects/novicenet', target='_blank')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  br
+                  h4.card-title NoviceNet
+                  h6 Sloppy code is better than no code
+                  // Text
+                  p.card-text First, solve the problem. Then, write the code.Grasp the toolset here..
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/novicenet', target='_blank') Access Now
+              // Card
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='http://www.digitalconnectmag.com/wp-content/uploads/2017/06/Businesses-prefer-the-ease-of-access-offered-by-cloud-computing.png', alt='Card image cap', style='height: 240px;')
+                  a(href='/projects/yetxplore#cloud', target='_blank')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  br
+                  h4.card-title CloudRunz
+                  h6 Boom your progress with cloud
+                  // Text
+                  p.card-text Dwell in the metaphor of Internet,store and organize code creatively
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/yetxplore#cloud', target='_blank') Discover
+            // Card deck
+          // Section: Main features & Quick Start
+          hr.my-5
+          .row
+            // Card deck
+            .card-deck
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='http://www.youthincmag.com/wp-content/uploads/2016/07/8-Books-That-Will-Leave-You-Feeling-Amazing-And-On-Top-Of-The-World.jpg', alt='Card image cap', style='height: 240px;')
+                  a(href='/projects/offlinides', target='_blank')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  h4.card-title Offlinides
+                  h6 Captured crafts at hands
+                  // Text
+                  p.card-text Knowledge within reach.Now read at your own comfort
+                  p Reading maketh a complete man
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/offlinides', target='_blank') Read Now
+              // Card
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/programming-languages-to-learn-for-wordpress-featured-image.png', alt='Card image cap', style='height: 240px;')
+                  a(href='/projects/yetxplore#dev', target='_blank')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  br
+                  h4.card-title DevToolZet
+                  h6 Boost your productivity,craft your creativity..
+                  // Text
+                  p.card-text
+                    | Work Concurrently, No More Handoffs.Try these dev support tools and have fun with production.
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/yetxplore#dev', target='_blank') Get Now
+              // Card
+              // Card
+              .card.mb-4
+                // Card image
+                .view.overlay
+                  img.card-img-top(src='https://cdn-images-1.medium.com/max/700/1*Eke8TstiI3Dabl7TUiPG2g.png', alt='Card image cap', style='height: 240px;')
+                  a(href='/projects/yetxplore', target='_blank')
+                    .mask.rgba-white-slight
+                // Card content
+                .card-body
+                  // Title
+                  br
+                  h4.card-title YetXplore
+                  h6 Don’t just accept differences —celebrate them and thrive on it
+                  // Text
+                  p.card-text
+                    | Weak men wait for opportunities,strong men make them.Discover and pave your own way at your comfort pace.
+                  // Provides extra visual weight and identifies the primary action in a set of buttons
+                  a.btn.btn-light-blue.btn-md(href='/projects/yetxplore', target='_blank') Grab Now
+            // Card deck
+    // Main layout
+    // Footer
+    footer.page-footer.text-center.font-small.mdb-color.darken-2.mt-4.wow.fadeIn
+      // Call to action
+      .pt-4
+        a.btn.btn-outline-white(href='/projects/knowledgebase', target='_blank', role='button')
+          | Have doubts ?
+          i.fa.fa-puzzle-piece(aria-hidden='true', style='padding-left: 5px;')
+        a.btn.btn-outline-white(href='/projects/contact', target='_blank', role='button')
+          | Reach us
+          i.fa.fa-heart(aria-hidden='true', style='padding-left: 5px;')
+      // /.Call to action
+      hr.my-4
+      .pb-4
+        a(href='https://www.facebook.com/accetthiran', target='_blank')
+          i.fa.fa-facebook.mr-3
+        a(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+          i.fa.fa-twitter.mr-3
+        a(href='https://www.youtube.com/user/ACCETthiran', target='_blank')
+          i.fa.fa-youtube.mr-3
+        a(href='https://plus.google.com/116707854087495862030', target='_blank')
+          i.fa.fa-google-plus.mr-3
+        a(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+          i.fa.fa-github.mr-3
+        a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+          i.fa.fa-linkedin.mr-3
+        a(href='https://www.instagram.com/thiran2k18/?hl=en', target='_blank')
+          i.fa.fa-instagram.mr-3
+      // Social icons
+      // Copyright
+      .footer-copyright.py-3
+        | © 2018 Copyright:
+        a(href='/', target='_blank')  thiran.in 
+      // /.Copyright
+    // /.Footer
+    // SCRIPTS
+    // JQuery
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // Bootstrap tooltips
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+    // Bootstrap core JavaScript
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+    // MDB core JavaScript
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+    // Initializations
+    script(type='text/javascript').
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }
+      // Animations initialization
+      new WOW().init();

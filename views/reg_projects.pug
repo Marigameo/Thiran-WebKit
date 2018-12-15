@@ -1,0 +1,579 @@
+doctype html
+head
+  title THIRAN - Register projects
+  // Import Google Icon Font
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+  // Import materialize.css
+  // Compiled and minified CSS
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css')
+  // Let browser know website is optimized for mobile
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+style(type='text/css').
+  .container {
+  margin: 20px auto;
+  max-width: 1280px;
+  width: 90%;
+  }
+  @media only screen and (min-width: 601px) {
+  .container {
+  width: 85%;
+  }
+  }
+  @media only screen and (min-width: 993px) {
+  .container {
+  width: 60%;
+  }
+  }
+  @media all and (max-width: 480px) {
+  .c1 {
+  display: none;
+  }
+  }
+  .c1 {
+  padding-top: 20px;
+  }
+  .shape-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  // height: 1200px;
+  // background: grey;
+  }
+  .shape-7 {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  }
+  .shape-1 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  }
+  .shape-2 {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  }
+  .shape-3 {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  }
+  .shape-4 {
+  position: absolute;
+  top: 20px;
+  left: 700px;
+  }
+  .shape-5 {
+  position: absolute;
+  top: 20px;
+  left: 900px;
+  }
+  .shape-6 {
+  position: absolute;
+  top: 10px;
+  left: 1100px;
+  }
+  .shape-8 {
+  position: absolute;
+  top: 10px;
+  left: 1300px;
+  }
+  .shape-bg {
+  position: absolute;
+  width: 61px;
+  height: 11px;
+  }
+  .shape-bg-blue-light {
+  background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#1CDFFE' fill-rule='evenodd'/></svg>");
+  background-size: cover;
+  }
+  .shape-bg-blue-mid {
+  background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#059ADC' fill-rule='evenodd'/></svg>");
+  background-size: cover;
+  }
+  .shape-bg-manatee-dark {
+  background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#181F22' fill-rule='evenodd'/></svg>");
+  background-size: cover;
+  }
+  .shape-bg-blue-light {
+  background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#1CDFFE' fill-rule='evenodd'/></svg>");
+  background-size: cover;
+  }
+  .shape-bg-blue-mid {
+  background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#059ADC' fill-rule='evenodd'/></svg>");
+  background-size: cover;
+  }
+  .shape-bg-manatee-dark {
+  background: url("data:image/svg+xml;utf8,<svg width='62' height='11' viewBox='0 0 62 11' xmlns='http://www.w3.org/2000/svg'><path d='M.083.268C.218.185.065.177 11.84.193 23.612.21 34.366.73 38.695.507c1.416-.073 9.537-.244 9.537-.244L53.761 0s1.917.133 3.139.09c1.222-.041 4.163-.118 4.813.178 1.026.467-1.029 7.01-1.029 8.249 0 1.238.497 2.06 0 2.47-.168.14-4.144-.972-13.572-.671-4.31.137-29.617-.403-35.133-.403-7.069 0-11.93.579-11.93.579s.333-4.244.333-6.123c0-1.88-.597-3.917-.299-4.1z' fill='#181F22' fill-rule='evenodd'/></svg>");
+  background-size: cover;
+  }
+  .anim-float {
+  animation-name: anim-float;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  }
+  @keyframes anim-float {
+  from {
+  transform: translateY(0px);
+  }
+  65% {
+  transform: translateY(16px);
+  }
+  to {
+  transform: translateY(0px);
+  }
+  }
+  .base-rotate--45 {
+  transform: rotate(-45deg);
+  }
+  .base-rotate-45 {
+  transform: rotate(45deg);
+  }
+  .base-rotate-20 {
+  transform: rotate(20deg);
+  }
+  .base-rotate-80 {
+  transform: rotate(80deg);
+  }
+  .offset-1 {
+  animation-delay: 1s;
+  }
+  .offset-2 {
+  animation-delay: 2s;
+  }
+  .offset-3 {
+  animation-delay: 3s;
+  }
+  #q1 {
+  color: #2980b9;
+  }
+  #q2 {
+  color: #009688;
+  }
+  // rotations
+  .anim-rotate {
+  animation-name: anim-rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  }
+  @keyframes anim-rotate {
+  from {
+  transform: rotate(0deg);
+  }
+  65% {
+  transform: rotate(8deg);
+  }
+  to {
+  transform: rotate(0deg);
+  }
+  }
+  body {
+  background: url('https://cdn.tutsplus.com/psd/uploads/2014/02/snow03-10.gif');
+  }
+#modal1.modal
+  .modal-content
+    h4 Go through these Use Cases
+    p Be brave enough to try new stuffs
+    .container
+      ul.collapsible.popout
+        li
+          .collapsible-header
+            i.material-icons explore
+            | Featured ideas
+          .collapsible-body
+            span
+              .collection
+                a.collection-item(href='https://electronicsforu.com/electronics-projects/simple-low-power-inverter', target='_blank') Low Power Inverter
+                a.collection-item(href='https://electronicsforu.com/electronics-projects/low-cost-lpg-leakage-detector', target='_blank') LPG leakage detector
+                a.collection-item(href='https://electronicsforu.com/electronics-projects/doorbell-cum-visitor-indicator', target='_blank') Doorbell cum visitor indicator
+                a.collection-item(href='https://electronicsforu.com/electronics-projects/hardware-diy/arduino-sixth-sense-media-player', target='_blank') Sixth Sense media player
+                a.collection-item(href='https://electronicsforu.com/electronics-projects/automatic-switch-off-battery-charger', target='_blank') Automatic switch-off battery charger
+                a.collection-item(href='http://nevonprojects.com/fingerprint-voting-system-project/', target='_blank') FingerPrint Voting System
+                a.collection-item(href='http://nevonprojects.com/project-ideas/electronics-ideas/', target='_blank') More
+        li
+          .collapsible-header
+            i.material-icons filter2
+            | Second
+          .collapsible-body
+            span
+              .collection
+                a.collection-item(href='http://www.electricaltechnology.org/2014/10/clap-switch-circuit-electronic-project.html', target='_blank') Clap switch sircuit
+                a.collection-item(href='https://youtu.be/JJ26uynApEU', target='_blank') Water level alarm
+                a.collection-item(href='http://www.electronicshub.org/speed-control-of-dc-motor-using-pulse-width-modulation/', target='_blank') Speed control of DC motor
+                a.collection-item(href='http://nevonprojects.com/smart-dustbin-with-iot-notifications/', target='_blank') Smart Dustbin With IOT Notifications
+                a.collection-item(href='http://nevonprojects.com/object-tracker-follower-robot-using-raspberry-pi/', target='_blank') Object Tracker &amp; Follower Robot Using Raspberry Pi
+        li
+          .collapsible-header
+            i.material-icons laptop_mac
+            | Software based
+          .collapsible-body
+            span
+              .collection
+                a.collection-item(href='https://developer.chrome.com/extensions/getstarted', target='_blank') Chrome extensions
+                a.collection-item(href='https://github.com/toddmotto/public-apis', target='_blank') API documentations
+                a.collection-item(href='https://market.mashape.com/explore?sort=creationDate&page=1', target='_blank') API mashap lists
+  .modal-footer
+    a.modal-close.waves-effect.waves-green.btn.btn-primary(href='#!') Close
+.c1
+  .shape-wrapper.container
+    .anim-float.offset-1
+      .shape-7.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float
+      .shape-1.base-rotate-45
+        .shape-bg.shape-bg-blue-light.anim-rotate
+    .anim-float.offset-3
+      .shape-2.base-rotate-20
+        .shape-bg.shape-bg-blue-mid.anim-rotate
+    .anim-float.offset-1
+      .shape-3.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float.offset-2
+      .shape-4.base-rotate-80
+        .shape-bg.shape-bg-blue-light.anim-rotate
+    .anim-float.offset-2
+      .shape-4.base-rotate-80
+        .shape-bg.shape-bg-blue-light.anim-rotate
+    .anim-float.offset-1
+      .shape-5.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float.offset-2
+      .shape-6.base-rotate-80
+        .shape-bg.shape-bg-blue-light.anim-rotate
+    .anim-float.offset-1
+      .shape-8.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float.offset-1
+      .shape-5.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float.offset-2
+      .shape-6.base-rotate-80
+        .shape-bg.shape-bg-blue-light.anim-rotate
+    .anim-float.offset-1
+      .shape-8.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float.offset-1
+      .shape-5.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+    .anim-float.offset-2
+      .shape-6.base-rotate-80
+        .shape-bg.shape-bg-blue-light.anim-rotate
+    .anim-float.offset-1
+      .shape-8.base-rotate--45
+        .shape-bg.shape-bg-manatee-dark.anim-rotate
+.card-panel.hoverable.container
+  .row
+    form#reg_project.col.s12(method='POST', action='/projects/reg_project')
+      .row
+        .col.s12
+          br
+          br
+          h6#q2.center-align Bravo! It always seems impossible until it&apos;s done.
+          h5#q1.center-align Never give up , just keep going #{user.username} 
+          br
+          hr(style='width: 250px')
+          br
+          .row
+            h5.center-align It&apos;s not about ideas.It&apos;s about making ideas happen
+          h6#q1.center-align Wee! Let&apos;s build the future
+          br
+          br
+        .row
+          .col.s6
+            .input-field.col.s12
+              input#name.validate(type='text', name='name', value=username)
+              label(for='name') Name
+              span.helper-text(data-error='Oops,fill me', data-success='cool,nice name champ!')
+          #dep_hide.col.s6
+            .input-field.col.s12
+              select#dep(name='dep')
+                option(value='', disabled='', selected='') Department
+                option(value='1') MECH
+                option(value='2') CIVIL
+                option(value='3') CSE
+                option(value='4') EEE
+                option(value='5') ECE
+                option(value='6') MCA
+                option(value='7') OTHERS
+              label Home of your passion
+          #dep_show.col.s6
+            #otherType(style='display:none;')
+              .input-field.col.s12
+                input.validate(type='text', name='dep', placeholder='Specify your domain')
+                label(for='dep') Field
+                span.helper-text(data-error='Oops!you missed me', data-success='Please mention your core of interest')
+        .row
+          .col.s6
+            .input-field.col.s12
+              input#email.validate(type='email', name='email', value=email)
+              label(for='email') Email
+              span.helper-text(data-error='Oops!you missed me', data-success='Cheers!email looks good')
+          .col.s6
+            .input-field.col.s12
+              select#yr(name='yr')
+                option(value='', disabled='', selected='') YEAR
+                option(value='8') FIRST YEAR
+                option(value='9') SECOND YEAR
+                option(value='10') THIRD YEAR
+                option(value='11') FOURTH YEAR
+              label Bootstrapping my
+        .row
+          #idea_1st.col.s6(style='display: none;')
+            .input-field.col.s12
+              br
+              select(name='project_title')
+                optgroup(label='Featured ideas')
+                  option(value='', disabled='', selected='') Use Cases
+                  option(value='12')
+                    a(href='https://electronicsforu.com/electronics-projects/simple-low-power-inverter') Low Power Inverter
+                  option(value='13')
+                    a(href='https://electronicsforu.com/electronics-projects/low-cost-lpg-leakage-detector') LPG leakage detector
+                  option(value='14')
+                    a(href='https://electronicsforu.com/electronics-projects/doorbell-cum-visitor-indicator') Doorbell cum visitor indicator
+                  option(value='15')
+                    a(href='https://electronicsforu.com/electronics-projects/hardware-diy/arduino-sixth-sense-media-player') Sixth Sense media player
+                  option(value='16')
+                    a(href='https://electronicsforu.com/electronics-projects/automatic-switch-off-battery-charger') Automatic switch-off battery charger
+                optgroup(label='Level 2')
+                  option(value='17')
+                    a(href='http://www.electricaltechnology.org/2014/10/clap-switch-circuit-electronic-project.html') Clap switch sircuit
+                  option(value='18')
+                    a(href='https://youtu.be/JJ26uynApEU') Water level alarm
+                  option(value='19')
+                    a(href='http://www.electronicshub.org/speed-control-of-dc-motor-using-pulse-width-modulation/') Speed control of DC motor
+                optgroup(label='Software based')
+                  option(value='20')
+                    a(href='https://developer.chrome.com/extensions/getstarted') Chrome extensions
+                  option(value='21') Library management system
+                  option(value='22') Attendance tracker
+                  option(value='23') GST calculator
+                  option(value='24') Weather app
+                  option(value='25') Sentiment analyser
+              label Few beginner usecases to get started
+              br
+              small It&apos;s just to trigger you,feel free to choose one
+          #idea_rest.col.s6(style='display: none;')
+            .input-field.col.s12
+              select(name='project_title')
+                optgroup(label='Featured ideas')
+                  option(value='', disabled='', selected='') Use Cases
+                  option(value='26')
+                    a(href='http://nevonprojects.com/smart-dustbin-with-iot-notifications/') Smart Dustbin With IOT Notifications
+                  option(value='27')
+                    a(href='http://nevonprojects.com/object-tracker-follower-robot-using-raspberry-pi/') Object Tracker &amp; Follower Robot Using Raspberry Pi
+                  option(value='28')
+                    a(href='http://nevonprojects.com/fingerprint-voting-system-project/') FingerPrint Voting System
+                  option(value='29')
+                    a(href='http://nevonprojects.com/project-ideas/electronics-ideas/') More
+                optgroup(label='Aurdino/android based project ideas')
+                  option(value='30')
+                    a(href='https://electronicsforu.com/electronics-projects/hardware-diy/arduino-based-audio-meter') Audio meter
+                  option(value='31')
+                    a(href='https://electronicsforu.com/electronics-projects/hardware-diy/arduino-home-automation-system-android') Home-automation system
+                  option(value='32')
+                    a(href='https://electronicsforu.com/electronics-projects/hardware-diy/arduino-based-fancy-lights-controller-2') Fancy light controller
+                  option(value='33')
+                    a(href='https://electronicsforu.com/electronics-projects/humidity-temperature-monitoring-using-arduino-esp8266') Humidity and temaperature monitoring
+                  option(value='34')
+                    a(href='https://electronicsforu.com/electronics-projects/hardware-diy/automated-plants-watering-system') Automatic plants watering system
+                optgroup(label='Software based')
+                  option(value='35') Intelligent Sales tracker system
+                  option(value='36') Ananymous student feedback app
+                  option(value='37') College happenings blog with google calender API
+                  option(value='38') Bit coin wallet
+                  option(value='39') Stock market app
+                  option(value='40') College happenings Bot
+                  option(value='41') Discussion forum for clubs
+              label Few ideas from our ideabank
+              br
+              small Feel free to get your hands dirty with these
+          #idea_sat1.col.s6(style='display: none;')
+            br
+            // Switch
+            label.col.s6 Not satisfied with the ideas
+            .switch
+              label
+                | No 
+                input#button_satisfied1(type='checkbox', name='idea')
+                span.lever
+                |             Yes
+          #idea_satrest.col.s6(style='display: none;')
+            br
+            // Switch
+            label.col.s6 Not satisfied with the ideas
+            .switch
+              label
+                | No 
+                input#button_satisfied2(type='checkbox', name='idea')
+                span.lever
+                |             Yes
+          #share_lag.col.s6(style='display: none;')
+            p.range-field
+              input#test5(type='range', name='rating', min='0', max='100')
+              label(for='rating') Rate these ideas out of 100
+        .row
+          .col.s6
+            p
+              label.col.s6
+                input.with-gap(name='position', type='radio', value='team', checked='')
+                span Team
+              label.col.s6
+                input.with-gap(name='position', type='radio', value='individual')
+                span Lone Wolf
+          .col.s6
+            p
+              // Switch
+              label.col.s6 Join hands with my peers
+              .switch
+                label
+                  | Yes
+                  input#button1(type='checkbox')
+                  span.lever
+                  |                 No
+        .row
+          #hide.col.s6
+            #test_teams.input-field.col.s12
+              label
+                | Teamnames/Id
+                select#teamname.browser-default
+                  option(value='', disabled='', selected='') Choose your troop
+          #div1.col.s6(style='display: none')
+            .input-field.col.s12
+              input#teamname_ip.validate(type='text', name='teamname')
+              label(for='teamname_ip') Team Name
+              small Or Your individual ID(name)
+              span.helper-text(data-error='Oops,fill me or try to revert back to pick one', data-success='cool,all the best!')
+          .col.s6
+            br
+            p
+              label
+                input#own_idea(type='checkbox')
+                span Have your own idea
+        #disp_idea.row(style='display: none;')
+          .col.s6
+            .input-field.col.s12
+              input#project_title.validate(type='text', name='project_title')
+              label(for='project_title') Your project title
+              span.helper-text(data-error='Oops,fill me', data-success='Wow,all the best yar!')
+          .col.s6
+            .input-field.col.s12
+              textarea#project_description.materialize-textarea.validate(name='project_description')
+              label(for='project_description') Project Description
+              span.helper-text(data-error='Ahem,please tell us about your project', data-success='Super cool!')
+        br
+        .row
+          .col.s12
+            br
+            // Switch
+            label.col.s6 Have prior project experience in THIRAN
+            .switch
+              label
+                | Yes 
+                input#button2(type='checkbox', name='experience')
+                span.lever
+                |             No
+        .row
+          .col.s6.div2
+            .input-field.col.s12
+              input#pre_project_title.validate(type='text', name='pre_project_title')
+              label(for='pre_project_title') Previous project title
+              span.helper-text(data-error='Oops,please fill it', data-success='Impressive')
+          .col.s6.div2
+            .input-field.col.s12
+              textarea#pre_project_description.materialize-textarea.validate(name='pre_project_description')
+              label(for='pre_project_description') Description
+              span.helper-text(data-error='Ahem,few words please', data-success='Great job!')
+        .row
+          .col.s12.div2
+            .input-field.col.s12
+              textarea#feedback.materialize-textarea(name='feedback')
+              label(for='feedback') Feedback
+              span.helper-text(data-error='Ahem,your feedbacks help us serve better', data-success='Thanks champ!')
+              small Share a few words about your experience in thiran
+        .row
+          .col.s6
+            p
+              label
+                input#button3(type='checkbox', name='mentor', checked='')
+                span Mentor needed
+                br
+                small Uncheck if not needed
+          #div3.col.s6
+            .input-field.col.s12
+              input#phoneno.validate(type='text', name='phoneno')
+              label(for='phoneno') Contact no
+              span.helper-text(data-error="Ahem,we couldn't help you much without sufficient contact no", data-success='Done,we will contact you soon')
+      .row
+        .center-align
+          input.btn.btn-primary(type='submit', value='Submit')
+script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+// Compiled and minified JavaScript
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js')
+script(src='/js/main.js')
+script(type='text/javascript').
+  // Or with jQuery
+  $(document).ready(function() {
+  $('.collapsible').collapsible();
+  $("#own_idea").click(function(){
+  $("#disp_idea").fadeToggle();
+  $("#idea_1st").hide();
+  $("#idea_rest").hide();
+  })
+  $("#button_satisfied1").click(function(){
+  $("#idea_1st").fadeToggle();
+  $("#idea_rest").hide();
+  $("#share_lag").fadeToggle();
+  })
+  $("#button_satisfied2").click(function(){
+  $("#idea_1st").hide();
+  $("#idea_rest").fadeToggle();
+  $("#share_lag").fadeToggle();
+  })
+  $('#dep').on('change',function(){
+  if( $(this).val()==="7"){
+  $("#dep_hide").hide();
+  $("#otherType").show();
+  }
+  else{
+  $("#otherType").hide();
+  }
+  });
+  $('#yr').on('change',function(){
+  if( $(this).val()==="8"){
+  $("#idea_1st").show();
+  $("#idea_sat1").show();
+  $("#idea_rest").hide();
+  $("#idea_satrest").hide();
+  }
+  else{
+  $("#idea_rest").show();
+  $("#idea_satrest").show();
+  $("#idea_1st").hide();
+  $("#idea_sat1").hide();
+  }
+  });
+  $('select').formSelect();
+  $("#button1").click(function() {
+  $('#hide').fadeToggle();
+  $("#div1").fadeToggle();
+  });
+  $("#button2").click(function() {
+  $(".div2").fadeToggle(800);
+  });
+  $("#button3").click(function() {
+  $("#div3").fadeToggle(800);
+  });
+  });
+  $('.modal').modal();
+  $("#test").click(function(){
+  $("#modal1").show();
+  });
+  $("#modal_close").click(function(){
+  $("#modal1").hide();
+  });
+  var toastHTML = '<a class="waves-effect waves-light modal-trigger" href="#modal1">Use Cases</a>';
+  M.toast({html: toastHTML,displayLength: Infinity});

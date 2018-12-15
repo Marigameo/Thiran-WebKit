@@ -1,0 +1,955 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title CODEUISTE - All in one coding platform 
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css', rel='stylesheet')
+    link(href='/css/style_t.min.css', rel='stylesheet')
+    style(type='text/css').
+      #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://i.redd.it/ounq1mw5kdxy.gif') 50% 50% no-repeat white;
+      }
+      html,
+      body,
+      header,
+      .view {
+      height: 100%;
+      }
+      @media (max-width: 559px) {
+      html,
+      body,
+      header,
+      .view {
+      height: 1000px;
+      }
+      }
+      @media (min-width: 560px) and (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+      height: 700px;
+      }
+      }
+      @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .view {
+      height: 600px;
+      }
+      }
+      @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+      }
+      }
+      .icon-block {
+      padding: 0 15px;
+      }
+      .icon-block .material-icons {
+      font-size: inherit;
+      }
+      /**
+      * Position icons into circle (SO)
+      * http://stackoverflow.com/q/12813573/1397351
+      */
+      .circle-container {
+      position: relative;
+      width: 24.75em;
+      height: 25.75em;
+      padding: 2.3em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+      border: dashed 1px;
+      border-radius: 70%;
+      margin: 1.95em auto 0;
+      }
+      .circle-container a {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 4em; height: 4em;
+      margin: -2em; /* 2em = 4em/2 */ /* half the width */
+      }
+      .circle-container img { display: block; width: 100%; }
+      .deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+      .deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+      .deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+      .deg180 { transform: translate(-12em); }
+      .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+      .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+      /* this is just for showing the angle on hover */
+      .circle-container a:not(.center):before {
+      position: absolute;
+      width: 4em;
+      color: white;
+      opacity: 0;
+      background: rgba(0,0,0,.5);
+      font: 1.25em/3.45 Courier, monospace;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-indent: -2em;
+      text-shadow: 0 0 .1em deeppink;
+      transition: .7s; /* only works in Firefox */
+      content: attr(class)'°';
+      }
+      .circle-container a:hover:before { opacity: 1; }
+      /* this is for showing the circle on which the images are placed */
+      .circle-container:after {
+      position: absolute;
+      top: 1.8em; left: 2.2em;
+      width: 20.75em; height: 22.75em;
+      border: dashed 1px deeppink;
+      border-radius: 50%;
+      opacity: .3;
+      pointer-events: none;
+      content: '';
+      }
+      .circle-container:hover:after { opacity: 1; }
+      .circle-container a:not(.center):after {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 24em; height: 24em;
+      border-radius: 50%;
+      box-shadow: 0 0 .5em .5em white;
+      margin: -2px;
+      background: deeppink;
+      opacity: .3;
+      content: '';
+      }
+      .circle-container:hover a:after { opacity: 1; }
+      .circle-container a:hover:after { opacity: .3; }
+      @import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
+      body{
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+      }
+      header h3{
+      text-align: center;
+      font-weight: bold;
+      margin-top: 0;
+      }
+      header p{
+      text-align: center;
+      margin-bottom: 0;
+      }
+      .hexa{
+      border: 0px;
+      float: left;
+      text-align: center;
+      height: 35px;
+      width: 60px;
+      font-size: 22px;
+      background: #f0f0f0;
+      color: #3c3c3c;
+      position: relative;
+      margin-top: 15px;
+      }
+      .hexa:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 15px solid #f0f0f0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      top: -15px;
+      }
+      .hexa:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 15px solid #f0f0f0;
+      bottom: -15px;
+      }
+      .timeline {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      margin-top: 20px;
+      list-style-type: none;
+      }
+      .timeline:before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: ' ';
+      display: block;
+      width: 2px;
+      height: 100%;
+      margin-left: -1px;
+      background: rgb(213,213,213);
+      background: -moz-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+      background: -webkit-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+      background: -o-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+      background: -ms-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+      background: linear-gradient(to bottom, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+      z-index: 5;
+      }
+      .timeline li {
+      padding: 2em 0;
+      }
+      .timeline .hexa{
+      width: 16px;
+      height: 10px;
+      position: absolute;
+      background: #00c4f3;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      margin-left:auto;
+      margin-right:auto;
+      top: -30px;
+      margin-top: 0;
+      }
+      .timeline .hexa:before {
+      border-bottom: 4px solid #00c4f3;
+      border-left-width: 8px;
+      border-right-width: 8px;
+      top: -4px;
+      }
+      .timeline .hexa:after {
+      border-left-width: 8px;
+      border-right-width: 8px;
+      border-top: 4px solid #00c4f3;
+      bottom: -4px;
+      }
+      .direction-l,
+      .direction-r {
+      float: none;
+      width: 100%;
+      text-align: center;
+      }
+      .flag-wrapper {
+      text-align: center;
+      position: relative;
+      }
+      .flag {
+      position: relative;
+      display: inline;
+      background: rgb(255,255,255);
+      font-weight: 600;
+      z-index: 15;
+      padding: 6px 10px;
+      text-align: left;
+      border-radius: 5px;
+      }
+      .direction-l .flag:after,
+      .direction-r .flag:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      height: 0;
+      width: 0;
+      margin-left: -8px;
+      border: solid transparent;
+      border-bottom-color: rgb(255,255,255);
+      border-width: 8px;
+      pointer-events: none;
+      }
+      .direction-l .flag {
+      -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      }
+      .direction-r .flag {
+      -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+      }
+      .time-wrapper {
+      display: block;
+      position: relative;
+      margin: 4px 0 0 0;
+      z-index: 14;
+      line-height: 1em;
+      vertical-align: middle;
+      color: #fff;
+      }
+      .direction-l .time-wrapper {
+      float: none;
+      }
+      .direction-r .time-wrapper {
+      float: none;
+      }
+      .time {
+      background: #00c4f3;
+      display: inline-block;
+      padding: 8px;
+      }
+      .desc {
+      position: relative;
+      margin: 1em 0 0 0;
+      padding: 1em;
+      background: rgb(254,254,254);
+      -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      z-index: 15;
+      }
+      .direction-l .desc,
+      .direction-r .desc {
+      position: relative;
+      margin: 1em 1em 0 1em;
+      padding: 1em;
+      z-index: 15;
+      }
+      @media(min-width: 768px){
+      .timeline {
+      width: 660px;
+      margin: 0 auto;
+      margin-top: 20px;
+      }
+      .timeline li:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      }
+      .timeline .hexa {
+      left: -28px;
+      right: auto;
+      top: 8px;
+      }
+      .timeline .direction-l .hexa {
+      left: auto;
+      right: -28px;
+      }
+      .direction-l {
+      position: relative;
+      width: 310px;
+      float: left;
+      text-align: right;
+      }
+      .direction-r {
+      position: relative;
+      width: 310px;
+      float: right;
+      text-align: left;
+      }
+      .flag-wrapper {
+      display: inline-block;
+      }
+      .flag {
+      font-size: 18px;
+      }
+      .direction-l .flag:after {
+      left: auto;
+      right: -16px;
+      top: 50%;
+      margin-top: -8px;
+      border: solid transparent;
+      border-left-color: rgb(254,254,254);
+      border-width: 8px;
+      }
+      .direction-r .flag:after {
+      top: 50%;
+      margin-top: -8px;
+      border: solid transparent;
+      border-right-color: rgb(254,254,254);
+      border-width: 8px;
+      left: -8px;
+      }
+      .time-wrapper {
+      display: inline;
+      vertical-align: middle;
+      margin: 0;
+      }
+      .direction-l .time-wrapper {
+      float: left;
+      }
+      .direction-r .time-wrapper {
+      float: right;
+      }
+      .time {
+      padding: 5px 10px;
+      }
+      .direction-r .desc {
+      margin: 1em 0 0 0.75em;
+      }
+      }
+      @media(min-width: 992px){
+      .timeline {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+      }
+      .direction-l {
+      position: relative;
+      width: 380px;
+      float: left;
+      text-align: right;
+      }
+      .direction-r {
+      position: relative;
+      width: 380px;
+      float: right;
+      text-align: left;
+      }
+      }
+  body
+    #loader
+    // Navbar
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.scrolling-navbar
+      .container
+        // Brand
+        a.navbar-brand(href='/projects/codesuite')
+          strong CodeSuite
+        // Collapse
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        // Links
+        #navbarSupportedContent.collapse.navbar-collapse
+          // Left
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='/projects/aboutcodesuite')
+                | About
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/', target='_blank') Thiran
+            li.nav-item
+              a.nav-link(href='/projects/about_discusshub', target='_blank') DiscussHub
+            li.nav-item
+              a.nav-link(href='/projects/about_startup', target='_blank') StartUp Wallet
+          // Right
+          ul.navbar-nav.nav-flex-icons
+            li.nav-item
+              a.nav-link(href='https://www.facebook.com/accetthiran', target='_blank')
+                i.fa.fa-facebook
+            li.nav-item
+              a.nav-link(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+                i.fa.fa-twitter
+            li.nav-item
+              a.nav-link.border.border-light.rounded(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+                i.fa.fa-github.mr-2
+                | Thiran GitHub
+    // Navbar
+    // Full Page Intro
+    .view
+      video.video-intro(poster='https://mdbootstrap.com/img/Photos/Others/background.jpg', playsinline='', autoplay='', muted='', loop='')
+        source(src='https://mdbootstrap.com/img/video/animation-intro.mp4', type='video/mp4')
+      // Mask & flexbox options
+      .mask.rgba-black-light.d-flex.justify-content-center.align-items-center
+        // Content
+        .text-center.white-text.mx-5.wow.fadeIn
+          h1.display-4.mb-4
+            strong CodeSuite
+            br
+            strong Interface To Innovate
+            hr.mb-1(style='border-color: white;width: 180px;')
+            br
+          h4.mb-4
+            strong
+              | All in one platform to practice and personalise your skills.Learn,practice,compete,win,teach and experiment at your own pace without any hurry..
+          h4.mb-4.d-none.d-md-block
+            strong
+              | CodeSuite - build with the dream of lifting 2000 + ACGCET'ians fluttering carreer tracks.
+          a.btn.btn-outline-white.btn-lg(target='_blank', href='/projects/codesuite')
+            | Mess with code
+            i.fa.fa-code.ml-2
+        // Content
+      // Mask & flexbox options
+    // Full Page Intro
+    br
+    br
+    // Card
+    .card.card-image.mb-3
+      img.img-fluid.mx-auto.d-block.mb-2(src='/img/codesuite.png', alt='Responsive image', style='height: 240px;width: 200px;')
+      // Heading & Description
+      .wow.fadeIn.container
+        // Section heading
+        h2.h3.text-center.mb-3.pb-3 Dare to be a passionate fool 
+        // Section description
+        h5#demo.text-center  
+        h5.text-center.mb-3.pb-3 Make coding your habit !
+        p.text-center
+          | It's not about curriculum ,the new world is all about passion,creativity,urge to learn. ! Let's refrain everything..Join Us.
+        p.text-center.mb-5.pb-3 Bridging passion and habit.
+    // Card
+    br
+    br
+    .container
+      hr.mb-5
+      // News card
+      .card.mb-3.text-center.hoverable
+        .card-body
+          // Grid row
+          .row
+            // Grid column
+            .col-md-4.offset-md-1.mx-3.my-3
+              // Featured image
+              .view.overlay
+                img(src='https://static.groklearning-cdn.com/static/images/hoc/code-rocket@2x.png', style='width: 300px;height: 250px;')
+                a
+                  .mask.rgba-white-slight
+            // Grid column
+            // Grid column
+            .col-md-7.text-left.ml-3.mt-3
+              // Excerpt
+              a.green-text(href='/projects/aboutcodesuite#test')
+                h6.font-bold.pb-1
+                  i.fa.fa-desktop
+                  |  Mess with code
+              h4.mb-4
+                strong What CodeSuite is?
+              p
+                | CodeSuite is build with the motive of making resources organised and easily accessible.Stop switching between multiple sights,maintaining messy bookmarks.Learning should be fruitful with us.
+              p
+                | Programming is a sport.Walk right into it, you will learn the unwritten rules of the game as you play harder and get better..We focus on what really matters.Rather that advertising carrers let's build our own.We strive to improve the prevailing standards of budding innovators.
+              p
+                a
+                  strong forEach i in failures info "Stay motivated" ;
+                |  ,Happy coding!
+            // Grid column
+          // Grid row
+        // Content
+      hr.mb-4
+    br
+    br
+    // Card
+    .container
+      // Section: Main info
+      section.mt-5.wow.fadeIn
+        // Grid row
+        .row
+          // Grid column
+          .col-md-6.mb-4
+            img.img-fluid.z-depth-1-half(src='https://images.yourstory.com/2018/03/coding-job.png?auto=compress', alt='', width='470px', height='600px')
+          // Grid column
+          // Grid column
+          .col-md-6.mb-3
+            // Main heading
+            h3.h3.mb-3 Don't compare your beginning to someone else's middle.
+            p
+              strong THIRAN
+              |  By giving people the power to share, we're making the world more transparent. --Mark ZukerBerg
+            p
+              | Computers never care who are,where you are from.Believe me they can be your trusty friend from now.Let's start with a "Hello World!" not hello.
+            // Main heading
+            hr
+          // Grid column
+          .container
+            p
+              | Awareness and fear of initiation are our main destroyers.Let's renovate our life- Alumni from various batches of ACGCET.
+              strong Feel free to give a try
+        // Grid row
+    br
+    br
+    // Card
+    .card.card-image.mb-3
+      br
+      img.img-fluid.mx-auto.d-block.mb-2(src='http://www.eatlogos.com/all_free_logos/png/vector_blue_birds_logo.png', alt='Responsive image', width='280px', height='220px')
+      span.h3.text-center.mb-3.pb-3 PLATFORM TO BRACE YOUR SKILLS
+      // Heading & Description
+      .wow.fadeIn.container
+        // Section heading
+        // Section description
+        h5#demo.text-center  
+        h5.text-center.mb-3.pb-3 Instantiate the coder in you
+        p.text-center
+          | CodeSuite empowers students by conducting various programming challenges every year,providing access to essential resources, promoting creativity, teamwork, innovation and a practical approach to solve fuzzy social issues.
+        p.text-center.mb-5.pb-3
+          | If a mind is convinced to serve the society,a block of code is worth doing it.Stay hungry!
+    // Card
+    br
+    br
+    .container
+      .card.mb-4.wow.fadeIn
+        // Card content
+        .card-body.text-center
+          p.h5.my-4 What we emphasize?
+          p#test
+            | We provide transparent and free access to all valuable community upvoted resources.The first step to learn is to explore the best way to do it.We have people who mastered each and every skillset,thus we can provide you the right solutions.Our motto is to serve your hunger by being organised and friendly enough to take up!
+          h5.my-4
+            strong Practice,learn,compete,win,teach and never miss to guide the rest.
+          // Logo carousel
+          #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel', data-interval='1800')
+            .carousel-inner
+              // First slide
+              .carousel-item
+                // Grid row
+                .row
+                  // First column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://venturebeat.com/wp-content/uploads/2018/02/google-flutter-logo.png?fit=578%2C289&strip=all', alt='Nike - logo', style='max-height: 40px;')
+                  // /First column
+                  // Second column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://arcweb.co/wp-content/uploads/2016/10/react-logo-1000-transparent.png', alt='Amazon - logo', style='max-height: 40px;')
+                  // /Second column
+                  // Third column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='http://pluspng.com/img-png/mongodb-png-mongo-db-logo-png-370.png', alt='Sony - logo', style='max-height: 40px;')
+                  // /Third column
+                  // Fourth column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://www.techombay.com/wp-content/uploads/2017/06/g1.png', alt='Samsung - logo', style='max-height: 40px;')
+                  // /Fourth column
+                // /Grid row
+              // First slide
+              // Second slide
+              .carousel-item.active.carousel-item-left
+                // Grid row
+                .row
+                  // First column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://www.google-melange.com/archive/gsoc/2015/orgs/python/logo-200.png', alt='Airbus - logo', style='max-height: 40px;')
+                  // /First column
+                  // Second column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://ih1.redbubble.net/image.489553250.2202/ap,550x550,16x12,1,transparent,t.png', alt='Yahoo - logo', style='max-height: 40px;')
+                  // /Second column
+                  // Third column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-card.png', alt='Deloitte - logo', style='max-height: 40px;')
+                  // /Third column
+                  // Fourth column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://wiki.pandorafms.com/images/1/1f/Selenium_logo.png', alt='GE - logo', style='max-height: 40px;')
+                  // /Fourth column
+                // /Grid row
+              // Second slide
+              // Third slide
+              .carousel-item.carousel-item-next.carousel-item-left
+                // Grid row
+                .row
+                  // First column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png', alt='KPMG - logo', style='max-height: 40px;')
+                  // /First column
+                  // Second column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://appacademy.dk/wp-content/uploads/2017/05/js-logo.png', alt='Unity - logo', style='max-height: 40px;')
+                  // /Second column
+                  // Third column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://warlord0blog.files.wordpress.com/2016/09/jquery_logo.png?w=640', alt='Ikea - logo', style='max-height: 40px;')
+                  // /Third column
+                  // Fourth column
+                  .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center
+                    img.img-fluid.px-4(src='https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/javadebugger/0.1.5/1507272422920/Microsoft.VisualStudio.Services.Icons.Default', alt='Aegon - logo', style='max-height: 40px;')
+                  // /Fourth column
+                // /Grid row
+              // Third slide
+          // Logo carousel
+          hr
+          a.btn.btn-outline-primary(href='/projects/codesuite', role='button', target='_blank')
+            | Visit Us
+            i.fa.fa-code.ml-2
+      // /.Card
+      hr.mb-5
+    br
+    br
+    .container
+    .container
+      // content to be placed inside <body>…</body>
+      .circle-container
+        a.center(href='#')
+          img.circle.responsive-img(src='https://i.gifer.com/XlQO.gif')
+        a.deg0(href='#')
+          img.circle.responsive-img(src='http://www.panayiotisgeorgiou.net/wp-content/uploads/2017/03/android-preview.gif')
+        a.deg45(href='#')
+          img.circle.responsive-img(src='https://image.flaticon.com/icons/png/512/471/471012.png')
+        a.deg135(href='#')
+          img.circle.responsive-img(src='https://www.woodmac.com/content/img/icons/icon-map-explore.svg')
+        a.deg180(href='#')
+          img.circle.responsive-img(src='https://cdn.iconscout.com/public/images/icon/premium/png-512/camera-drone-explore-quadcopter-365f039a53a83923-512x512.png')
+        a.deg225(href='#')
+          img.circle.responsive-img(src='https://orioniconlibrary.com/icon-default.png')
+        a.deg315(href='#')
+          img.circle.responsive-img(src='https://camo.githubusercontent.com/0cd910e76658429374539a8d72a0608783918aae/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667')
+      br
+      br
+    .container
+      header
+        h3 We just made our beggining by sharing,yet lot more to do.
+        p We love to stay versatile
+        hr(style='width: 40px;')
+        p(style='color:hotpink;') Our future goals.
+      ul.timeline
+        // Item 1
+        li
+          .direction-r
+            .flag-wrapper
+              span.hexa
+              span.flag Interface to learn.
+              span.time-wrapper
+                span.time Vison
+            .desc
+              | We wish to stay as student's best friend.Our focus is to act as an interface between the student's learning curve and serve them with the best..
+        // Item 2
+        li
+          .direction-l
+            .flag-wrapper
+              span.hexa
+              span.flag Intelligent counselling system.
+              span.time-wrapper
+                span.time ML and AI
+            .desc
+              | We are working on an Intelling solution providing software to understand student's needs,their hesitation and guide them in the right way.Planned to integrate it with a bang.Stay tuned for updates.
+        // Item 3
+        li
+          .direction-r
+            .flag-wrapper
+              span.hexa
+              span.flag Ananymous feedback forum
+              span.time-wrapper
+                span.time Coming soon
+            .desc
+              | Most of us barely complain our staffs,discuss what is lagging,what is needed only in a hidden repo.But we are not ready to express them to the concened members.That's the place problem chains.Our next big idea is to break the silence
+    br
+    br
+    .container
+      h2.my-5.h3.text-center ...GalleryGlitz
+      // Section: Images
+      section.text-center
+        // Grid row
+        .row
+          // Grid column
+          .col-lg-4.col-md-12.mb-3
+            .view.overlay.z-depth-1-half
+              img.img-fluid(src='http://read.thiran.in/wp-content/uploads/2015/07/image-e1435849029290.png', alt='', style='width: 510px;height: 280px;')
+              a
+                .mask.rgba-white-light
+          // Grid column
+          // Grid column
+          .col-lg-4.col-md-6.mb-3
+            .view.overlay.z-depth-1-half
+              img.img-fluid(src='https://i.ytimg.com/vi/rFGfH2n9gLE/hqdefault.jpg', alt='', style='height: 280px;')
+              a
+                .mask.rgba-white-light
+          // Grid column
+          // Grid column
+          .col-lg-4.col-md-6.mb-3
+            .view.overlay.z-depth-1-half
+              img.img-fluid(src='https://accetosaweb.files.wordpress.com/2017/06/22037_102904466399252_3954820_n.jpg?w=640', alt='', style='height: 280px;')
+              a
+                .mask.rgba-white-light
+          // Grid column
+        // Grid row
+        // Grid row
+        .row
+          // Grid column
+          .col-md-6.mb-3
+            .view.overlay.z-depth-1-half
+              img.img-fluid(src='/img/c.jpg', alt='', style='height: 600px;')
+              a
+                .mask.rgba-white-light
+          // Grid column
+          // Grid column
+          .col-md-6.mb-3
+            .view.overlay.z-depth-1-half
+              img.img-fluid(src='/img/jp.jpg', alt='', style='height: 600px;')
+              a
+                .mask.rgba-white-light
+          // Grid column
+        // Grid row
+        // Grid row
+        .row
+          // Grid column
+          .col-md-12.mb-3
+            .view.overlay.z-depth-1-half
+              img.img-fluid(src='/img/a.jpg', alt='', width='1400px;')
+              a
+                .mask.rgba-white-light
+          // Grid column
+        // Grid row
+      // Section: Images
+    .container
+      hr.mb-5
+      // Section: More
+      section
+        h2.my-5.h3.text-center ...and even more
+        // First row
+        .row.features-small.mt-5.wow.fadeIn
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-firefox.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2.pl-3
+                h5.feature-title.font-bold.mb-1 NoviceNet
+                p.grey-text.mt-2
+                  | A small bridge to connect the aspirants with apt resources organised in a friendly mannerA man who asks is a fool for five minutes. A man who never asks is a fool for life.Let's rise up from now,get instant touch with our resources exclusively.Confused ! Let me help you,just unblock the box randomly,read it and grab the way if it suits you..
+            // /Grid row
+          // /Grid column
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-level-up.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 ACGCET StartUp Wallet
+                p.grey-text.mt-2
+                  | Entrepreneurship is all about one’s readiness to take risks, create structure and handle a business in a competitive world that is dynamic.No matter were we are ,just the spirit of competing matters.Thus we pave the right way a bit earlier by means of a wallet - initiative to boost startUp culture inside the campus.
+            // /Grid row
+          // /Grid column
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-comments-o.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 CodeMate
+                p.grey-text.mt-2
+                  | Competitive Programming is a sport.Walk right into it, you will learn the unwritten rules of the game as you play harder and get better. And believe me, you don’t need to know any “fancy name” algorithm or data-structure to get started.
+                  br
+                  | while(!succeed = try()) "Happy coding!";
+            // /Grid row
+          // /Grid column
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-code.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 Offlinides
+                p.grey-text.mt-2
+                  | Access all popular books on programming,enjoy reading them online ,suggest good materials that helped you and share your ratings and much more.Books are our true friends,use them optimally..
+            // /Grid row
+          // /Grid column
+        // /First row
+        // Second row
+        .row.features-small.mt-4.wow.fadeIn
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-cubes.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 YetExplore
+                p.grey-text.mt-2
+                  | Explore the hidden paradise of knowledge and tools yet to be experimented by most of us.User Experience Focused centralised platform to satisfy quench to discover..
+            // /Grid row
+          // /Grid column
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-question.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 DevToolz
+                p.grey-text.mt-2
+                  | Get your dev life cycle simplified with us.Really awesome tools to experiment.Try now...
+            // /Grid row
+          // /Grid column
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-th.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 CloudRunz
+                p.grey-text.mt-2
+                  | The world is slowly moving towards cloud.Discover the most popular cloud services and have fun...
+            // /Grid row
+          // /Grid column
+          // Grid column
+          .col-xl-3.col-lg-6
+            // Grid row
+            .row
+              .col-2
+                i.fa.fa-file-code-o.fa-2x.mb-1.indigo-text(aria-hidden='true')
+              .col-10.mb-2
+                h5.feature-title.font-bold.mb-1 SAAS support
+                p.grey-text.mt-2
+                  | All the support materials are made available to students via cloud based platforms to minimise the constraints in accessibility
+            // /Grid row
+          // /Grid column
+        // /Second row
+      // Section: More
+    // Footer
+    footer.page-footer.text-center.font-small.mt-4.wow.fadeIn
+      // Call to action
+      .pt-4
+        a.btn.btn-outline-white(href='/projects/kbase', target='_blank', role='button')
+          | Have doubts ? 
+          i.fa.fa-puzzle-piece(aria-hidden='true', style='padding-left: 5px;')
+        a.btn.btn-outline-white(href='/projects/contact', target='_blank', role='button')
+          | Reach us 
+          i.fa.fa-heart(aria-hidden='true', style='padding-left: 5px;')
+      // /.Call to action
+      hr.my-4
+      // Social icons
+      .pb-4
+        a(href='https://www.facebook.com/accetthiran', target='_blank')
+          i.fa.fa-facebook.mr-3
+        a(href='https://twitter.com/accetthiran?lang=en', target='_blank')
+          i.fa.fa-twitter.mr-3
+        a(href='https://www.youtube.com/user/ACCETthiran', target='_blank')
+          i.fa.fa-youtube.mr-3
+        a(href='https://plus.google.com/116707854087495862030', target='_blank')
+          i.fa.fa-google-plus.mr-3
+        a(href='https://github.com/Thiran2K18/Thiran2K18', target='_blank')
+          i.fa.fa-github.mr-3
+        a(href='https://www.linkedin.com/in/mariappan-s-82905613a/', target='_blank')
+          i.fa.fa-linkedin.mr-3
+        a(href='https://www.instagram.com/thiran2k18/?hl=en', target='_blank')
+          i.fa.fa-instagram.mr-3
+      // Social icons
+      // Copyright
+      .footer-copyright.py-3
+        | © 2018 Copyright:
+        a(href='/', target='_blank')  thiran.in 
+      // /.Copyright
+    // /.Footer
+    // SCRIPTS
+    // JQuery
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    // Bootstrap tooltips
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js')
+    // Bootstrap core JavaScript
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js')
+    // MDB core JavaScript
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js')
+    script(type='text/javascript').
+      setTimeout(function() {
+      fullyLoaded();
+      }, 1000);
+      function fullyLoaded() {
+      $("#loader").fadeOut("slow");
+      }
+      // Animations initialization
+      new WOW().init();
+      var i = 0;
+      var txt = '“…if you really look closely, most overnight successes took a long time.” — Steve Jobs';
+      var speed = 60;
+      function typeWriter() {
+      if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+      }
+      }
+      $(document).ready(function(){
+      typeWriter();
+      })
