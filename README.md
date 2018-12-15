@@ -21,3 +21,7 @@ For help and troubles try to contact via : mariappangameo@gmail.com
 
 
 Just take these as reference.
+
+
+
+Important note : the img folder should be inside the public folder.Please do replace it if you are using it.I have mistakenly uploaded it and it's quite hard to alter via browser so I've left it as it is.I do respect my time in development,thus personally feel it's people responsibility to sense these type of arrangement and simple erors.
