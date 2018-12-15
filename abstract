@@ -1,0 +1,167 @@
+         THIRAN PROJECT SUBMISSION 
+Mariappan,
+III year, CSE,
+Alagappa Chettiar College of Engineering and Technology,
+Karaikudi-630 004,
+Mail id: mariappangameo@gmail.com
+
+
+
+ 
+Make hay while the sun shines! Chances often act like mirage , we realize it’s importance only when it crowns someone. But it’s useless because already the race is over and you can’t be in that track now. Just like that ACCET is also not an exception .You can get whatever you aspire for your development, you can lay your footprints in all the platforms available open .But the irony is that no one can push you and no need to do that so. Thiran is one of the most prominent platform of ACCET. As I mentioned before we people will not get such a platform to improve our skills anywhere else at this ease. Thiran act as an elite platform to showcase your talents irrespective of your domain and curriculum, but interest matters a lot. I have involved myself actively in Thiran right from my first year. I am glad that I got the opportunity as early as possible. I started off with a mini student registration project in c, not a big one but with what we learned at that period. The project matters a lot for me as it acted as an enlightening experience after getting into ACCET .It sounded very strange to have a look at our senior projects at that time, but with a little hope and confidence that I can improve myself. Glad it worked too. I would like to thank all my seniors, alumnae who have been supporting us in all possible ways. I apologize for writing these notes on a project submission abstract but I thought it would be helpful rather than providing source code of my project. If I do so it will only tempt them to follow it. But it’s for better to guide someone with inspirational words to spoon feeding with all essentials. The most valuable treasure I got after getting into ACCET is that I learned how to learn myself.
+
+ 
+
+Conclusion:
+ I always prefer inspiring someone rather that impressing as I see them as different. So get inspired and inspire a lot.
+“GETTING INTO AN ELITE INSTITUTION MATTERS A LOT BUT IT DOESNN’T GUARENTEE SUCCESS “
+—Mr.Sundar Pichai,CEO,GOOGLE
+ 
+
+.
+     
+THIRAN – Version 1
+CREATIVITY REDEFINED
+
+ 
+My project for Thiran 2K17-2K18 is a web application for Thiran. I know it’s a quite complex task for a short span of time and a person like me who wish to start off new right from the basics of web development. But not anymore since I made it quite well by giving my best I could. Certain factors pushed me take this project.
+
+1.	First and foremost everyone was trying to do something fancy but I thought of doing something that doesn’t end with thiran demo day.
+2.	To be honest I don’t have any new ideas in my mind too at that time as I am new to this domain.
+3.	It’s always far better to start of with something than waiting till the peak of demo day for a better idea.
+4.	I prefer making stuffs in a great way rather than making great stuffs, which I could do after my initial experience.
+Let me now get into the details of my project. This application has all the basic functionalities that a web application have in common. But I made my mind to add some elements new in addition to this. I don’t know it’s worth or not but definitely going to be different in some way.
+The common features I have included in this application are,
+	About page
+	Login and signup form
+	Member Registration forms
+	Event registration forms
+	About events page and 
+	Contact form
+These may sound most common just like any web applications. But it’s my duty not to change the basic format too. But it’s my application and so I decided to play with it with some cool stuffs. Rather than modifying the basic format of the application I decide to add an additional application to so that it senses a lot about my effort and creativity. It could also make the application more meaningful when linked. It’s a good programming practice not to dump all the stuffs in a file, in application too (in my opinion).
+So I made another cool application, named it as codesuite (as I didn’t get the opportunity to name my application earlier as I only redefined it).The reasons to link this application are,
+	The primary aim of any software application is to solve certain problem, When I was searching for a problem to solve I found it so difficult to grasp good one (as I was looking to solve some business problem but I don’t have much knowledge on business platforms)
+	At the same time it will be very common to make a registration or management software. I was looking for something cool than that so that I could explore more.
+	“Creativity exists in us, rather than searching it outside if we make a deeper look in our self we may grasp a good one.” It worked for me I that rather than solving a problem assuming that it could help someone, why don’t we solve a problem that we have so that it may also benefit students like me (lazy as I am and always looking for someone to encourage to do things).
+Codesuite is an all in one coding platform. Don’t mistake me I named it in that way. What I primarily did is that I assembled all the stuffs not only me most of the students search for, use often to learn to code. I have a habit of spending a lot of time to search for good resources to learn than learning (sorry but I do so).It helped me a lot too. My philosophy is that if you found a platform that makes you feel comfortable and stuffs that really you are interested in then you will never feel like working and start loving it.So I compiled all the existing coding platforms, books for reference and some basic ide’s to code too. I did this because I was too lazy to search for resources (not a new one that I am not familiar with) and jumping here and there to get references at one place, meaning at one place and coding in different platform and so on. It made me tired easily. So I thought it would be so cool and fancy to have all those stuffs organized (it was my ultimate aim too) and compiled in a single platform.
+Certain cool features I have included in this application are,
+	Access to competitive programming platforms like Codechef, HackerRank, HackerEarth, Codeforces etc...(Almost all). I know it’s not a big deal to link these sites in an application but I did this because of two primary reasons,
+1.	Most of us are not aware of such good sites besides its popularity. So at least we should introduce them through thiran.(it worth too)
+2.	I feel fascinated when working at such cool organized platform, thus I could hang some extra time coding there.
+	When it comes to placement the most primary thing irrespective of all departments is that aptitude skills.Allthough it’s easy to master it if we have basic math skills and interest we feel difficult at times to spend time with it.The same strategy here, we may feel easy if we have all the best resources available in a single platform. So I did so.
+	It’s hard to include notepad or notepad++ to some online applications. It’s not safe too. But for simplicity (I am not that much efficient to make an online ide yet) and most of us prefer them too, I decided it would be better to have them here.So I included three most commonly used stuffs here.
+1.	Sublime text editor
+2.	Notepad
+3.	Notepad++
+With the help of a third party software.
+	I have also included a to-do app with it so that we could check our self with our schedule.
+	The next simple one but my favorite one.Links to my favorite links( sorry if it doesn’t sound pleasant) I made links to various programming and discussion forums like,
+1.	Quora 
+2.	Stack overflow
+3.	Github
+4.	YouTube 
+5.	Google as well (good to get it here too right!) 
+Finally I would like to talk about the email functionality. It was the most challenging thing I did as I have no initial understanding of it before. I have added PHP mail functionality tested it successfully in localhost. I have made both my application in such away it sends mail as follows,
+	Once a new user register himself, will get a welcome mail to the registered mail address.
+	Once a user registers for an event or project, will receive a confirmation mail.
+    		Fascinated on looking at my senior’s projects on zoho platform at my first year I did also made a try in zoho creator platform. I can now feel that it’s not worth that level but to be honest that was the start of my journey. So I have also linked it to this project. I named it as ACCET startup wallet, a tiny application that makes registration of ideas easier.
+Languages used:
+	HTML,CSS,Javascript – frontend
+	PHP –backend
+	Database – PHP myadmin (sql linked)
+Other features used:
+•	Google fonts
+•	Google icons
+
+                 Thank you!
+
+
+
+
+
+
+
+
+
+   THIRAN – Version 2
+CREATIVITY REDEFINED
+
+ 
+My project for the year 2018-2019 was the the next version of thiran webapp.I have named it as thiran webKit.The main aim or motto of this year project is to fulfil all the suggestions I got last year and submit an improved version of the webapp this time.
+The decision was to take a project that could help my very own ACCETIANS in some way.I don't want to take up something,work on it for a while,submit it on the demo day,win a price and leave it aside the very next day.My first year project went that way and most of the thiran projects goes in vein this way.So I decided that my very next project should not be a short term travel,I want it to be a long term voyage.But just like everyone I too was hiding myself behind the reason 'I have no idea,if I have an idea I would have done it'. 
+As per the suggestions from the alumni I've changed this entirely with effiecient and latest technologies.Let me list them up
+
+•	Frontend
+1.HTML
+2.CSS
+3.Javascript
+•	Frontend frameworks
+1.MDBootstrap(google material design-fully responsive to any devices)
+2.Materialise css(fully responsive to all devices)
+3.JQuery 
+
+•	Backend
+1.Node.js(modern and developing popular framework)
+
+•	Database
+1.MongoDB - very fast and efficient JSON collections type of storage
+
+Note: The database I've used is mongoDB as a cloud service,MLAB - which is a free mongoDB cloud service provider.
+
+•	API's
+1.Google fonts
+2.Google charts
+3.Google icons
+4.Materialize icons and fonts
+5.Google sign in authentication
+
+•	Special features :
+
+1.All the forms are customised to users,for example the project submission form I've designed is like giving project ideas as per his department and year so that he may get an idea at the time of submission or registration.
+
+2.All page are responsive to mobile sizes,tablets or computer appliances.
+
+3.Everything is made clear with proper documented knowledgebase.So that all the informations are digitally available.Easy to access at hands.
+
+Features included:
+
+1.	Student /alumni registration form with google signin authentication
+2.	Project registration  form
+3.	Event registration form
+4.	Alumni conduct event registration form(where alumni could register for conducting workshops,guidance programmes etc)
+5.	Knowledgebase for projects guidance and general doubts
+6.	Discussion forum - platform to make thiran conversation active
+7.	Blog (our existing blog included)
+
+Star features which I 've made with lot's of enthusiasm .Everytime I get much excited whenever I discuss it with someone.Happy to share those,
+
+1.Codesuite - All in coding platform
+
+A platform where students could access all the resources particularly to learn,practice and participate in coding activities.My motto is to make coding skills accessible to each and everyone of ACCET.Being a CSE student,passionate programmer I want to make such a site and deliver those content via thiran.
+
+Features:
+•	Offlinides - a place to access all kind of books and resources.Specially there is a form which can be filled and submitted for requesting new books that are not available.Thus the alumni who wish to help can get this info and help the students at hands.Thus the gap is bridged.
+
+•	novicenet - a place to access all educational,community upvoted resources.Student can access gate related resources,other popular learning platforms like udemy,hardvard lectures(many of us are not aware of those)
+
+•	YetExplore - a place to explore unknown resources and platforms so that those get introduced to the intersted people via thiran.Here when a student visits each time a random lucky number and a random resource or platform with proper guidance will be provided.So that a funny random visit spreads some knowledge and learning becomes fun.
+
+•	codemate - access and know about competitive coding platforms
+
+•	CloudRunz - a place to access all the cloud computing resources,be it platforms or storage solutions.
+
+2.ACGCET discussHub
+
+•	Enaging student alumni interaction constantly is a big task,but if it's acheived it's all done.Thus planned of giving a platform with ananymous sharing option so that any student can share his/her opinions without hesitation and alumni can stay close to the platform actively.Like a social media for thiran.Here also we have option to upvote and downvote a post so that it becomes more clear whether the post is likely or not and the suggestions can be taken or not.
+
+3.ACGCET Gems portal
+A place where students constantly post and update their profile which can be viewed by alumni.On the other hand alumni can post jobs and intern opportunities and thus students can have a view on them,apply there even and contact them if required.Thus jobs made easy with thiran.
+
+4.Survey portal
+A way to conduct project reviews online,thus students and alumni will be free from difficulties of time and presence physically.They can submit answers for the questions,alumni can parrallely make a note of them and suggest instantly and guide them accordingly.
+
+5.Dashboard 
+A complete dashboard where alumni can access informations like total no of projects registered,project details,student registered,their details,all count stats and so on.All informations are visually presented with google charts api,thus analysis and performance tracking becomes simple.
+I've done almost all modules from scratch,and only a few which are not to my level of implementation(just by now,later I have plans to learn and implement them too) by zoho platform which is a less codebased deluge language platform which is quite efficient and my favourite too.I've done this so that instead of just saying my idea through words I can visually present them like a working prototype so that it works better and I may get better guidance and appreciation.
+
+
