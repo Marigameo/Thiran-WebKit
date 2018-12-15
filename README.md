@@ -25,3 +25,5 @@ Just take these as reference.
 
 
 Important note :The main aim is to share the core functionalities and workflow.Some of the files like pdf's and images might be missing.Anyhow the core functionality will be full.
+
+For more information on what is Thiran and the mind behind this project - read the abstract.docx file
