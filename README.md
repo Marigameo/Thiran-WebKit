@@ -24,4 +24,4 @@ Just take these as reference.
 
 
 
-Important note : the img folder should be inside the public folder.Please do replace it if you are using it.I have mistakenly uploaded it and it's quite hard to alter via browser so I've left it as it is.I do respect my time in development,thus personally feel it's people responsibility to sense these type of arrangement and simple erors.
+Important note :The main aim is to share the core functionalities and workflow.Some of the files like pdf's and images might be missing.Anyhow the core functionality will be full.
