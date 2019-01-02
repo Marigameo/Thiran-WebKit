@@ -15,7 +15,7 @@ Thiran WebKit includes
    
    The main aim of this application is to create an integrated web platform for all sort of college students,alumni,teacher interactions.
    
-   Note : I didn't detail the implementation part here as that is not my aim.The target people should be quite familiar with these       technologies,if so they good grasp some tricks from these modules and use it somewhere.
+Note : I didn't detail the implementation part here as that is not my aim.The target people should be quite familiar with these       technologies,if so they good grasp some tricks from these modules and use it somewhere.
    
 For help and troubles try to contact via : mariappangameo@gmail.com
 
